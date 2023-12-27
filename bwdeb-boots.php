@@ -18,7 +18,7 @@ class BWDEBClassElementorBundle {
 	}
 
 	public function bwdeb_admin_editor_scripts() {
-		wp_enqueue_script( 'bwdeb_the_contact_form_editor', plugin_dir_url( __FILE__ ) . 'assets/public/js/empty-dummy.js', array(), '1.2.0', true );
+		wp_enqueue_script( 'bwdeb_the_contact_form_editor', plugin_dir_url( __FILE__ ) . 'assets/public/js/empty-dummy.js', array(), '1.3.6', true );
 		wp_script_add_data( 'bwdeb_the_contact_form_editor', 'type', 'module' );
 	}
 
@@ -514,144 +514,144 @@ class BWDEBClassElementorBundle {
 	}
 	public function bwdeb_all_assets_for_the_public(){
 		// This styles for CodEntor Syntax Highlighter
-		wp_register_style( 'codentor-code-default', plugin_dir_url( __FILE__ ) . 'assets/public/css/codentor-css/prism-default.css', null, '1.2.0', 'all' );
-		wp_register_style( 'codentor-code-coy', plugin_dir_url( __FILE__ ) . 'assets/public/css/codentor-css/prism-coy.css', null, '1.2.0', 'all' );
-		wp_register_style( 'codentor-code-dark', plugin_dir_url( __FILE__ ) . 'assets/public/css/codentor-css/prism-dark.css', null, '1.2.0', 'all' );
-		wp_register_style( 'codentor-code-funky', plugin_dir_url( __FILE__ ) . 'assets/public/css/codentor-css/prism-funky.css', null, '1.2.0', 'all' );
-		wp_register_style( 'codentor-code-okaidia', plugin_dir_url( __FILE__ ) . 'assets/public/css/codentor-css/prism-okaidia.css', null, '1.2.0', 'all' );
-		wp_register_style( 'codentor-code-solarized-light', plugin_dir_url( __FILE__ ) . 'assets/public/css/codentor-css/prism-solarized-light.css', null, '1.2.0', 'all' );
-		wp_register_style( 'codentor-solarized-dark-atom', plugin_dir_url( __FILE__ ) . 'assets/public/css/codentor-css/solarized-dark-atom.css', null, '1.2.0', 'all' );
-		wp_register_style( 'codentor-code-tomorrow-night', plugin_dir_url( __FILE__ ) . 'assets/public/css/codentor-css/prism-tomorrow-night.css', null, '1.2.0', 'all' );
-		wp_register_style( 'codentor-code-twilight', plugin_dir_url( __FILE__ ) . 'assets/public/css/codentor-css/prism-twilight.css', null, '1.2.0', 'all' );
-		wp_register_style( 'codentor-code-toolbar', plugin_dir_url( __FILE__ ) . 'assets/public/css/codentor-css/prism-toolbar.css', null, '1.2.0', 'all' );
-		wp_register_style( 'codentor-cold-dark', plugin_dir_url( __FILE__ ) . 'assets/public/css/codentor-css/cold-dark.css', null, '1.2.0', 'all' );
-		wp_register_style( 'codentor-colddark-dark', plugin_dir_url( __FILE__ ) . 'assets/public/css/codentor-css/colddark-dark.css', null, '1.2.0', 'all' );
-		wp_register_style( 'codentor-z-touch', plugin_dir_url( __FILE__ ) . 'assets/public/css/codentor-css/z-touch.css', null, '1.2.0', 'all' );
-		wp_register_style( 'codentor-zonokai-theme', plugin_dir_url( __FILE__ ) . 'assets/public/css/codentor-css/zonokai-theme.css', null, '1.2.0', 'all' );
-		wp_register_style( 'codentor-vs-theme', plugin_dir_url( __FILE__ ) . 'assets/public/css/codentor-css/vs-theme.css', null, '1.2.0', 'all' );
-		wp_register_style( 'codentor-nord-theme', plugin_dir_url( __FILE__ ) . 'assets/public/css/codentor-css/nord-theme.css', null, '1.2.0', 'all' );
-		wp_register_style( 'codentor-holy-theme', plugin_dir_url( __FILE__ ) . 'assets/public/css/codentor-css/holy-theme.css', null, '1.2.0', 'all' );
-		wp_register_style( 'codentor-laserwave-theme', plugin_dir_url( __FILE__ ) . 'assets/public/css/codentor-css/laserwave-theme.css', null, '1.2.0', 'all' );
-		wp_register_style( 'codentor-lucario-theme', plugin_dir_url( __FILE__ ) . 'assets/public/css/codentor-css/lucario-theme.css', null, '1.2.0', 'all' );
-		wp_register_style( 'codentor-night-owl', plugin_dir_url( __FILE__ ) . 'assets/public/css/codentor-css/night-owl.css', null, '1.2.0', 'all' );
-		wp_register_style( 'codentor-atom-dark', plugin_dir_url( __FILE__ ) . 'assets/public/css/codentor-css/atom-dark.css', null, '1.2.0', 'all' );
-		wp_register_style( 'codentor-dracula-theme', plugin_dir_url( __FILE__ ) . 'assets/public/css/codentor-css/dracula-theme.css', null, '1.2.0', 'all' );
-		wp_register_style( 'codentor-duotone-forest', plugin_dir_url( __FILE__ ) . 'assets/public/css/codentor-css/duotone-forest.css', null, '1.2.0', 'all' );
-		wp_register_style( 'codentor-duotone-dark', plugin_dir_url( __FILE__ ) . 'assets/public/css/codentor-css/duotone-dark.css', null, '1.2.0', 'all' );
-		wp_register_style( 'codentor-duotone-earth', plugin_dir_url( __FILE__ ) . 'assets/public/css/codentor-css/duotone-earth.css', null, '1.2.0', 'all' );
-		wp_register_style( 'codentor-duotone-light', plugin_dir_url( __FILE__ ) . 'assets/public/css/codentor-css/duotone-light.css', null, '1.2.0', 'all' );
-		wp_register_style( 'codentor-duotone-sea', plugin_dir_url( __FILE__ ) . 'assets/public/css/codentor-css/duotone-sea.css', null, '1.2.0', 'all' );
-		wp_register_style( 'codentor-duotone-space', plugin_dir_url( __FILE__ ) . 'assets/public/css/codentor-css/duotone-space.css', null, '1.2.0', 'all' );
-		wp_register_style( 'codentor-gruvbox-dark', plugin_dir_url( __FILE__ ) . 'assets/public/css/codentor-css/gruvbox-dark.css', null, '1.2.0', 'all' );
-		wp_register_style( 'codentor-gruvbox-light', plugin_dir_url( __FILE__ ) . 'assets/public/css/codentor-css/gruvbox-light.css', null, '1.2.0', 'all' );
-		wp_register_style( 'codentor-ghcolors-theme', plugin_dir_url( __FILE__ ) . 'assets/public/css/codentor-css/ghcolors-theme.css', null, '1.2.0', 'all' );
-		wp_register_style( 'codentor-pojoaque', plugin_dir_url( __FILE__ ) . 'assets/public/css/codentor-css/pojoaque.css', null, '1.2.0', 'all' );
-		wp_register_style( 'codentor-shades-of-purple', plugin_dir_url( __FILE__ ) . 'assets/public/css/codentor-css/shades-of-purple.css', null, '1.2.0', 'all' );
-		wp_register_style( 'codentor-synthwave', plugin_dir_url( __FILE__ ) . 'assets/public/css/codentor-css/synthwave.css', null, '1.2.0', 'all' );
-		wp_register_style( 'codentor-a11y-dark-theme', plugin_dir_url( __FILE__ ) . 'assets/public/css/codentor-css/a11y-dark-theme.css', null, '1.2.0', 'all' );
-		wp_register_style( 'codentor-material-dark', plugin_dir_url( __FILE__ ) . 'assets/public/css/codentor-css/material-dark.css', null, '1.2.0', 'all' );
-		wp_register_style( 'codentor-material-light', plugin_dir_url( __FILE__ ) . 'assets/public/css/codentor-css/material-light.css', null, '1.2.0', 'all' );
-		wp_register_style( 'codentor-material-oceanic', plugin_dir_url( __FILE__ ) . 'assets/public/css/codentor-css/material-oceanic.css', null, '1.2.0', 'all' );
+		wp_register_style( 'codentor-code-default', plugin_dir_url( __FILE__ ) . 'assets/public/css/codentor-css/prism-default.css', null, '1.3.6', 'all' );
+		wp_register_style( 'codentor-code-coy', plugin_dir_url( __FILE__ ) . 'assets/public/css/codentor-css/prism-coy.css', null, '1.3.6', 'all' );
+		wp_register_style( 'codentor-code-dark', plugin_dir_url( __FILE__ ) . 'assets/public/css/codentor-css/prism-dark.css', null, '1.3.6', 'all' );
+		wp_register_style( 'codentor-code-funky', plugin_dir_url( __FILE__ ) . 'assets/public/css/codentor-css/prism-funky.css', null, '1.3.6', 'all' );
+		wp_register_style( 'codentor-code-okaidia', plugin_dir_url( __FILE__ ) . 'assets/public/css/codentor-css/prism-okaidia.css', null, '1.3.6', 'all' );
+		wp_register_style( 'codentor-code-solarized-light', plugin_dir_url( __FILE__ ) . 'assets/public/css/codentor-css/prism-solarized-light.css', null, '1.3.6', 'all' );
+		wp_register_style( 'codentor-solarized-dark-atom', plugin_dir_url( __FILE__ ) . 'assets/public/css/codentor-css/solarized-dark-atom.css', null, '1.3.6', 'all' );
+		wp_register_style( 'codentor-code-tomorrow-night', plugin_dir_url( __FILE__ ) . 'assets/public/css/codentor-css/prism-tomorrow-night.css', null, '1.3.6', 'all' );
+		wp_register_style( 'codentor-code-twilight', plugin_dir_url( __FILE__ ) . 'assets/public/css/codentor-css/prism-twilight.css', null, '1.3.6', 'all' );
+		wp_register_style( 'codentor-code-toolbar', plugin_dir_url( __FILE__ ) . 'assets/public/css/codentor-css/prism-toolbar.css', null, '1.3.6', 'all' );
+		wp_register_style( 'codentor-cold-dark', plugin_dir_url( __FILE__ ) . 'assets/public/css/codentor-css/cold-dark.css', null, '1.3.6', 'all' );
+		wp_register_style( 'codentor-colddark-dark', plugin_dir_url( __FILE__ ) . 'assets/public/css/codentor-css/colddark-dark.css', null, '1.3.6', 'all' );
+		wp_register_style( 'codentor-z-touch', plugin_dir_url( __FILE__ ) . 'assets/public/css/codentor-css/z-touch.css', null, '1.3.6', 'all' );
+		wp_register_style( 'codentor-zonokai-theme', plugin_dir_url( __FILE__ ) . 'assets/public/css/codentor-css/zonokai-theme.css', null, '1.3.6', 'all' );
+		wp_register_style( 'codentor-vs-theme', plugin_dir_url( __FILE__ ) . 'assets/public/css/codentor-css/vs-theme.css', null, '1.3.6', 'all' );
+		wp_register_style( 'codentor-nord-theme', plugin_dir_url( __FILE__ ) . 'assets/public/css/codentor-css/nord-theme.css', null, '1.3.6', 'all' );
+		wp_register_style( 'codentor-holy-theme', plugin_dir_url( __FILE__ ) . 'assets/public/css/codentor-css/holy-theme.css', null, '1.3.6', 'all' );
+		wp_register_style( 'codentor-laserwave-theme', plugin_dir_url( __FILE__ ) . 'assets/public/css/codentor-css/laserwave-theme.css', null, '1.3.6', 'all' );
+		wp_register_style( 'codentor-lucario-theme', plugin_dir_url( __FILE__ ) . 'assets/public/css/codentor-css/lucario-theme.css', null, '1.3.6', 'all' );
+		wp_register_style( 'codentor-night-owl', plugin_dir_url( __FILE__ ) . 'assets/public/css/codentor-css/night-owl.css', null, '1.3.6', 'all' );
+		wp_register_style( 'codentor-atom-dark', plugin_dir_url( __FILE__ ) . 'assets/public/css/codentor-css/atom-dark.css', null, '1.3.6', 'all' );
+		wp_register_style( 'codentor-dracula-theme', plugin_dir_url( __FILE__ ) . 'assets/public/css/codentor-css/dracula-theme.css', null, '1.3.6', 'all' );
+		wp_register_style( 'codentor-duotone-forest', plugin_dir_url( __FILE__ ) . 'assets/public/css/codentor-css/duotone-forest.css', null, '1.3.6', 'all' );
+		wp_register_style( 'codentor-duotone-dark', plugin_dir_url( __FILE__ ) . 'assets/public/css/codentor-css/duotone-dark.css', null, '1.3.6', 'all' );
+		wp_register_style( 'codentor-duotone-earth', plugin_dir_url( __FILE__ ) . 'assets/public/css/codentor-css/duotone-earth.css', null, '1.3.6', 'all' );
+		wp_register_style( 'codentor-duotone-light', plugin_dir_url( __FILE__ ) . 'assets/public/css/codentor-css/duotone-light.css', null, '1.3.6', 'all' );
+		wp_register_style( 'codentor-duotone-sea', plugin_dir_url( __FILE__ ) . 'assets/public/css/codentor-css/duotone-sea.css', null, '1.3.6', 'all' );
+		wp_register_style( 'codentor-duotone-space', plugin_dir_url( __FILE__ ) . 'assets/public/css/codentor-css/duotone-space.css', null, '1.3.6', 'all' );
+		wp_register_style( 'codentor-gruvbox-dark', plugin_dir_url( __FILE__ ) . 'assets/public/css/codentor-css/gruvbox-dark.css', null, '1.3.6', 'all' );
+		wp_register_style( 'codentor-gruvbox-light', plugin_dir_url( __FILE__ ) . 'assets/public/css/codentor-css/gruvbox-light.css', null, '1.3.6', 'all' );
+		wp_register_style( 'codentor-ghcolors-theme', plugin_dir_url( __FILE__ ) . 'assets/public/css/codentor-css/ghcolors-theme.css', null, '1.3.6', 'all' );
+		wp_register_style( 'codentor-pojoaque', plugin_dir_url( __FILE__ ) . 'assets/public/css/codentor-css/pojoaque.css', null, '1.3.6', 'all' );
+		wp_register_style( 'codentor-shades-of-purple', plugin_dir_url( __FILE__ ) . 'assets/public/css/codentor-css/shades-of-purple.css', null, '1.3.6', 'all' );
+		wp_register_style( 'codentor-synthwave', plugin_dir_url( __FILE__ ) . 'assets/public/css/codentor-css/synthwave.css', null, '1.3.6', 'all' );
+		wp_register_style( 'codentor-a11y-dark-theme', plugin_dir_url( __FILE__ ) . 'assets/public/css/codentor-css/a11y-dark-theme.css', null, '1.3.6', 'all' );
+		wp_register_style( 'codentor-material-dark', plugin_dir_url( __FILE__ ) . 'assets/public/css/codentor-css/material-dark.css', null, '1.3.6', 'all' );
+		wp_register_style( 'codentor-material-light', plugin_dir_url( __FILE__ ) . 'assets/public/css/codentor-css/material-light.css', null, '1.3.6', 'all' );
+		wp_register_style( 'codentor-material-oceanic', plugin_dir_url( __FILE__ ) . 'assets/public/css/codentor-css/material-oceanic.css', null, '1.3.6', 'all' );
 		// Meet The Team
-		wp_enqueue_script( 'bwdeb_the_js_image_load', plugin_dir_url( __FILE__ ) . 'assets/public/js/imagesloaded.pkgd.min.js', array('jquery'), '1.2.0', true );
-		wp_enqueue_script( 'bwdeb_the_js_isotop', plugin_dir_url( __FILE__ ) . 'assets/public/js/isotope.pkgd.min.js', array('jquery'), '1.2.0', true );
-		wp_enqueue_script( 'bwdeb_the_js_snake', plugin_dir_url( __FILE__ ) . 'assets/public/js/snake.js', array('jquery'), '1.2.0', true );
-		wp_enqueue_script( 'bwdeb_the_js_min', plugin_dir_url( __FILE__ ) . 'assets/public/js/min.js', array('jquery'), '1.2.0', true );
+		wp_enqueue_script( 'bwdeb_the_js_image_load', plugin_dir_url( __FILE__ ) . 'assets/public/js/imagesloaded.pkgd.min.js', array('jquery'), '1.3.6', true );
+		wp_enqueue_script( 'bwdeb_the_js_isotop', plugin_dir_url( __FILE__ ) . 'assets/public/js/isotope.pkgd.min.js', array('jquery'), '1.3.6', true );
+		wp_enqueue_script( 'bwdeb_the_js_snake', plugin_dir_url( __FILE__ ) . 'assets/public/js/snake.js', array('jquery'), '1.3.6', true );
+		wp_enqueue_script( 'bwdeb_the_js_min', plugin_dir_url( __FILE__ ) . 'assets/public/js/min.js', array('jquery'), '1.3.6', true );
 		// Accordion
-		wp_enqueue_script( 'bwdeb_accordion_main_js', plugin_dir_url( __FILE__ ) . 'assets/public/js/bwdeb-main.js', array('jquery'), '1.2.0', true );
+		wp_enqueue_script( 'bwdeb_accordion_main_js', plugin_dir_url( __FILE__ ) . 'assets/public/js/bwdeb-main.js', array('jquery'), '1.3.6', true );
 		// Animated Heading
-		wp_enqueue_script( 'bwdeb_animated_heading_custom_js', plugin_dir_url( __FILE__ ) . 'assets/public/js/bwdeb-custom.js', array('jquery'), '1.2.0', true );
+		wp_enqueue_script( 'bwdeb_animated_heading_custom_js', plugin_dir_url( __FILE__ ) . 'assets/public/js/bwdeb-custom.js', array('jquery'), '1.3.6', true );
 		// Click To Contact
-		wp_enqueue_script( 'bwdeb_clickcall_main_js', plugin_dir_url( __FILE__ ) . 'assets/public/js/clicktocontact.js', array('jquery'), '1.2.0', true );
+		wp_enqueue_script( 'bwdeb_clickcall_main_js', plugin_dir_url( __FILE__ ) . 'assets/public/js/clicktocontact.js', array('jquery'), '1.3.6', true );
 		// Countdown
-		wp_enqueue_script( 'bwdeb_count_down_custom_js', plugin_dir_url( __FILE__ ) . 'assets/public/js/countdown.js', array('jquery'), '1.2.0', true );
+		wp_enqueue_script( 'bwdeb_count_down_custom_js', plugin_dir_url( __FILE__ ) . 'assets/public/js/countdown.js', array('jquery'), '1.3.6', true );
 		// Counter
-		wp_enqueue_script( 'bwdeb_counter_custom_js', plugin_dir_url( __FILE__ ) . 'assets/public/js/counter.js', array('jquery'), '1.2.0', true );
+		wp_enqueue_script( 'bwdeb_counter_custom_js', plugin_dir_url( __FILE__ ) . 'assets/public/js/counter.js', array('jquery'), '1.3.6', true );
 		// Coupon Code
-		wp_enqueue_script( 'bwdeb_coupon_code_min_js', plugin_dir_url( __FILE__ ) . 'assets/public/js/coupon.js', array('jquery'), '1.2.0', true );
+		wp_enqueue_script( 'bwdeb_coupon_code_min_js', plugin_dir_url( __FILE__ ) . 'assets/public/js/coupon.js', array('jquery'), '1.3.6', true );
 		// Filterable Gallery
-		wp_enqueue_script( 'bwdfg_filterable_mgPopup_js', plugin_dir_url( __FILE__ ) . 'assets/public/js/filterable-popup.js', array('jquery'), '1.2.0', true );
-		wp_enqueue_script( 'bwdeb_filterable_main_js', plugin_dir_url( __FILE__ ) . 'assets/public/js/filterable-gallery.js', array('jquery'), '1.2.0', true );
+		wp_enqueue_script( 'bwdfg_filterable_mgPopup_js', plugin_dir_url( __FILE__ ) . 'assets/public/js/filterable-popup.js', array('jquery'), '1.3.6', true );
+		wp_enqueue_script( 'bwdeb_filterable_main_js', plugin_dir_url( __FILE__ ) . 'assets/public/js/filterable-gallery.js', array('jquery'), '1.3.6', true );
 		// Image Compare
-		wp_enqueue_script( 'bwdeb_compare_custom_js', plugin_dir_url( __FILE__ ) . 'assets/public/js/imgcompare.js', array('jquery'), '1.2.0', true );
+		wp_enqueue_script( 'bwdeb_compare_custom_js', plugin_dir_url( __FILE__ ) . 'assets/public/js/imgcompare.js', array('jquery'), '1.3.6', true );
 		// Progress Bar
-		wp_enqueue_script( 'bwdeb_progressBar_custom_js', plugin_dir_url( __FILE__ ) . 'assets/public/js/progressbar.js', array('jquery'), '1.2.0', true );
+		wp_enqueue_script( 'bwdeb_progressBar_custom_js', plugin_dir_url( __FILE__ ) . 'assets/public/js/progressbar.js', array('jquery'), '1.3.6', true );
 		// Timeline
-		wp_enqueue_script( 'bwdeb_timeline_custom_js', plugin_dir_url( __FILE__ ) . 'assets/public/js/timeline.js', array('jquery'), '1.2.0', true );
-		wp_enqueue_script( 'bwdeb_count_down_main_js', plugin_dir_url( __FILE__ ) . 'assets/public/js/main.js', array(), '1.2.0', true );
+		wp_enqueue_script( 'bwdeb_timeline_custom_js', plugin_dir_url( __FILE__ ) . 'assets/public/js/timeline.js', array('jquery'), '1.3.6', true );
+		wp_enqueue_script( 'bwdeb_count_down_main_js', plugin_dir_url( __FILE__ ) . 'assets/public/js/main.js', array(), '1.3.6', true );
 		// Webinar Info
-		wp_enqueue_script( 'bwdeb_interactive', plugin_dir_url( __FILE__ ) . 'assets/public/js/webinar.js', array('jquery'), '1.2.0', true );
+		wp_enqueue_script( 'bwdeb_interactive', plugin_dir_url( __FILE__ ) . 'assets/public/js/webinar.js', array('jquery'), '1.3.6', true );
 		// Header
-		wp_enqueue_script( 'bwdeb_the_js_main', plugin_dir_url( __FILE__ ) . 'assets/public/js/header.js', array('jquery'), '1.2.0', true );
-		wp_enqueue_script( 'bwdeb_the_js_search_main', plugin_dir_url( __FILE__ ) . 'assets/public/js/search_main.js', array('jquery'), '1.2.0', true );
+		wp_enqueue_script( 'bwdeb_the_js_main', plugin_dir_url( __FILE__ ) . 'assets/public/js/header.js', array('jquery'), '1.3.6', true );
+		wp_enqueue_script( 'bwdeb_the_js_search_main', plugin_dir_url( __FILE__ ) . 'assets/public/js/search_main.js', array('jquery'), '1.3.6', true );
 		// Team Carousel
-		wp_enqueue_script( 'bwdeb-teamcarousel-owljs', plugin_dir_url( __FILE__ ) . 'assets/public/js/bwdeb-owl.carousel.min.js', array('jquery'), '1.2.0', true );
-		wp_enqueue_script( 'bwdeb-teamcarousel-mainjs', plugin_dir_url( __FILE__ ) . 'assets/public/js/team-carousel.js', array('jquery'), '1.2.0', true );
+		wp_enqueue_script( 'bwdeb-teamcarousel-owljs', plugin_dir_url( __FILE__ ) . 'assets/public/js/bwdeb-owl.carousel.min.js', array('jquery'), '1.3.6', true );
+		wp_enqueue_script( 'bwdeb-teamcarousel-mainjs', plugin_dir_url( __FILE__ ) . 'assets/public/js/team-carousel.js', array('jquery'), '1.3.6', true );
 		// Video Popup
-		wp_enqueue_script( 'bwdeb_video_popup_custom_js', plugin_dir_url( __FILE__ ) . 'assets/public/js/video-popup.js', array('jquery'), '1.2.0', true );
+		wp_enqueue_script( 'bwdeb_video_popup_custom_js', plugin_dir_url( __FILE__ ) . 'assets/public/js/video-popup.js', array('jquery'), '1.3.6', true );
 		// Profile Card
-		wp_enqueue_script( 'bwdeb_profile_card_min_js', plugin_dir_url( __FILE__ ) . 'assets/public/js/profile-card.js', array('jquery'), '1.2.0', true );
+		wp_enqueue_script( 'bwdeb_profile_card_min_js', plugin_dir_url( __FILE__ ) . 'assets/public/js/profile-card.js', array('jquery'), '1.3.6', true );
 		// Bact To Top
-		wp_enqueue_script( 'bwdeb_back_top_main_one_js', plugin_dir_url( __FILE__ ) . 'assets/public/js/bwdeb-bttop.js', array('jquery'), '1.2.0', true );
+		wp_enqueue_script( 'bwdeb_back_top_main_one_js', plugin_dir_url( __FILE__ ) . 'assets/public/js/bwdeb-bttop.js', array('jquery'), '1.3.6', true );
 		// Masking Video
-		wp_enqueue_script( 'bwdeb_masking_video_custom_js', plugin_dir_url( __FILE__ ) . 'assets/public/js/masking-video.js', array('jquery'), '1.2.0', true );
+		wp_enqueue_script( 'bwdeb_masking_video_custom_js', plugin_dir_url( __FILE__ ) . 'assets/public/js/masking-video.js', array('jquery'), '1.3.6', true );
 		// Brand Logo
-		wp_enqueue_script( 'brand-logo-swiper-interactive', plugin_dir_url( __FILE__ ) . 'assets/public/js/bwdeb-swiper.js', array('jquery'), '1.2.0', true );
-		wp_enqueue_script( 'brand-logo-main', plugin_dir_url( __FILE__ ) . 'assets/public/js/bwdeb-main2.js', array('jquery'), '1.2.0', true );
+		wp_enqueue_script( 'brand-logo-swiper-interactive', plugin_dir_url( __FILE__ ) . 'assets/public/js/bwdeb-swiper.js', array('jquery'), '1.3.6', true );
+		wp_enqueue_script( 'brand-logo-main', plugin_dir_url( __FILE__ ) . 'assets/public/js/bwdeb-main2.js', array('jquery'), '1.3.6', true );
 		// Author Bio
-		wp_enqueue_script( 'bwdeb_author_bio_min_js', plugin_dir_url( __FILE__ ) . 'assets/public/js/author-bio.js', array('jquery'), '1.2.0', true );
+		wp_enqueue_script( 'bwdeb_author_bio_min_js', plugin_dir_url( __FILE__ ) . 'assets/public/js/author-bio.js', array('jquery'), '1.3.6', true );
 		// Post Accordion
-		wp_enqueue_script( 'bwdeb_accordion_main2_js', plugin_dir_url( __FILE__ ) . 'assets/public/js/bwdeb-main3.js', array('jquery'), '1.2.0', true );
+		wp_enqueue_script( 'bwdeb_accordion_main2_js', plugin_dir_url( __FILE__ ) . 'assets/public/js/bwdeb-main3.js', array('jquery'), '1.3.6', true );
 		// Post Carousel
-		wp_enqueue_script( 'blogpost-owl-interactive', plugin_dir_url( __FILE__ ) . 'assets/public/js/bwdeb.carousel.min.js', array('jquery'), '1.2.0', true );
-		wp_enqueue_script( 'blogpost-main-interactive', plugin_dir_url( __FILE__ ) . 'assets/public/js/post-carousel.js', array('jquery'), '1.2.0', true );
+		wp_enqueue_script( 'blogpost-owl-interactive', plugin_dir_url( __FILE__ ) . 'assets/public/js/bwdeb.carousel.min.js', array('jquery'), '1.3.6', true );
+		wp_enqueue_script( 'blogpost-main-interactive', plugin_dir_url( __FILE__ ) . 'assets/public/js/post-carousel.js', array('jquery'), '1.3.6', true );
 		// News Ticker
-		wp_enqueue_script( 'ptnticker_newsticker_owljs', plugin_dir_url( __FILE__ ) . 'assets/public/js/bwdeb-owl.carousel.min4.js', array('jquery'), '1.2.0', true );
-		wp_enqueue_script( 'ptnticker_newsticker_mainjs', plugin_dir_url( __FILE__ ) . 'assets/public/js/bwdeb-main4.js', array('jquery'), '1.2.0', true );
+		wp_enqueue_script( 'ptnticker_newsticker_owljs', plugin_dir_url( __FILE__ ) . 'assets/public/js/bwdeb-owl.carousel.min4.js', array('jquery'), '1.3.6', true );
+		wp_enqueue_script( 'ptnticker_newsticker_mainjs', plugin_dir_url( __FILE__ ) . 'assets/public/js/bwdeb-main4.js', array('jquery'), '1.3.6', true );
 		// Related Product Carousel
-		wp_enqueue_script( 'woo-relapro-interactive', plugin_dir_url( __FILE__ ) . 'assets/public/js/bwdeb.carousel.min2.js', array('jquery'), '1.2.0', true );
-		wp_enqueue_script( 'woo-relapro-main-style', plugin_dir_url( __FILE__ ) . 'assets/public/js/bwdeb-product.js', array('jquery'), '1.2.0', true );
+		wp_enqueue_script( 'woo-relapro-interactive', plugin_dir_url( __FILE__ ) . 'assets/public/js/bwdeb.carousel.min2.js', array('jquery'), '1.3.6', true );
+		wp_enqueue_script( 'woo-relapro-main-style', plugin_dir_url( __FILE__ ) . 'assets/public/js/bwdeb-product.js', array('jquery'), '1.3.6', true );
 		// Product Accordion
-		wp_enqueue_script( 'bwdeb_accordion_main3_js', plugin_dir_url( __FILE__ ) . 'assets/public/js/bwdeb-main5.js', array('jquery'), '1.2.0', true );
+		wp_enqueue_script( 'bwdeb_accordion_main3_js', plugin_dir_url( __FILE__ ) . 'assets/public/js/bwdeb-main5.js', array('jquery'), '1.3.6', true );
 		// Testimonial
-		wp_enqueue_script( 'bwdeb_testimonials_the_main_js', plugin_dir_url( __FILE__ ) . 'assets/public/js/testimonial.js', array('jquery'), '1.2.0', true );
-		wp_enqueue_script( 'bwdeb_testimonials_owl', plugin_dir_url( __FILE__ ) . 'assets/public/js/bwdeb.carousel.min3.js', array('jquery'), '1.2.0', true );
+		wp_enqueue_script( 'bwdeb_testimonials_the_main_js', plugin_dir_url( __FILE__ ) . 'assets/public/js/testimonial.js', array('jquery'), '1.3.6', true );
+		wp_enqueue_script( 'bwdeb_testimonials_owl', plugin_dir_url( __FILE__ ) . 'assets/public/js/bwdeb.carousel.min3.js', array('jquery'), '1.3.6', true );
 		// Product Grid Carousel
-		wp_enqueue_script( 'product-interactive', plugin_dir_url( __FILE__ ) . 'assets/public/js/woopgridcaro.js', array('jquery'), '1.2.0', true );
-		wp_enqueue_script( 'product-owl-interactive', plugin_dir_url( __FILE__ ) . 'assets/public/js/bwdeb.carousel.min4.js', array('jquery'), '1.2.0'
+		wp_enqueue_script( 'product-interactive', plugin_dir_url( __FILE__ ) . 'assets/public/js/woopgridcaro.js', array('jquery'), '1.3.6', true );
+		wp_enqueue_script( 'product-owl-interactive', plugin_dir_url( __FILE__ ) . 'assets/public/js/bwdeb.carousel.min4.js', array('jquery'), '1.3.6'
 		, true );
 		// Prodcut List Carousel
-		wp_enqueue_script( 'bwdeb-owlcarousel-script', plugin_dir_url( __FILE__ ) . 'assets/public/js/bwdeb.carousel.min5.js', array('jquery'), '1.2.0', true );
-		wp_enqueue_script( 'bwdeb-main-script', plugin_dir_url( __FILE__ ) . 'assets/public/js/bwdeb-caro.js', array('jquery'), '1.2.0', true );
+		wp_enqueue_script( 'bwdeb-owlcarousel-script', plugin_dir_url( __FILE__ ) . 'assets/public/js/bwdeb.carousel.min5.js', array('jquery'), '1.3.6', true );
+		wp_enqueue_script( 'bwdeb-main-script', plugin_dir_url( __FILE__ ) . 'assets/public/js/bwdeb-caro.js', array('jquery'), '1.3.6', true );
 		// Timeline
-		wp_enqueue_script( 'bwdeb-timeline-custom', plugin_dir_url( __FILE__ ) . 'assets/public/js/product-timeline.js', array('jquery'), '1.2.0', true );
+		wp_enqueue_script( 'bwdeb-timeline-custom', plugin_dir_url( __FILE__ ) . 'assets/public/js/product-timeline.js', array('jquery'), '1.3.6', true );
 		// bwdsb-switch-background
-		wp_enqueue_script( 'bwdeb_main', plugin_dir_url( __FILE__ ) . 'assets/public/js/bwdeb_main.js', array('jquery'), '1.2.0', true );
+		wp_enqueue_script( 'bwdeb_main', plugin_dir_url( __FILE__ ) . 'assets/public/js/bwdeb_main.js', array('jquery'), '1.3.6', true );
 		// effective-pre-loader
-		wp_enqueue_script( 'bwdeb-eprel-loader', plugin_dir_url( __FILE__ ) . 'assets/public/js/bwdeb-loader.js', array('jquery'), '1.2.0', true );
-		wp_enqueue_script( 'bwdeb-loader', plugin_dir_url( __FILE__ ) . 'assets/public/js/bwdeb-loader.min.js', array('jquery'), '1.2.0', true );
-		wp_enqueue_script( 'bwdeb-loader-extra-transit-sk', plugin_dir_url( __FILE__ ) . 'assets/public/js/bwdeb-loader-extra-transition.js', array('jquery'), '1.2.0', true );
-		wp_enqueue_script( 'bwdeb-loader-extra-transition', plugin_dir_url( __FILE__ ) . 'assets/public/js/bwdeb-loader-extra-transition.min.js', array('jquery'), '1.2.0', true );
+		wp_enqueue_script( 'bwdeb-eprel-loader', plugin_dir_url( __FILE__ ) . 'assets/public/js/bwdeb-loader.js', array('jquery'), '1.3.6', true );
+		wp_enqueue_script( 'bwdeb-loader', plugin_dir_url( __FILE__ ) . 'assets/public/js/bwdeb-loader.min.js', array('jquery'), '1.3.6', true );
+		wp_enqueue_script( 'bwdeb-loader-extra-transit-sk', plugin_dir_url( __FILE__ ) . 'assets/public/js/bwdeb-loader-extra-transition.js', array('jquery'), '1.3.6', true );
+		wp_enqueue_script( 'bwdeb-loader-extra-transition', plugin_dir_url( __FILE__ ) . 'assets/public/js/bwdeb-loader-extra-transition.min.js', array('jquery'), '1.3.6', true );
 		// Secound 
-		wp_enqueue_script( 'bwdeb-main2', plugin_dir_url( __FILE__ ) . 'assets/public/js/bwdeb-main7.js', array('jquery'), '1.2.0', true );
-		wp_enqueue_script( 'bwdeb-owl.carousel.min', plugin_dir_url( __FILE__ ) . 'assets/public/js/bwdeb-owl.carousel.min3.js', array('jquery'), '1.2.0', true );
-		wp_enqueue_script( 'bwdeb-main3', plugin_dir_url( __FILE__ ) . 'assets/public/js/bwdeb-main8.js', array('jquery'), '1.2.0', true );
-		wp_enqueue_script( 'bwdeb-owl.carousel.min2', plugin_dir_url( __FILE__ ) . 'assets/public/js/bwdeb-owl.carousel.min2.js', array('jquery'), '1.2.0', true );
-		wp_enqueue_script( 'bwdeb-unfold-content', plugin_dir_url( __FILE__ ) . 'assets/public/js/bwdeb-unfold-content.js', array('jquery'), '1.2.0', true );
-		wp_enqueue_script( 'codentor-prism-toolbar', plugin_dir_url( __FILE__ ) . 'assets/public/js/codentor-prism-toolbar.js', array('jquery'), '1.2.0', true );
-		wp_enqueue_script( 'codentor-prism', plugin_dir_url( __FILE__ ) . 'assets/public/js/codentor-prism.js', array('jquery'), '1.2.0', true );
-		wp_enqueue_script( 'teps-main', plugin_dir_url( __FILE__ ) . 'assets/public/js/bwdeb-main9.js', array('jquery'), '1.2.0', true );
-		wp_enqueue_script( 'teps-swiper-bundle.min', plugin_dir_url( __FILE__ ) . 'assets/public/js/bwdeb-swiper-bundle.min.js', array('jquery'), '1.2.0', true );
-		wp_enqueue_script( 'bwdeb-custom2', plugin_dir_url( __FILE__ ) . 'assets/public/js/bwdeb-custom2.js', array('jquery'), '1.2.0', true );
+		wp_enqueue_script( 'bwdeb-main2', plugin_dir_url( __FILE__ ) . 'assets/public/js/bwdeb-main7.js', array('jquery'), '1.3.6', true );
+		wp_enqueue_script( 'bwdeb-owl.carousel.min', plugin_dir_url( __FILE__ ) . 'assets/public/js/bwdeb-owl.carousel.min3.js', array('jquery'), '1.3.6', true );
+		wp_enqueue_script( 'bwdeb-main3', plugin_dir_url( __FILE__ ) . 'assets/public/js/bwdeb-main8.js', array('jquery'), '1.3.6', true );
+		wp_enqueue_script( 'bwdeb-owl.carousel.min2', plugin_dir_url( __FILE__ ) . 'assets/public/js/bwdeb-owl.carousel.min2.js', array('jquery'), '1.3.6', true );
+		wp_enqueue_script( 'bwdeb-unfold-content', plugin_dir_url( __FILE__ ) . 'assets/public/js/bwdeb-unfold-content.js', array('jquery'), '1.3.6', true );
+		wp_enqueue_script( 'codentor-prism-toolbar', plugin_dir_url( __FILE__ ) . 'assets/public/js/codentor-prism-toolbar.js', array('jquery'), '1.3.6', true );
+		wp_enqueue_script( 'codentor-prism', plugin_dir_url( __FILE__ ) . 'assets/public/js/codentor-prism.js', array('jquery'), '1.3.6', true );
+		wp_enqueue_script( 'teps-main', plugin_dir_url( __FILE__ ) . 'assets/public/js/bwdeb-main9.js', array('jquery'), '1.3.6', true );
+		wp_enqueue_script( 'teps-swiper-bundle.min', plugin_dir_url( __FILE__ ) . 'assets/public/js/bwdeb-swiper-bundle.min.js', array('jquery'), '1.3.6', true );
+		wp_enqueue_script( 'bwdeb-custom2', plugin_dir_url( __FILE__ ) . 'assets/public/js/bwdeb-custom2.js', array('jquery'), '1.3.6', true );
 		// Tab
-		wp_enqueue_script( 'bwdeb-tab', plugin_dir_url( __FILE__ ) . 'assets/public/js/tab.js', array('jquery'), '1.2.0', true );
+		wp_enqueue_script( 'bwdeb-tab', plugin_dir_url( __FILE__ ) . 'assets/public/js/tab.js', array('jquery'), '1.3.6', true );
 		// Content Switcher 
-		wp_enqueue_script( 'bwdeb-content-switcher', plugin_dir_url( __FILE__ ) . 'assets/public/js/bwdeb_min.js', array('jquery'), '1.2.0', true );
+		wp_enqueue_script( 'bwdeb-content-switcher', plugin_dir_url( __FILE__ ) . 'assets/public/js/bwdeb_min.js', array('jquery'), '1.3.6', true );
 		// For new  widgets  10Dec2023
 		// Ajax Data Table
-		wp_enqueue_script( 'bwdcssk-content-switcher-dataTablesdatatables', plugin_dir_url( __FILE__ ) . 'assets/public/ajax-DataTable/datatables.min.js', array('jquery'), '1.2.0', true );
-		wp_enqueue_script( 'bwdcssk-content-switcher-dataTables-responsive', plugin_dir_url( __FILE__ ) . 'assets/public/ajax-DataTable/dataTables.responsive.min.js', array('jquery'), '1.2.0', true );
-		wp_enqueue_script( 'bwdcssk-content-switcher-ajax-DataTable-script', plugin_dir_url( __FILE__ ) . 'assets/public/ajax-DataTable/main.js', array('jquery'), '1.2.0', true );
+		wp_enqueue_script( 'bwdcssk-content-switcher-dataTablesdatatables', plugin_dir_url( __FILE__ ) . 'assets/public/ajax-DataTable/datatables.min.js', array('jquery'), '1.3.6', true );
+		wp_enqueue_script( 'bwdcssk-content-switcher-dataTables-responsive', plugin_dir_url( __FILE__ ) . 'assets/public/ajax-DataTable/dataTables.responsive.min.js', array('jquery'), '1.3.6', true );
+		wp_enqueue_script( 'bwdcssk-content-switcher-ajax-DataTable-script', plugin_dir_url( __FILE__ ) . 'assets/public/ajax-DataTable/main.js', array('jquery'), '1.3.6', true );
 
 
 
@@ -852,7 +852,7 @@ class BWDEBClassElementorBundle {
 
 		);
 		foreach($all_css_js_file as $handle => $fileinfo){
-      		wp_enqueue_style( $handle, $fileinfo['bwdeb_path_define'], null, '1.2.0', 'all');
+      		wp_enqueue_style( $handle, $fileinfo['bwdeb_path_define'], null, '1.3.6', 'all');
 		}
 	}
 	public function bwdeb_all_assets_for_elementor_editor_admin(){
@@ -860,16 +860,16 @@ class BWDEBClassElementorBundle {
 			'admin-icon-style' => array('bwdeb_path_admin_define'=>BWDEB_ASFSK_ASSETS_ADMIN_DIR_FILE . '/css/icon.css'),
 		);
 		foreach($all_css_js_file as $handle => $fileinfo){
-      wp_enqueue_style( $handle, $fileinfo['bwdeb_path_admin_define'], null, '1.2.0', 'all');
+      wp_enqueue_style( $handle, $fileinfo['bwdeb_path_admin_define'], null, '1.3.6', 'all');
 		}
 	}
 	public function bwdeb_all_assets_for_dashboard_admin(){
-		wp_enqueue_style( 'bwdeb-dashboard-admin',  plugin_dir_url( __FILE__ ) . 'assets/admin/css/admin-basic.css', null, '1.2.0', 'all' );
+		wp_enqueue_style( 'bwdeb-dashboard-admin',  plugin_dir_url( __FILE__ ) . 'assets/admin/css/admin-basic.css', null, '1.3.6', 'all' );
 		// For dashboard
-		wp_enqueue_style( 'bwdeb-index-dashboard-admin',  plugin_dir_url( __FILE__ ) . 'assets/admin/dashboard/style.css', null, '1.2.0', 'all' );
-		wp_enqueue_script( 'bwdeb-index-dashboard-admin-script',  plugin_dir_url( __FILE__ ) . 'assets/admin/dashboard/main.js', ['jquery'], '1.2.0', true );
+		wp_enqueue_style( 'bwdeb-index-dashboard-admin',  plugin_dir_url( __FILE__ ) . 'assets/admin/dashboard/style.css', null, '1.3.6', 'all' );
+		wp_enqueue_script( 'bwdeb-index-dashboard-admin-script',  plugin_dir_url( __FILE__ ) . 'assets/admin/dashboard/main.js', ['jquery'], '1.3.6', true );
 		// For Check Box Status
-		wp_enqueue_script( 'bwdeb-index-dashboard-checkbox-status',  plugin_dir_url( __FILE__ ) . 'assets/admin/js/checkbox-status.js', ['jquery'], '1.2.0', true );
+		wp_enqueue_script( 'bwdeb-index-dashboard-checkbox-status',  plugin_dir_url( __FILE__ ) . 'assets/admin/js/checkbox-status.js', ['jquery'], '1.3.6', true );
 	}
 
 	public function bwdeb_admin_menu_test(){
@@ -1000,6 +1000,7 @@ class BWDEBClassElementorBundle {
 			'bwdeb-horizontal-timeline-slider',
 			'bwdeb-threesixty-rotation-view',
 			'bwdeb-widget-template',
+			'bwdeb-pssx',
 			'bwdeb-plugin-cv-builder',
 			'bwdeb-plugin-cv-about',
 			'bwdeb-plugin-cv-contact',

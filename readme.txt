@@ -1,10 +1,10 @@
-﻿=== BWD Elementor Addons ===
+﻿=== BWD Elementor Addons (2500+ presets, Meet The Team, Lottie Animation, Masking Effect, Woocommerce, Blog Widgets, CV Buillder, Conatact Form 7 Styler) ===
 Contributors: bestwpdeveloper, ferdaussk, wpexperttariqul, nazmulhudabest, xohanniloy017
 Donate link: http://bestwpdeveloper.com/
 Tags: addons, elementor, elementor addons, elementor widget, elements
 Requires at least: 5.0
 Tested up to: 6.3
-Stable tag: 1.2.0
+Stable tag: 1.3.6
 Requires PHP: 5.6
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -205,7 +205,7 @@ Thank you for your continued support!
 ++ The first virsion
 ++ 1.0
 ++ Added some new widgets free and pro
-++ 1.2.0
+++ 1.3.6
 
 == Installation ==
 Installation is fairly straightforward. Install it from the WordPress plugin repository.
