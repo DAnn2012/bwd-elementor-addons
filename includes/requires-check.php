@@ -78,28 +78,3 @@ function bwdeb_addon_install() {
 	$installed_plugins = get_plugins();
 	return isset($installed_plugins[$file_path]);
 }
-
-if (!function_exists('bwdpssx_get_currency_symbol')) {
-    function bwdpssx_get_currency_symbol( $bwdpssx_symbol_name ) {
-        $bwdpssx_symbols = [
-            'dollar'        => '&#36;',
-            'euro'          => '&#128;',
-            'franc'         => '&#8355;',
-            'pound'         => '&#163;',
-            'ruble'         => '&#8381;',
-            'shekel'        => '&#8362;',
-            'baht'          => '&#3647;',
-            'yen'           => '&#165;',
-            'won'           => '&#8361;',
-            'guilder'       => '&fnof;',
-            'peso'          => '&#8369;',
-            'peseta'        => '&#8359',
-            'lira'          => '&#8356;',
-            'rupee'         => '&#8360;',
-            'indian_rupee'  => '&#8377;',
-            'real'          => 'R$',
-            'krona'         => 'kr',
-        ];
-        return isset( $bwdpssx_symbols[ $bwdpssx_symbol_name ] ) ? $bwdpssx_symbols[ $bwdpssx_symbol_name ] : '';
-    }
-} 

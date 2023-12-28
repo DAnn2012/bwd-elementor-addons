@@ -4,7 +4,7 @@ Donate link: http://bestwpdeveloper.com/
 Tags: addons, elementor, elementor addons, elementor widget, elements
 Requires at least: 5.0
 Tested up to: 6.3
-Stable tag: 1.3.6
+Stable tag: 1.3.9
 Requires PHP: 5.6
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -205,7 +205,15 @@ Thank you for your continued support!
 ++ The first virsion
 ++ 1.0
 ++ Added some new widgets free and pro
+++ 1.9.6
+++ Update
+++ 2.4.0
+++ Added some new code for update
+++ 3.2.1
+++ Added a new widget
 ++ 1.3.6
+++ Boots
+++ 1.3.9
 
 == Installation ==
 Installation is fairly straightforward. Install it from the WordPress plugin repository.
