@@ -659,6 +659,41 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 		'bwdeb-plugin-main-menu',
 		'bwdeb-plugin-switch-section'
 	);
+	add_settings_field(
+		'bwdeb-blmx1',
+		'',
+		'bwdeb_plugin_function_for_datas_callback',
+		'bwdeb-plugin-main-menu',
+		'bwdeb-plugin-switch-section'
+	);
+	add_settings_field(
+		'bwdeb-blmx2',
+		'',
+		'bwdeb_plugin_function_for_datas_callback',
+		'bwdeb-plugin-main-menu',
+		'bwdeb-plugin-switch-section'
+	);
+	add_settings_field(
+		'bwdeb-blmx3',
+		'',
+		'bwdeb_plugin_function_for_datas_callback',
+		'bwdeb-plugin-main-menu',
+		'bwdeb-plugin-switch-section'
+	);
+	add_settings_field(
+		'bwdeb-svpx',
+		'',
+		'bwdeb_plugin_function_for_datas_callback',
+		'bwdeb-plugin-main-menu',
+		'bwdeb-plugin-switch-section'
+	);
+	add_settings_field(
+		'bwdeb-txsx',
+		'',
+		'bwdeb_plugin_function_for_datas_callback',
+		'bwdeb-plugin-main-menu',
+		'bwdeb-plugin-switch-section'
+	);
 
 	add_settings_field(
 		'bwdeb-plugin-cv-builder',
@@ -1412,6 +1447,26 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 	register_setting( 
 		'bwdeb-plugin-settings', 
 		'bwdeb-pssx' 
+	);
+	register_setting( 
+		'bwdeb-plugin-settings', 
+		'bwdeb-blmx1' 
+	);
+	register_setting( 
+		'bwdeb-plugin-settings', 
+		'bwdeb-blmx2' 
+	);
+	register_setting( 
+		'bwdeb-plugin-settings', 
+		'bwdeb-blmx3' 
+	);
+	register_setting( 
+		'bwdeb-plugin-settings', 
+		'bwdeb-svpx' 
+	);
+	register_setting( 
+		'bwdeb-plugin-settings', 
+		'bwdeb-txsx' 
 	);
 	register_setting( 
 		'bwdeb-plugin-settings', 
