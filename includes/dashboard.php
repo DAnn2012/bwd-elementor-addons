@@ -1074,6 +1074,27 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 		'bwdeb-plugin-main-menu',
 		'bwdeb-plugin-switch-section'
 	);
+	add_settings_field(
+		'bwdeb-extn-tooltip',
+		'',
+		'bwdeb_plugin_function_for_datas_callback',
+		'bwdeb-plugin-main-menu',
+		'bwdeb-plugin-switch-section'
+	);
+	add_settings_field(
+		'bwdeb-extn-link',
+		'',
+		'bwdeb_plugin_function_for_datas_callback',
+		'bwdeb-plugin-main-menu',
+		'bwdeb-plugin-switch-section'
+	);
+	add_settings_field(
+		'bwdeb-extn-protctn',
+		'',
+		'bwdeb_plugin_function_for_datas_callback',
+		'bwdeb-plugin-main-menu',
+		'bwdeb-plugin-switch-section'
+	);
   
   // Registered the add switch control here
 	register_setting( 
@@ -1684,4 +1705,16 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 	register_setting( 
 		'bwdeb-plugin-settings', 
 		'bwdeb-woop-vendors' 
+	);
+	register_setting( 
+		'bwdeb-plugin-settings', 
+		'bwdeb-extn-tooltip' 
+	);
+	register_setting( 
+		'bwdeb-plugin-settings', 
+		'bwdeb-extn-link' 
+	);
+	register_setting( 
+		'bwdeb-plugin-settings', 
+		'bwdeb-extn-protctn' 
 	);

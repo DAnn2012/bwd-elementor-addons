@@ -152,6 +152,10 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 	$bwdeb_woop_multi_action_value = get_option( 'bwdeb-plugin-woop-multi-action', 'off' );
 	$bwdeb_woop_wish_cont_value = get_option( 'bwdeb-plugin-woop-wish-cont', 'off' );
 	$bwdeb_woop_vendors_value = get_option( 'bwdeb-woop-vendors', 'off' );
+
+	$bwdeb_extn_tooltip_value = get_option( 'bwdeb-extn-tooltip', 'off' );
+	$bwdeb_extn_link_value = get_option( 'bwdeb-extn-link', 'off' );
+	$bwdeb_extn_protctn_value = get_option( 'bwdeb-extn-protctn', 'off' );
 	?>
 	<div class="bwdeb-admin-wrapper wrap">
 		<form method="post" action="options.php">
@@ -3170,11 +3174,73 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																</div>
 														</div>
 												</div>
-												<!-- This tab for extentions -->
+												<!-- This tab for extensions -->
 												<div id="tab3" class="tab-content">
-													<div class="bwd-widget-notice">
-														<h1 class="bwd-comming-soon"><?php echo esc_html__('Coming Soon Extentions Here...', 'bwd-elementor-addons'); ?></h1>
+													<div class="bwd-main-wrapper">
+														<div class="bwd-widget-cat-count">
+															<h2 class="bwd-widget-cat-title"><?php echo wp_kses_post('Extensions (3) <sup><span>Pro</span></sup>'); ?></h2>
+														</div>
+														<div class="bwd-widget-item-wrapper">
+															<div class="<?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_extn_tooltip_value, 'on', false ))?esc_attr('active'):''; ?>">
+																	<div class="bwdeb_pro_pro_per"><span><?php echo esc_html__('Pro', 'bwd-elementor-addons'); ?></span></div>
+																	<div class="bwd-widget-box">
+																<a href="https://bwdplugins.com/plugins_documentations/li_documentation/" class="bwd-dcmtn-link" target="_blank">
+																	<p class="bwd-widget-title"><?php echo esc_html__('Tooltip', 'bwd-elementor-addons'); ?></p>
+																	<span class="bwd-view-demo"><?php echo esc_html__('View Documentation', 'bwd-elementor-addons'); ?></span>
+																</a>
+																<a href="https://bestwpdeveloper.com/extn-tooltip" class="bwd-demo-link" target="_blank">
+																	<img src="<?php echo esc_url(plugin_dir_url( __FILE__ ).'../assets/admin/dashboard/img/linking.png'); ?>" alt="<?php echo esc_attr('View Demo'); ?>">
+																	<span class="bwd-view-demo"><?php echo esc_html__('View Demo', 'bwd-elementor-addons'); ?></span>
+																</a>
+																</div>
+																<div class="bwd-switch-item <?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwdeb_pro_permission':'bwdeb_pro_active'; ?>">
+																	<label class="bwd-switch">
+																		<input type="<?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'':'checkbox'; ?>" <?php if(class_exists( 'ProbwdelementorBundle' )){ echo 'name="'.esc_attr('bwdeb-extn-tooltip').'" value="on"'; echo checked( $bwdeb_extn_tooltip_value, 'on', false );} ?>>
+																		<span class="bwd-slider"></span>
+																	</label>
+																</div>
+															</div>
+															<div class="<?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_extn_link_value, 'on', false ))?esc_attr('active'):''; ?>">
+																	<div class="bwdeb_pro_pro_per"><span><?php echo esc_html__('Pro', 'bwd-elementor-addons'); ?></span></div>
+																	<div class="bwd-widget-box">
+																<a href="https://bwdplugins.com/plugins_documentations/li_documentation/" class="bwd-dcmtn-link" target="_blank">
+																	<p class="bwd-widget-title"><?php echo esc_html__('Wrap Link', 'bwd-elementor-addons'); ?></p>
+																	<span class="bwd-view-demo"><?php echo esc_html__('View Documentation', 'bwd-elementor-addons'); ?></span>
+																</a>
+																<a href="https://bestwpdeveloper.com/extn-link" class="bwd-demo-link" target="_blank">
+																	<img src="<?php echo esc_url(plugin_dir_url( __FILE__ ).'../assets/admin/dashboard/img/linking.png'); ?>" alt="<?php echo esc_attr('View Demo'); ?>">
+																	<span class="bwd-view-demo"><?php echo esc_html__('View Demo', 'bwd-elementor-addons'); ?></span>
+																</a>
+																</div>
+																<div class="bwd-switch-item <?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwdeb_pro_permission':'bwdeb_pro_active'; ?>">
+																	<label class="bwd-switch">
+																		<input type="<?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'':'checkbox'; ?>" <?php if(class_exists( 'ProbwdelementorBundle' )){ echo 'name="'.esc_attr('bwdeb-extn-link').'" value="on"'; echo checked( $bwdeb_extn_link_value, 'on', false );} ?>>
+																		<span class="bwd-slider"></span>
+																	</label>
+																</div>
+															</div>
+															<div class="<?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_extn_protctn_value, 'on', false ))?esc_attr('active'):''; ?>">
+																	<div class="bwdeb_pro_pro_per"><span><?php echo esc_html__('Pro', 'bwd-elementor-addons'); ?></span></div>
+																	<div class="bwd-widget-box">
+																<a href="https://bwdplugins.com/plugins_documentations/li_documentation/" class="bwd-dcmtn-link" target="_blank">
+																	<p class="bwd-widget-title"><?php echo esc_html__('Content Protection', 'bwd-elementor-addons'); ?></p>
+																	<span class="bwd-view-demo"><?php echo esc_html__('View Documentation', 'bwd-elementor-addons'); ?></span>
+																</a>
+																<a href="https://bestwpdeveloper.com/extn-protctn" class="bwd-demo-link" target="_blank">
+																	<img src="<?php echo esc_url(plugin_dir_url( __FILE__ ).'../assets/admin/dashboard/img/linking.png'); ?>" alt="<?php echo esc_attr('View Demo'); ?>">
+																	<span class="bwd-view-demo"><?php echo esc_html__('View Demo', 'bwd-elementor-addons'); ?></span>
+																</a>
+																</div>
+																<div class="bwd-switch-item <?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwdeb_pro_permission':'bwdeb_pro_active'; ?>">
+																	<label class="bwd-switch">
+																		<input type="<?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'':'checkbox'; ?>" <?php if(class_exists( 'ProbwdelementorBundle' )){ echo 'name="'.esc_attr('bwdeb-extn-protctn').'" value="on"'; echo checked( $bwdeb_extn_protctn_value, 'on', false );} ?>>
+																		<span class="bwd-slider"></span>
+																	</label>
+																</div>
+															</div>
+														</div>
 													</div>
+
 												</div>
 											</div>
 									</div>
