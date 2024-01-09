@@ -98,6 +98,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 	$bwdeb_blmx3_value = get_option( 'bwdeb-blmx3', 'off' );
 	$bwdeb_svpx_value = get_option( 'bwdeb-svpx', 'off' );
 	$bwdeb_txsx_value = get_option( 'bwdeb-txsx', 'off' );
+	$bwdeb_vsix_value = get_option( 'bwdeb-vsix', 'off' );
 	$bwdeb_cv_builder_value = get_option( 'bwdeb-plugin-cv-builder', 'off' );
 	$bwdeb_cv_about_value = get_option( 'bwdeb-plugin-cv-about', 'off' );
 	$bwdeb_cv_contact_value = get_option( 'bwdeb-plugin-cv-contact', 'off' );
@@ -2138,6 +2139,25 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																			<div class="bwd-switch-item <?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwdeb_pro_permission':'bwdeb_pro_active'; ?>">
 																				<label class="bwd-switch">
 																					<input type="<?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'':'checkbox'; ?>" <?php if(class_exists( 'ProbwdelementorBundle' )){ echo 'name="'.esc_attr('bwdeb-txsx').'" value="on"'; echo checked( $bwdeb_txsx_value, 'on', false );} ?>>
+																					<span class="bwd-slider"></span>
+																				</label>
+																			</div>
+																		</div>
+																		<div class="<?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_vsix_value, 'on', false ))?esc_attr('active'):''; ?>">
+																				<div class="bwdeb_pro_pro_per"><span><?php echo esc_html__('Pro', 'bwd-elementor-addons'); ?></span></div>
+																				<div class="bwd-widget-box">
+																			<a href="https://bwdplugins.com/plugins_documentations/li_documentation/" class="bwd-dcmtn-link" target="_blank">
+																				<p class="bwd-widget-title"><?php echo esc_html__('Vertical Split Slideshow', 'bwd-elementor-addons'); ?></p>
+																				<span class="bwd-view-demo"><?php echo esc_html__('View Documentation', 'bwd-elementor-addons'); ?></span>
+																			</a>
+																			<a href="https://bestwpdeveloper.com/vertical-split-slideshow" class="bwd-demo-link" target="_blank">
+																				<img src="<?php echo esc_url(plugin_dir_url( __FILE__ ).'../assets/admin/dashboard/img/linking.png'); ?>" alt="<?php echo esc_attr('View Demo'); ?>">
+																				<span class="bwd-view-demo"><?php echo esc_html__('View Demo', 'bwd-elementor-addons'); ?></span>
+																			</a>
+																			</div>
+																			<div class="bwd-switch-item <?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwdeb_pro_permission':'bwdeb_pro_active'; ?>">
+																				<label class="bwd-switch">
+																					<input type="<?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'':'checkbox'; ?>" <?php if(class_exists( 'ProbwdelementorBundle' )){ echo 'name="'.esc_attr('bwdeb-vsix').'" value="on"'; echo checked( $bwdeb_vsix_value, 'on', false );} ?>>
 																					<span class="bwd-slider"></span>
 																				</label>
 																			</div>

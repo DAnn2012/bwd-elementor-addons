@@ -694,6 +694,13 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 		'bwdeb-plugin-main-menu',
 		'bwdeb-plugin-switch-section'
 	);
+	add_settings_field(
+		'bwdeb-vsix',
+		'',
+		'bwdeb_plugin_function_for_datas_callback',
+		'bwdeb-plugin-main-menu',
+		'bwdeb-plugin-switch-section'
+	);
 
 	add_settings_field(
 		'bwdeb-plugin-cv-builder',
@@ -1488,6 +1495,10 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 	register_setting( 
 		'bwdeb-plugin-settings', 
 		'bwdeb-txsx' 
+	);
+	register_setting( 
+		'bwdeb-plugin-settings', 
+		'bwdeb-vsix' 
 	);
 	register_setting( 
 		'bwdeb-plugin-settings', 
