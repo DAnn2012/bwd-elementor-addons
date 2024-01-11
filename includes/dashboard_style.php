@@ -622,16 +622,16 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																				</div>
 																		</div>
 																		<div class="<?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_honeycombs_value, 'on', false ))?esc_attr('active'):''; ?>">
-																				<div class="bwdeb_pro_pro_per"><span><?php echo esc_html__('Pro', 'bwd-elementor-addons'); ?></span></div>
+																			<div class="bwdeb_pro_pro_per"><span><?php echo esc_html__('Pro', 'bwd-elementor-addons'); ?></span></div>
 																				<div class="bwd-widget-box">
-																			<a href="https://bwdplugins.com/plugins_documentations/hc_documentation/" class="bwd-dcmtn-link" target="_blank">
-																				<p class="bwd-widget-title"><?php echo esc_html__('Honeycombs', 'bwd-elementor-addons'); ?></p>
-																				<span class="bwd-view-demo"><?php echo esc_html__('View Documentation', 'bwd-elementor-addons'); ?></span>
-																			</a>
+																				<a href="https://bwdplugins.com/plugins_documentations/hc_documentation/" class="bwd-dcmtn-link" target="_blank">
+																					<p class="bwd-widget-title"><?php echo esc_html__('Honeycombs', 'bwd-elementor-addons'); ?></p>
+																					<span class="bwd-view-demo"><?php echo esc_html__('View Documentation', 'bwd-elementor-addons'); ?></span>
+																				</a>
 																				<a href="https://bestwpdeveloper.com/honeycombs" class="bwd-demo-link" target="_blank">
-																								<img src="<?php echo esc_url(plugin_dir_url( __FILE__ ).'../assets/admin/dashboard/img/linking.png'); ?>" alt="<?php echo esc_attr('View Demo'); ?>">
-																								<span class="bwd-view-demo"><?php echo esc_html__('View Demo', 'bwd-elementor-addons'); ?></span>
-																						</a>
+																					<img src="<?php echo esc_url(plugin_dir_url( __FILE__ ).'../assets/admin/dashboard/img/linking.png'); ?>" alt="<?php echo esc_attr('View Demo'); ?>">
+																					<span class="bwd-view-demo"><?php echo esc_html__('View Demo', 'bwd-elementor-addons'); ?></span>
+																				</a>
 																				</div>
 																				<div class="bwd-switch-item <?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwdeb_pro_permission':'bwdeb_pro_active'; ?>">
 																					<label class="bwd-switch">
