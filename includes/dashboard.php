@@ -1082,6 +1082,13 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 		'bwdeb-plugin-switch-section'
 	);
 	add_settings_field(
+		'bwdeb-twpx',
+		'',
+		'bwdeb_plugin_function_for_datas_callback',
+		'bwdeb-plugin-main-menu',
+		'bwdeb-plugin-switch-section'
+	);
+	add_settings_field(
 		'bwdeb-extn-tooltip',
 		'',
 		'bwdeb_plugin_function_for_datas_callback',
@@ -1716,6 +1723,10 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 	register_setting( 
 		'bwdeb-plugin-settings', 
 		'bwdeb-woop-vendors' 
+	);
+	register_setting( 
+		'bwdeb-plugin-settings', 
+		'bwdeb-twpx' 
 	);
 	register_setting( 
 		'bwdeb-plugin-settings', 

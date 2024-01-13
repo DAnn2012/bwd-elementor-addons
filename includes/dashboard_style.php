@@ -153,6 +153,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 	$bwdeb_woop_multi_action_value = get_option( 'bwdeb-plugin-woop-multi-action', 'off' );
 	$bwdeb_woop_wish_cont_value = get_option( 'bwdeb-plugin-woop-wish-cont', 'off' );
 	$bwdeb_woop_vendors_value = get_option( 'bwdeb-woop-vendors', 'off' );
+	$bwdeb_twpx_value = get_option( 'bwdeb-twpx', 'off' );
 
 	$bwdeb_extn_tooltip_value = get_option( 'bwdeb-extn-tooltip', 'off' );
 	$bwdeb_extn_link_value = get_option( 'bwdeb-extn-link', 'off' );
@@ -275,11 +276,12 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																		</ul>
 																	</div>
 																</div>
+															<div class="bwd-sk-wrapper">
 																<div class="bwd-widget-cat-count">
-																	<h2 class="bwd-widget-cat-title"><?php echo esc_html__('General Widgets (98)', 'bwd-elementor-addons'); ?></h2>
+																	<h2 class="bwd-widget-cat-title"><?php echo wp_kses_post('General Widgets (<div class="widgetCount"></div>)'); ?></h2>
 																</div>
 																<div class="bwd-widget-item-wrapper">
-																		<div class="bwd-single-widget-item <?php echo (checked( $bwdeb_meet_the_team_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn bwd-single-widget-item <?php echo (checked( $bwdeb_meet_the_team_value, 'on', false ))?esc_attr('active'):''; ?>">
 																			<div class="bwd-profree-badge"><?php echo esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_html__('/ Pro', 'bwd-elementor-addons').'</span>'; ?></div>
 																			<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/mtt_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -298,7 +300,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																				</label>
 																			</div>
 																		</div>
-																		<div class="bwd-single-widget-item <?php echo (checked( $bwdeb_testimonials_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn bwd-single-widget-item <?php echo (checked( $bwdeb_testimonials_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwd-profree-badge"><?php echo esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_html__('/ Pro', 'bwd-elementor-addons').'</span>'; ?></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/bwdt-documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -317,7 +319,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="bwd-single-widget-item <?php echo (checked( $bwdeb_creative_button_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn bwd-single-widget-item <?php echo (checked( $bwdeb_creative_button_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwd-profree-badge"><?php echo esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_html__('/ Pro', 'bwd-elementor-addons').'</span>'; ?></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/bcb_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -336,7 +338,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="bwd-single-widget-item <?php echo (checked( $bwdeb_accordion_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn bwd-single-widget-item <?php echo (checked( $bwdeb_accordion_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwd-profree-badge"><?php echo esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_html__('/ Pro', 'bwd-elementor-addons').'</span>'; ?></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/ba_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -355,7 +357,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																						</label>
 																				</div>
 																		</div>
-																		<div class="bwd-single-widget-item <?php echo (checked( $bwdeb_masking_effect_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn bwd-single-widget-item <?php echo (checked( $bwdeb_masking_effect_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwd-profree-badge"><?php echo esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_html__('/ Pro', 'bwd-elementor-addons').'</span>'; ?></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/bme_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -374,7 +376,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																						</label>
 																				</div>
 																		</div>
-																		<div class="bwd-single-widget-item <?php echo (checked( $bwdeb_service_showcase_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn bwd-single-widget-item <?php echo (checked( $bwdeb_service_showcase_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwd-profree-badge"><?php echo esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_html__('/ Pro', 'bwd-elementor-addons').'</span>'; ?></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/bss_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -393,7 +395,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																						</label>
 																				</div>
 																		</div>
-																		<div class="bwd-single-widget-item <?php echo (checked( $bwdeb_promo_box_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn bwd-single-widget-item <?php echo (checked( $bwdeb_promo_box_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwd-profree-badge"><?php echo esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_html__('/ Pro', 'bwd-elementor-addons').'</span>'; ?></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/bpb_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -412,7 +414,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																						</label>
 																				</div>
 																		</div>
-																		<div class="bwd-single-widget-item <?php echo (checked( $bwdeb_service_flip_box_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn bwd-single-widget-item <?php echo (checked( $bwdeb_service_flip_box_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwd-profree-badge"><?php echo esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_html__('/ Pro', 'bwd-elementor-addons').'</span>'; ?></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/bfb_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -431,7 +433,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="bwd-single-widget-item <?php echo (checked( $bwdeb_bwd_flip_box_carousel_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn bwd-single-widget-item <?php echo (checked( $bwdeb_bwd_flip_box_carousel_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwd-profree-badge"><?php echo esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_html__('/ Pro', 'bwd-elementor-addons').'</span>'; ?></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/fc_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -450,7 +452,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="bwd-single-widget-item <?php echo (checked( $bwdeb_step_flip_box_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn bwd-single-widget-item <?php echo (checked( $bwdeb_step_flip_box_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwd-profree-badge"><?php echo esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_html__('/ Pro', 'bwd-elementor-addons').'</span>'; ?></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/bfb_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -469,7 +471,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="bwd-single-widget-item <?php echo (checked( $bwdeb_team_flip_box_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn bwd-single-widget-item <?php echo (checked( $bwdeb_team_flip_box_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwd-profree-badge"><?php echo esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_html__('/ Pro', 'bwd-elementor-addons').'</span>'; ?></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/bfb_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -488,7 +490,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="bwd-single-widget-item <?php echo (checked( $bwdeb_map_masking_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn bwd-single-widget-item <?php echo (checked( $bwdeb_map_masking_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwd-profree-badge"><?php echo esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_html__('/ Pro', 'bwd-elementor-addons').'</span>'; ?></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/bmm_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -507,7 +509,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="bwd-single-widget-item <?php echo (checked( $bwdeb_creative_list_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn bwd-single-widget-item <?php echo (checked( $bwdeb_creative_list_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwd-profree-badge"><?php echo esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_html__('/ Pro', 'bwd-elementor-addons').'</span>'; ?></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/bcl_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -526,7 +528,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="bwd-single-widget-item <?php echo (checked( $bwdeb_dual_heading_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn bwd-single-widget-item <?php echo (checked( $bwdeb_dual_heading_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwd-profree-badge"><?php echo esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_html__('/ Pro', 'bwd-elementor-addons').'</span>'; ?></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/bdh_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -545,7 +547,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="bwd-single-widget-item <?php echo (checked( $bwdeb_back_to_top_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn bwd-single-widget-item <?php echo (checked( $bwdeb_back_to_top_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwd-profree-badge"><?php echo esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_html__('/ Pro', 'bwd-elementor-addons').'</span>'; ?></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/bub_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -564,7 +566,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="bwd-single-widget-item <?php echo (checked( $bwdeb_call_to_action_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn bwd-single-widget-item <?php echo (checked( $bwdeb_call_to_action_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwd-profree-badge"><?php echo esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_html__('/ Pro', 'bwd-elementor-addons').'</span>'; ?></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/bac_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -583,7 +585,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="bwd-single-widget-item <?php echo (checked( $bwdeb_icon_box_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn bwd-single-widget-item <?php echo (checked( $bwdeb_icon_box_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwd-profree-badge"><?php echo esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_html__('/ Pro', 'bwd-elementor-addons').'</span>'; ?></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/bib_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -602,7 +604,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="bwd-single-widget-item <?php echo (checked( $bwdeb_dual_button_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn bwd-single-widget-item <?php echo (checked( $bwdeb_dual_button_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwd-profree-badge"><?php echo esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_html__('/ Pro', 'bwd-elementor-addons').'</span>'; ?></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/bdb_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -621,7 +623,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="<?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_honeycombs_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn <?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_honeycombs_value, 'on', false ))?esc_attr('active'):''; ?>">
 																			<div class="bwdeb_pro_pro_per"><span><?php echo esc_html__('Pro', 'bwd-elementor-addons'); ?></span></div>
 																				<div class="bwd-widget-box">
 																				<a href="https://bwdplugins.com/plugins_documentations/hc_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -640,7 +642,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="bwd-single-widget-item <?php echo (checked( $bwdeb_awesome_step_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn bwd-single-widget-item <?php echo (checked( $bwdeb_awesome_step_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwd-profree-badge"><?php echo esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_html__('/ Pro', 'bwd-elementor-addons').'</span>'; ?></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/bas_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -659,7 +661,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="bwd-single-widget-item <?php echo (checked( $bwdeb_counter_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn bwd-single-widget-item <?php echo (checked( $bwdeb_counter_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwd-profree-badge"><?php echo esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_html__('/ Pro', 'bwd-elementor-addons').'</span>'; ?></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/bc_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -678,7 +680,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="bwd-single-widget-item <?php echo (checked( $bwdeb_image_hover_effect_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn bwd-single-widget-item <?php echo (checked( $bwdeb_image_hover_effect_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwd-profree-badge"><?php echo esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_html__('/ Pro', 'bwd-elementor-addons').'</span>'; ?></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/bihe_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -697,7 +699,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="bwd-single-widget-item <?php echo (checked( $bwdeb_countdown_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn bwd-single-widget-item <?php echo (checked( $bwdeb_countdown_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwd-profree-badge"><?php echo esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_html__('/ Pro', 'bwd-elementor-addons').'</span>'; ?></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/bcd_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -716,7 +718,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="bwd-single-widget-item <?php echo (checked( $bwdeb_animated_heading_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn bwd-single-widget-item <?php echo (checked( $bwdeb_animated_heading_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwd-profree-badge"><?php echo esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_html__('/ Pro', 'bwd-elementor-addons').'</span>'; ?></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/bah_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -735,7 +737,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="bwd-single-widget-item <?php echo (checked( $bwdeb_filterable_gallery_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn bwd-single-widget-item <?php echo (checked( $bwdeb_filterable_gallery_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwd-profree-badge"><?php echo esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_html__('/ Pro', 'bwd-elementor-addons').'</span>'; ?></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/bfg_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -754,7 +756,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="bwd-single-widget-item <?php echo (checked( $bwdeb_pricing_table_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn bwd-single-widget-item <?php echo (checked( $bwdeb_pricing_table_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwd-profree-badge"><?php echo esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_html__('/ Pro', 'bwd-elementor-addons').'</span>'; ?></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/bpt_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -773,7 +775,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="bwd-single-widget-item <?php echo (checked( $bwdeb_social_icon_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn bwd-single-widget-item <?php echo (checked( $bwdeb_social_icon_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwd-profree-badge"><?php echo esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_html__('/ Pro', 'bwd-elementor-addons').'</span>'; ?></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/bsi_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -792,7 +794,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="bwd-single-widget-item <?php echo (checked( $bwdeb_creative_tabs_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn bwd-single-widget-item <?php echo (checked( $bwdeb_creative_tabs_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwd-profree-badge"><?php echo esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_html__('/ Pro', 'bwd-elementor-addons').'</span>'; ?></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/ct_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -811,7 +813,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="bwd-single-widget-item <?php echo (checked( $bwdeb_author_bio_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn bwd-single-widget-item <?php echo (checked( $bwdeb_author_bio_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwd-profree-badge"><?php echo esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_html__('/ Pro', 'bwd-elementor-addons').'</span>'; ?></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/bab_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -830,7 +832,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="bwd-single-widget-item <?php echo (checked( $bwdeb_animated_link_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn bwd-single-widget-item <?php echo (checked( $bwdeb_animated_link_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwd-profree-badge"><?php echo esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_html__('/ Pro', 'bwd-elementor-addons').'</span>'; ?></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/bal_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -849,7 +851,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="bwd-single-widget-item <?php echo (checked( $bwdeb_business_hours_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn bwd-single-widget-item <?php echo (checked( $bwdeb_business_hours_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwd-profree-badge"><?php echo esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_html__('/ Pro', 'bwd-elementor-addons').'</span>'; ?></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/bbh_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -868,7 +870,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="bwd-single-widget-item <?php echo (checked( $bwdeb_image_shape_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn bwd-single-widget-item <?php echo (checked( $bwdeb_image_shape_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwd-profree-badge"><?php echo esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_html__('/ Pro', 'bwd-elementor-addons').'</span>'; ?></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/bis_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -887,7 +889,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="bwd-single-widget-item <?php echo (checked( $bwdeb_fancy_heading_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn bwd-single-widget-item <?php echo (checked( $bwdeb_fancy_heading_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwd-profree-badge"><?php echo esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_html__('/ Pro', 'bwd-elementor-addons').'</span>'; ?></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/bfh_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -906,7 +908,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="bwd-single-widget-item <?php echo (checked( $bwdeb_progress_bar_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn bwd-single-widget-item <?php echo (checked( $bwdeb_progress_bar_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwd-profree-badge"><?php echo esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_html__('/ Pro', 'bwd-elementor-addons').'</span>'; ?></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/pb_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -925,7 +927,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="bwd-single-widget-item <?php echo (checked( $bwdeb_image_accordion_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn bwd-single-widget-item <?php echo (checked( $bwdeb_image_accordion_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwd-profree-badge"><?php echo esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_html__('/ Pro', 'bwd-elementor-addons').'</span>'; ?></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/bia_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -944,7 +946,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="bwd-single-widget-item <?php echo (checked( $bwdeb_image_compare_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn bwd-single-widget-item <?php echo (checked( $bwdeb_image_compare_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwd-profree-badge"><?php echo esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_html__('/ Pro', 'bwd-elementor-addons').'</span>'; ?></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/bic_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -963,7 +965,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="bwd-single-widget-item <?php echo (checked( $bwdeb_timeline_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn bwd-single-widget-item <?php echo (checked( $bwdeb_timeline_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwd-profree-badge"><?php echo esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_html__('/ Pro', 'bwd-elementor-addons').'</span>'; ?></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/bit_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -982,7 +984,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="bwd-single-widget-item <?php echo (checked( $bwdeb_blockquote_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn bwd-single-widget-item <?php echo (checked( $bwdeb_blockquote_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwd-profree-badge"><?php echo esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_html__('/ Pro', 'bwd-elementor-addons').'</span>'; ?></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/bbq_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -1001,7 +1003,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="bwd-single-widget-item <?php echo (checked( $bwdeb_video_popup_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn bwd-single-widget-item <?php echo (checked( $bwdeb_video_popup_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwd-profree-badge"><?php echo esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_html__('/ Pro', 'bwd-elementor-addons').'</span>'; ?></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/bvp_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -1020,7 +1022,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="bwd-single-widget-item <?php echo (checked( $bwdeb_image_stack_group_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn bwd-single-widget-item <?php echo (checked( $bwdeb_image_stack_group_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwd-profree-badge"><?php echo esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_html__('/ Pro', 'bwd-elementor-addons').'</span>'; ?></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/isg_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -1039,7 +1041,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="bwd-single-widget-item <?php echo (checked( $bwdeb_making_video_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn bwd-single-widget-item <?php echo (checked( $bwdeb_making_video_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwd-profree-badge"><?php echo esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_html__('/ Pro', 'bwd-elementor-addons').'</span>'; ?></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/bmv_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -1058,7 +1060,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="bwd-single-widget-item <?php echo (checked( $bwdeb_image_swap_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn bwd-single-widget-item <?php echo (checked( $bwdeb_image_swap_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwd-profree-badge"><?php echo esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_html__('/ Pro', 'bwd-elementor-addons').'</span>'; ?></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/is_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -1077,7 +1079,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="bwd-single-widget-item <?php echo (checked( $bwdeb_profile_card_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn bwd-single-widget-item <?php echo (checked( $bwdeb_profile_card_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwd-profree-badge"><?php echo esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_html__('/ Pro', 'bwd-elementor-addons').'</span>'; ?></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/bpc_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -1096,7 +1098,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="bwd-single-widget-item <?php echo (checked( $bwdeb_photo_stack_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn bwd-single-widget-item <?php echo (checked( $bwdeb_photo_stack_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwd-profree-badge"><?php echo esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_html__('/ Pro', 'bwd-elementor-addons').'</span>'; ?></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/ps_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -1115,7 +1117,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="bwd-single-widget-item <?php echo (checked( $bwdeb_image_scroll_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn bwd-single-widget-item <?php echo (checked( $bwdeb_image_scroll_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwd-profree-badge"><?php echo esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_html__('/ Pro', 'bwd-elementor-addons').'</span>'; ?></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/biscrol_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -1134,7 +1136,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="bwd-single-widget-item <?php echo (checked( $bwdeb_ihover_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn bwd-single-widget-item <?php echo (checked( $bwdeb_ihover_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwd-profree-badge"><?php echo esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_html__('/ Pro', 'bwd-elementor-addons').'</span>'; ?></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/ie_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -1153,7 +1155,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="bwd-single-widget-item <?php echo (checked( $bwdeb_webinar_info_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn bwd-single-widget-item <?php echo (checked( $bwdeb_webinar_info_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwd-profree-badge"><?php echo esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_html__('/ Pro', 'bwd-elementor-addons').'</span>'; ?></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/bwi_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -1172,7 +1174,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="bwd-single-widget-item <?php echo (checked( $bwdeb_circle_info_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn bwd-single-widget-item <?php echo (checked( $bwdeb_circle_info_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwd-profree-badge"><?php echo esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_html__('/ Pro', 'bwd-elementor-addons').'</span>'; ?></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/ici_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -1191,7 +1193,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="bwd-single-widget-item <?php echo (checked( $bwdeb_coupon_code_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn bwd-single-widget-item <?php echo (checked( $bwdeb_coupon_code_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwd-profree-badge"><?php echo esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_html__('/ Pro', 'bwd-elementor-addons').'</span>'; ?></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/bcc_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -1210,7 +1212,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="bwd-single-widget-item <?php echo (checked( $bwdeb_unique_headers_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn bwd-single-widget-item <?php echo (checked( $bwdeb_unique_headers_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwd-profree-badge"><?php echo esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_html__('/ Pro', 'bwd-elementor-addons').'</span>'; ?></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/tuh_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -1229,7 +1231,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="bwd-single-widget-item <?php echo (checked( $bwdeb_click_to_contact_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn bwd-single-widget-item <?php echo (checked( $bwdeb_click_to_contact_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwd-profree-badge"><?php echo esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_html__('/ Pro', 'bwd-elementor-addons').'</span>'; ?></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/ctc_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -1248,7 +1250,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="<?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_popup_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn <?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_popup_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwdeb_pro_pro_per"><span><?php echo esc_html__('Pro', 'bwd-elementor-addons'); ?></span></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/bp_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -1267,7 +1269,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="bwd-single-widget-item <?php echo (checked( $bwdeb_data_table_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn bwd-single-widget-item <?php echo (checked( $bwdeb_data_table_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwd-profree-badge"><?php echo esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_html__('/ Pro', 'bwd-elementor-addons').'</span>'; ?></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/dt_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -1286,7 +1288,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="<?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_advanced_slider_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn <?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_advanced_slider_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwdeb_pro_pro_per"><span><?php echo esc_html__('Pro', 'bwd-elementor-addons'); ?></span></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/bwdads_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -1305,7 +1307,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="<?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_slide_anything_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn <?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_slide_anything_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwdeb_pro_pro_per"><span><?php echo esc_html__('Pro', 'bwd-elementor-addons'); ?></span></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/bwdsa_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -1324,7 +1326,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="bwd-single-widget-item <?php echo (checked( $bwdeb_contact_form_7_styler_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn bwd-single-widget-item <?php echo (checked( $bwdeb_contact_form_7_styler_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwd-profree-badge"><?php echo esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_html__('/ Pro', 'bwd-elementor-addons').'</span>'; ?></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/bwdcs_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -1343,7 +1345,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="<?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_image_hotspot_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn <?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_image_hotspot_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwdeb_pro_pro_per"><span><?php echo esc_html__('Pro', 'bwd-elementor-addons'); ?></span></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/bih_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -1362,7 +1364,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="bwd-single-widget-item <?php echo (checked( $bwdeb_logo_carousel_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn bwd-single-widget-item <?php echo (checked( $bwdeb_logo_carousel_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwd-profree-badge"><?php echo esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_html__('/ Pro', 'bwd-elementor-addons').'</span>'; ?></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/bbl_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -1381,7 +1383,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																			</div>
-																			<div class="bwd-single-widget-item <?php echo (checked( $bwdeb_logo_grid_value, 'on', false ))?esc_attr('active'):''; ?>">
+																			<div class="bwd-sk-cmn bwd-single-widget-item <?php echo (checked( $bwdeb_logo_grid_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwd-profree-badge"><?php echo esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_html__('/ Pro', 'bwd-elementor-addons').'</span>'; ?></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/bbl_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -1400,7 +1402,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																			</div>
-																			<div class="bwd-single-widget-item <?php echo (checked( $bwdeb_logo_filter_value, 'on', false ))?esc_attr('active'):''; ?>">
+																			<div class="bwd-sk-cmn bwd-single-widget-item <?php echo (checked( $bwdeb_logo_filter_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwd-profree-badge"><?php echo esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_html__('/ Pro', 'bwd-elementor-addons').'</span>'; ?></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/bbl_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -1419,7 +1421,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																			</div>
-																			<div class="bwd-single-widget-item <?php echo (checked( $bwdeb_team_carousel_value, 'on', false ))?esc_attr('active'):''; ?>">
+																			<div class="bwd-sk-cmn bwd-single-widget-item <?php echo (checked( $bwdeb_team_carousel_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwd-profree-badge"><?php echo esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_html__('/ Pro', 'bwd-elementor-addons').'</span>'; ?></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/tc_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -1438,7 +1440,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																			</div>
-																		<div class="<?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_unfold_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn <?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_unfold_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwdeb_pro_pro_per"><span><?php echo esc_html__('Pro', 'bwd-elementor-addons'); ?></span></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/uc_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -1457,7 +1459,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="bwd-single-widget-item <?php echo (checked( $bwdeb_code_highlighter_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn bwd-single-widget-item <?php echo (checked( $bwdeb_code_highlighter_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwd-profree-badge"><?php echo esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_html__('/ Pro', 'bwd-elementor-addons').'</span>'; ?></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/ch_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -1476,7 +1478,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="<?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_lottie_animation_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn <?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_lottie_animation_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwdeb_pro_pro_per"><span><?php echo esc_html__('Pro', 'bwd-elementor-addons'); ?></span></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/ela_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -1495,7 +1497,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="bwd-single-widget-item <?php echo (checked( $bwdeb_breadcrumb_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn bwd-single-widget-item <?php echo (checked( $bwdeb_breadcrumb_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwd-profree-badge"><?php echo esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_html__('/ Pro', 'bwd-elementor-addons').'</span>'; ?></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/bb_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -1514,7 +1516,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="bwd-single-widget-item <?php echo (checked( $bwdeb_info_download_button_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn bwd-single-widget-item <?php echo (checked( $bwdeb_info_download_button_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwd-profree-badge"><?php echo esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_html__('/ Pro', 'bwd-elementor-addons').'</span>'; ?></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/indb_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -1533,7 +1535,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="bwd-single-widget-item <?php echo (checked( $bwdeb_effective_pre_loader_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn bwd-single-widget-item <?php echo (checked( $bwdeb_effective_pre_loader_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwd-profree-badge"><?php echo esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_html__('/ Pro', 'bwd-elementor-addons').'</span>'; ?></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/bep_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -1552,7 +1554,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="<?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_bar_chart_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn <?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_bar_chart_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwdeb_pro_pro_per"><span><?php echo esc_html__('Pro', 'bwd-elementor-addons'); ?></span></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/bwdbc_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -1571,7 +1573,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="bwd-single-widget-item <?php echo (checked( $bwdeb_social_share_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn bwd-single-widget-item <?php echo (checked( $bwdeb_social_share_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwd-profree-badge"><?php echo esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_html__('/ Pro', 'bwd-elementor-addons').'</span>'; ?></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/bwdss_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -1590,7 +1592,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="bwd-single-widget-item <?php echo (checked( $bwdeb_background_switcher_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn bwd-single-widget-item <?php echo (checked( $bwdeb_background_switcher_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwd-profree-badge"><?php echo esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_html__('/ Pro', 'bwd-elementor-addons').'</span>'; ?></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/bbs_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -1609,7 +1611,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="bwd-single-widget-item <?php echo (checked( $bwdeb_product_content_switcher_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn bwd-single-widget-item <?php echo (checked( $bwdeb_product_content_switcher_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwd-profree-badge"><?php echo esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_html__('/ Pro', 'bwd-elementor-addons').'</span>'; ?></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/bwdcs_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -1628,7 +1630,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="<?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_lord_icon_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn <?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_lord_icon_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwdeb_pro_pro_per"><span><?php echo esc_html__('Pro', 'bwd-elementor-addons'); ?></span></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/li_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -1648,7 +1650,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																				</div>
 																		</div>
 																		<!-- For new  widgets  10Dec2023 -->
-																		<div class="<?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_cart_flipper_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn <?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_cart_flipper_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwdeb_pro_pro_per"><span><?php echo esc_html__('Pro', 'bwd-elementor-addons'); ?></span></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/li_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -1667,7 +1669,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																				</label>
 																			</div>
 																		</div>
-																		<div class="bwd-single-widget-item <?php echo (checked( $bwdeb_ajax_data_table_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn bwd-single-widget-item <?php echo (checked( $bwdeb_ajax_data_table_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwd-profree-badge"><?php echo esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_html__('/ Pro', 'bwd-elementor-addons').'</span>'; ?></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/bwdpc_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -1686,7 +1688,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="<?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_con_awi_pls_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn <?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_con_awi_pls_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwdeb_pro_pro_per"><span><?php echo esc_html__('Pro', 'bwd-elementor-addons'); ?></span></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/li_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -1705,7 +1707,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																				</label>
 																			</div>
 																		</div>
-																		<div class="<?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_img_rev_widg_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn <?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_img_rev_widg_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwdeb_pro_pro_per"><span><?php echo esc_html__('Pro', 'bwd-elementor-addons'); ?></span></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/li_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -1724,7 +1726,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																				</label>
 																			</div>
 																		</div>
-																		<div class="<?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_img_unfold_kit_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn <?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_img_unfold_kit_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwdeb_pro_pro_per"><span><?php echo esc_html__('Pro', 'bwd-elementor-addons'); ?></span></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/li_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -1743,7 +1745,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																				</label>
 																			</div>
 																		</div>
-																		<div class="<?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_modern_feature_list_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn <?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_modern_feature_list_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwdeb_pro_pro_per"><span><?php echo esc_html__('Pro', 'bwd-elementor-addons'); ?></span></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/li_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -1762,7 +1764,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																				</label>
 																			</div>
 																		</div>
-																		<div class="<?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_nft_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn <?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_nft_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwdeb_pro_pro_per"><span><?php echo esc_html__('Pro', 'bwd-elementor-addons'); ?></span></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/li_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -1781,7 +1783,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																				</label>
 																			</div>
 																		</div>
-																		<div class="<?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_offcanvasmagic_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn <?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_offcanvasmagic_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwdeb_pro_pro_per"><span><?php echo esc_html__('Pro', 'bwd-elementor-addons'); ?></span></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/li_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -1800,7 +1802,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																				</label>
 																			</div>
 																		</div>
-																		<div class="<?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_privacy_content_locker_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn <?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_privacy_content_locker_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwdeb_pro_pro_per"><span><?php echo esc_html__('Pro', 'bwd-elementor-addons'); ?></span></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/li_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -1819,7 +1821,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																				</label>
 																			</div>
 																		</div>
-																		<div class="<?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_viewpdf_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn <?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_viewpdf_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwdeb_pro_pro_per"><span><?php echo esc_html__('Pro', 'bwd-elementor-addons'); ?></span></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/li_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -1838,7 +1840,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																				</label>
 																			</div>
 																		</div>
-																		<div class="<?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_progress_master_kit_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn <?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_progress_master_kit_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwdeb_pro_pro_per"><span><?php echo esc_html__('Pro', 'bwd-elementor-addons'); ?></span></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/li_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -1857,7 +1859,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																				</label>
 																			</div>
 																		</div>
-																		<div class="<?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_restaurant_price_menu_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn <?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_restaurant_price_menu_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwdeb_pro_pro_per"><span><?php echo esc_html__('Pro', 'bwd-elementor-addons'); ?></span></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/li_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -1876,7 +1878,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																				</label>
 																			</div>
 																		</div>
-																		<div class="<?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_sales_promotion_offer_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn <?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_sales_promotion_offer_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwdeb_pro_pro_per"><span><?php echo esc_html__('Pro', 'bwd-elementor-addons'); ?></span></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/li_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -1895,7 +1897,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																				</label>
 																			</div>
 																		</div>
-																		<div class="<?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_profile_showcas_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn <?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_profile_showcas_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwdeb_pro_pro_per"><span><?php echo esc_html__('Pro', 'bwd-elementor-addons'); ?></span></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/li_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -1914,7 +1916,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																				</label>
 																			</div>
 																		</div>
-																		<div class="<?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_tooltip_mastery_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn <?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_tooltip_mastery_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwdeb_pro_pro_per"><span><?php echo esc_html__('Pro', 'bwd-elementor-addons'); ?></span></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/li_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -1933,7 +1935,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																				</label>
 																			</div>
 																		</div>
-																		<div class="<?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_employee_profile_identity_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn <?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_employee_profile_identity_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwdeb_pro_pro_per"><span><?php echo esc_html__('Pro', 'bwd-elementor-addons'); ?></span></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/li_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -1952,7 +1954,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																				</label>
 																			</div>
 																		</div>
-																		<div class="<?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_horizontal_timeline_slider_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn <?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_horizontal_timeline_slider_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwdeb_pro_pro_per"><span><?php echo esc_html__('Pro', 'bwd-elementor-addons'); ?></span></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/li_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -1971,7 +1973,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																				</label>
 																			</div>
 																		</div>
-																		<div class="<?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_product_features_w_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn <?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_product_features_w_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwdeb_pro_pro_per"><span><?php echo esc_html__('Pro', 'bwd-elementor-addons'); ?></span></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/li_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -1990,7 +1992,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																				</label>
 																			</div>
 																		</div>
-																		<div class="<?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_threesixty_rotation_view_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn <?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_threesixty_rotation_view_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwdeb_pro_pro_per"><span><?php echo esc_html__('Pro', 'bwd-elementor-addons'); ?></span></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/li_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -2009,7 +2011,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																				</label>
 																			</div>
 																		</div>
-																		<div class="<?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_widget_template_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn <?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_widget_template_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwdeb_pro_pro_per"><span><?php echo esc_html__('Pro', 'bwd-elementor-addons'); ?></span></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/li_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -2028,7 +2030,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																				</label>
 																			</div>
 																		</div>
-																		<div class="<?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_pssx_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn <?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_pssx_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwdeb_pro_pro_per"><span><?php echo esc_html__('Pro', 'bwd-elementor-addons'); ?></span></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/li_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -2048,7 +2050,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																			</div>
 																		</div>
 																		<!-- vvvvvvvvvv -->
-																		<div class="<?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_blmx1_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn <?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_blmx1_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwdeb_pro_pro_per"><span><?php echo esc_html__('Pro', 'bwd-elementor-addons'); ?></span></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/li_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -2067,7 +2069,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																				</label>
 																			</div>
 																		</div>
-																		<div class="<?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_blmx2_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn <?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_blmx2_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwdeb_pro_pro_per"><span><?php echo esc_html__('Pro', 'bwd-elementor-addons'); ?></span></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/li_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -2086,7 +2088,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																				</label>
 																			</div>
 																		</div>
-																		<div class="<?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_blmx3_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn <?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_blmx3_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwdeb_pro_pro_per"><span><?php echo esc_html__('Pro', 'bwd-elementor-addons'); ?></span></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/li_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -2105,7 +2107,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																				</label>
 																			</div>
 																		</div>
-																		<div class="<?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_svpx_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn <?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_svpx_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwdeb_pro_pro_per"><span><?php echo esc_html__('Pro', 'bwd-elementor-addons'); ?></span></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/li_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -2124,7 +2126,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																				</label>
 																			</div>
 																		</div>
-																		<div class="<?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_txsx_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn <?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_txsx_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwdeb_pro_pro_per"><span><?php echo esc_html__('Pro', 'bwd-elementor-addons'); ?></span></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/li_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -2143,7 +2145,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																				</label>
 																			</div>
 																		</div>
-																		<div class="<?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_vsix_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn <?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_vsix_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwdeb_pro_pro_per"><span><?php echo esc_html__('Pro', 'bwd-elementor-addons'); ?></span></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/li_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -2165,11 +2167,13 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 
 
 																</div>
+																</div>
+															<div class="bwd-sk-wrapper">
 																<div class="bwd-widget-cat-count">
-																<h2 class="bwd-widget-cat-title"><?php echo wp_kses_post('CV Builder (11) <sup><span>Pro</span></sup>'); ?></h2>
+																<h2 class="bwd-widget-cat-title"><?php echo wp_kses_post('CV Builder (<div class="widgetCount"></div>) <sup><span>Pro</span></sup>'); ?></h2>
 																</div>
 																<div class="bwd-widget-item-wrapper">
-																		<div class="<?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_cv_builder_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn <?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_cv_builder_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwdeb_pro_pro_per"><span><?php echo esc_html__('Pro', 'bwd-elementor-addons'); ?></span></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/bcvb_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -2188,7 +2192,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="<?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_cv_about_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn <?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_cv_about_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwdeb_pro_pro_per"><span><?php echo esc_html__('Pro', 'bwd-elementor-addons'); ?></span></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/bcvb_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -2207,7 +2211,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="<?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_cv_contact_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn <?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_cv_contact_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwdeb_pro_pro_per"><span><?php echo esc_html__('Pro', 'bwd-elementor-addons'); ?></span></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/bcvb_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -2226,7 +2230,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="<?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_cv_education_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn <?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_cv_education_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwdeb_pro_pro_per"><span><?php echo esc_html__('Pro', 'bwd-elementor-addons'); ?></span></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/bcvb_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -2245,7 +2249,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="<?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_cv_experience_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn <?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_cv_experience_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwdeb_pro_pro_per"><span><?php echo esc_html__('Pro', 'bwd-elementor-addons'); ?></span></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/bcvb_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -2264,7 +2268,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="<?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_cv_footer_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn <?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_cv_footer_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwdeb_pro_pro_per"><span><?php echo esc_html__('Pro', 'bwd-elementor-addons'); ?></span></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/bcvb_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -2283,7 +2287,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="<?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_cv_header_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn <?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_cv_header_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwdeb_pro_pro_per"><span><?php echo esc_html__('Pro', 'bwd-elementor-addons'); ?></span></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/bcvb_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -2302,7 +2306,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="<?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_cv_hobby_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn <?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_cv_hobby_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwdeb_pro_pro_per"><span><?php echo esc_html__('Pro', 'bwd-elementor-addons'); ?></span></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/bcvb_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -2321,7 +2325,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="<?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_cv_language_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn <?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_cv_language_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwdeb_pro_pro_per"><span><?php echo esc_html__('Pro', 'bwd-elementor-addons'); ?></span></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/bcvb_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -2340,7 +2344,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="<?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_cv_reference_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn <?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_cv_reference_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwdeb_pro_pro_per"><span><?php echo esc_html__('Pro', 'bwd-elementor-addons'); ?></span></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/bcvb_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -2359,7 +2363,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="<?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_cv_skill_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn <?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_cv_skill_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwdeb_pro_pro_per"><span><?php echo esc_html__('Pro', 'bwd-elementor-addons'); ?></span></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/bcvb_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -2379,11 +2383,13 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																				</div>
 																		</div>
 																</div> 
+																</div> 
+															<div class="bwd-sk-wrapper">
 																<div class="bwd-widget-cat-count">
-																<h2 class="bwd-widget-cat-title"><?php echo wp_kses_post('Hero Sections (13) <sup><span>Pro</span></sup>'); ?></h2>
+																<h2 class="bwd-widget-cat-title"><?php echo wp_kses_post('Hero Sections (<div class="widgetCount"></div>) <sup><span>Pro</span></sup>'); ?></h2>
 																</div>
 																<div class="bwd-widget-item-wrapper">
-																		<div class="<?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_hero_section_style1, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn <?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_hero_section_style1, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwdeb_pro_pro_per"><span><?php echo esc_html__('Pro', 'bwd-elementor-addons'); ?></span></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/bcvb_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -2402,7 +2408,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="<?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_hero_section_style2, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn <?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_hero_section_style2, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwdeb_pro_pro_per"><span><?php echo esc_html__('Pro', 'bwd-elementor-addons'); ?></span></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/bcvb_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -2421,7 +2427,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="<?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_hero_section_style3, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn <?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_hero_section_style3, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwdeb_pro_pro_per"><span><?php echo esc_html__('Pro', 'bwd-elementor-addons'); ?></span></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/bcvb_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -2440,7 +2446,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="<?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_hero_section_style4, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn <?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_hero_section_style4, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwdeb_pro_pro_per"><span><?php echo esc_html__('Pro', 'bwd-elementor-addons'); ?></span></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/bcvb_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -2459,7 +2465,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="<?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_hero_section_style5, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn <?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_hero_section_style5, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwdeb_pro_pro_per"><span><?php echo esc_html__('Pro', 'bwd-elementor-addons'); ?></span></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/bcvb_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -2478,7 +2484,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="<?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_hero_section_style6, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn <?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_hero_section_style6, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwdeb_pro_pro_per"><span><?php echo esc_html__('Pro', 'bwd-elementor-addons'); ?></span></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/bcvb_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -2497,7 +2503,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="<?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_hero_section_style7, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn <?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_hero_section_style7, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwdeb_pro_pro_per"><span><?php echo esc_html__('Pro', 'bwd-elementor-addons'); ?></span></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/bcvb_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -2516,7 +2522,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="<?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_hero_section_style8, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn <?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_hero_section_style8, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwdeb_pro_pro_per"><span><?php echo esc_html__('Pro', 'bwd-elementor-addons'); ?></span></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/bcvb_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -2535,7 +2541,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="<?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_hero_section_style9, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn <?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_hero_section_style9, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwdeb_pro_pro_per"><span><?php echo esc_html__('Pro', 'bwd-elementor-addons'); ?></span></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/bcvb_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -2554,7 +2560,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="<?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_hero_section_style10, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn <?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_hero_section_style10, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwdeb_pro_pro_per"><span><?php echo esc_html__('Pro', 'bwd-elementor-addons'); ?></span></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/bcvb_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -2573,7 +2579,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="<?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_hero_section_style11, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn <?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_hero_section_style11, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwdeb_pro_pro_per"><span><?php echo esc_html__('Pro', 'bwd-elementor-addons'); ?></span></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/bcvb_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -2592,7 +2598,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="<?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_hero_section_style12, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn <?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_hero_section_style12, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwdeb_pro_pro_per"><span><?php echo esc_html__('Pro', 'bwd-elementor-addons'); ?></span></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/bcvb_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -2611,7 +2617,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="<?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_hero_section_style13, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn <?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_hero_section_style13, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwdeb_pro_pro_per"><span><?php echo esc_html__('Pro', 'bwd-elementor-addons'); ?></span></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/bcvb_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -2631,11 +2637,13 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																				</div>
 																		</div>
 																</div> 
+																</div> 
+															<div class="bwd-sk-wrapper">
 																<div class="bwd-widget-cat-count">
-																<h2 class="bwd-widget-cat-title"><?php echo esc_html__('Blog Widgets (12)', 'bwd-elementor-addons'); ?></h2>
+																<h2 class="bwd-widget-cat-title"><?php echo wp_kses_post('Blog Widgets (<div class="widgetCount"></div>)', 'bwd-elementor-addons'); ?></h2>
 																</div>
 																<div class="bwd-widget-item-wrapper">
-																		<div class="bwd-single-widget-item <?php echo (checked( $bwdeb_post_grid_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn bwd-single-widget-item <?php echo (checked( $bwdeb_post_grid_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwd-profree-badge"><?php echo esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_html__('/ Pro', 'bwd-elementor-addons').'</span>'; ?></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/bpg_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -2654,7 +2662,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="bwd-single-widget-item <?php echo (checked( $bwdeb_post_list_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn bwd-single-widget-item <?php echo (checked( $bwdeb_post_list_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwd-profree-badge"><?php echo esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_html__('/ Pro', 'bwd-elementor-addons').'</span>'; ?></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/bpl_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -2673,7 +2681,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="bwd-single-widget-item <?php echo (checked( $bwdeb_post_tiles_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn bwd-single-widget-item <?php echo (checked( $bwdeb_post_tiles_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwd-profree-badge"><?php echo esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_html__('/ Pro', 'bwd-elementor-addons').'</span>'; ?></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/pt_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -2692,7 +2700,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="bwd-single-widget-item <?php echo (checked( $bwdeb_post_accordion_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn bwd-single-widget-item <?php echo (checked( $bwdeb_post_accordion_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwd-profree-badge"><?php echo esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_html__('/ Pro', 'bwd-elementor-addons').'</span>'; ?></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/bpa_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -2711,7 +2719,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="bwd-single-widget-item <?php echo (checked( $bwdeb_post_timeline_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn bwd-single-widget-item <?php echo (checked( $bwdeb_post_timeline_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwd-profree-badge"><?php echo esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_html__('/ Pro', 'bwd-elementor-addons').'</span>'; ?></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/bwdpt_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -2730,7 +2738,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="bwd-single-widget-item <?php echo (checked( $bwdeb_masonary_blog_post_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn bwd-single-widget-item <?php echo (checked( $bwdeb_masonary_blog_post_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwd-profree-badge"><?php echo esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_html__('/ Pro', 'bwd-elementor-addons').'</span>'; ?></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/mbp_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -2749,7 +2757,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="bwd-single-widget-item <?php echo (checked( $bwdeb_post_image_accordion_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn bwd-single-widget-item <?php echo (checked( $bwdeb_post_image_accordion_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwd-profree-badge"><?php echo esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_html__('/ Pro', 'bwd-elementor-addons').'</span>'; ?></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/bpia_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -2768,7 +2776,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="bwd-single-widget-item <?php echo (checked( $bwdeb_single_post_slider_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn bwd-single-widget-item <?php echo (checked( $bwdeb_single_post_slider_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwd-profree-badge"><?php echo esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_html__('/ Pro', 'bwd-elementor-addons').'</span>'; ?></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/eps_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -2787,7 +2795,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="bwd-single-widget-item <?php echo (checked( $bwdeb_news_ticker_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn bwd-single-widget-item <?php echo (checked( $bwdeb_news_ticker_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwd-profree-badge"><?php echo esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_html__('/ Pro', 'bwd-elementor-addons').'</span>'; ?></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/nt_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -2806,7 +2814,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="bwd-single-widget-item <?php echo (checked( $bwdeb_creative_post_carousel_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn bwd-single-widget-item <?php echo (checked( $bwdeb_creative_post_carousel_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwd-profree-badge"><?php echo esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_html__('/ Pro', 'bwd-elementor-addons').'</span>'; ?></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/bwdpc_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -2825,7 +2833,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="<?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_post_prestige_portfolio_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn <?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_post_prestige_portfolio_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwdeb_pro_pro_per"><span><?php echo esc_html__('Pro', 'bwd-elementor-addons'); ?></span></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/li_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -2844,7 +2852,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																				</label>
 																			</div>
 																		</div>
-																		<div class="<?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_apostst_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn <?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_apostst_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwdeb_pro_pro_per"><span><?php echo esc_html__('Pro', 'bwd-elementor-addons'); ?></span></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/li_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -2864,11 +2872,13 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																			</div>
 																		</div>
 																</div> 
+																</div> 
+															<div class="bwd-sk-wrapper">
 																<div class="bwd-widget-cat-count">
-																		<h2 class="bwd-widget-cat-title"><?php echo esc_html__('Woocommerce Widgets (17)', 'bwd-elementor-addons'); ?></h2>
+																		<h2 class="bwd-widget-cat-title"><?php echo wp_kses_post('Woocommerce Widgets (<div class="widgetCount"></div>)', 'bwd-elementor-addons'); ?></h2>
 																</div>
 																<div class="bwd-widget-item-wrapper">
-																		<div class="bwd-single-widget-item <?php echo (checked( $bwdeb_product_grid_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn bwd-single-widget-item <?php echo (checked( $bwdeb_product_grid_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwd-profree-badge"><?php echo esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_html__('/ Pro', 'bwd-elementor-addons').'</span>'; ?></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/bcpg_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -2887,7 +2897,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="bwd-single-widget-item <?php echo (checked( $bwdeb_product_list_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn bwd-single-widget-item <?php echo (checked( $bwdeb_product_list_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwd-profree-badge"><?php echo esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_html__('/ Pro', 'bwd-elementor-addons').'</span>'; ?></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/wcpl_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -2906,7 +2916,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="bwd-single-widget-item <?php echo (checked( $bwdeb_product_tiles_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn bwd-single-widget-item <?php echo (checked( $bwdeb_product_tiles_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwd-profree-badge"><?php echo esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_html__('/ Pro', 'bwd-elementor-addons').'</span>'; ?></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/wpt_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -2925,7 +2935,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="bwd-single-widget-item <?php echo (checked( $bwdeb_product_carousel_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn bwd-single-widget-item <?php echo (checked( $bwdeb_product_carousel_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwd-profree-badge"><?php echo esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_html__('/ Pro', 'bwd-elementor-addons').'</span>'; ?></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/gpc_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -2944,7 +2954,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="bwd-single-widget-item <?php echo (checked( $bwdeb_product_category_grid_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn bwd-single-widget-item <?php echo (checked( $bwdeb_product_category_grid_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwd-profree-badge"><?php echo esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_html__('/ Pro', 'bwd-elementor-addons').'</span>'; ?></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/pcg_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -2963,7 +2973,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="bwd-single-widget-item <?php echo (checked( $bwdeb_product_category_tiles_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn bwd-single-widget-item <?php echo (checked( $bwdeb_product_category_tiles_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwd-profree-badge"><?php echo esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_html__('/ Pro', 'bwd-elementor-addons').'</span>'; ?></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/wpct_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -2982,7 +2992,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="bwd-single-widget-item <?php echo (checked( $bwdeb_product_accordion_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn bwd-single-widget-item <?php echo (checked( $bwdeb_product_accordion_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwd-profree-badge"><?php echo esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_html__('/ Pro', 'bwd-elementor-addons').'</span>'; ?></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/wpa_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -3001,7 +3011,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="bwd-single-widget-item <?php echo (checked( $bwdeb_product_iamage_accordion_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn bwd-single-widget-item <?php echo (checked( $bwdeb_product_iamage_accordion_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwd-profree-badge"><?php echo esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_html__('/ Pro', 'bwd-elementor-addons').'</span>'; ?></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/wpia_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -3020,7 +3030,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="bwd-single-widget-item <?php echo (checked( $bwdeb_product_list_carousel_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn bwd-single-widget-item <?php echo (checked( $bwdeb_product_list_carousel_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwd-profree-badge"><?php echo esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_html__('/ Pro', 'bwd-elementor-addons').'</span>'; ?></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/plc_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -3039,7 +3049,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="bwd-single-widget-item <?php echo (checked( $bwdeb_product_timeline_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn bwd-single-widget-item <?php echo (checked( $bwdeb_product_timeline_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwd-profree-badge"><?php echo esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_html__('/ Pro', 'bwd-elementor-addons').'</span>'; ?></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/woopt_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -3058,7 +3068,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="bwd-single-widget-item <?php echo (checked( $bwdeb_related_product_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn bwd-single-widget-item <?php echo (checked( $bwdeb_related_product_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwd-profree-badge"><?php echo esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_html__('/ Pro', 'bwd-elementor-addons').'</span>'; ?></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/wrp_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -3077,7 +3087,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="bwd-single-widget-item <?php echo (checked( $bwdeb_product_category_carousel_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn bwd-single-widget-item <?php echo (checked( $bwdeb_product_category_carousel_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwd-profree-badge"><?php echo esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_html__('/ Pro', 'bwd-elementor-addons').'</span>'; ?></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/pcc_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -3096,7 +3106,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="bwd-single-widget-item <?php echo (checked( $bwdeb_featured_product_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn bwd-single-widget-item <?php echo (checked( $bwdeb_featured_product_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwd-profree-badge"><?php echo esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_html__('/ Pro', 'bwd-elementor-addons').'</span>'; ?></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/wfpg_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -3115,7 +3125,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																					</label>
 																				</div>
 																		</div>
-																		<div class="<?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_woo_cat_gallery_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn <?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_woo_cat_gallery_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwdeb_pro_pro_per"><span><?php echo esc_html__('Pro', 'bwd-elementor-addons'); ?></span></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/li_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -3134,7 +3144,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																				</label>
 																			</div>
 																		</div>
-																		<div class="<?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_woop_multi_action_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn <?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_woop_multi_action_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwdeb_pro_pro_per"><span><?php echo esc_html__('Pro', 'bwd-elementor-addons'); ?></span></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/li_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -3153,7 +3163,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																				</label>
 																			</div>
 																		</div>
-																		<div class="<?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_woop_wish_cont_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn <?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_woop_wish_cont_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwdeb_pro_pro_per"><span><?php echo esc_html__('Pro', 'bwd-elementor-addons'); ?></span></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/li_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -3172,7 +3182,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																				</label>
 																			</div>
 																		</div>
-																		<div class="<?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_woop_vendors_value, 'on', false ))?esc_attr('active'):''; ?>">
+																		<div class="bwd-sk-cmn <?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_woop_vendors_value, 'on', false ))?esc_attr('active'):''; ?>">
 																				<div class="bwdeb_pro_pro_per"><span><?php echo esc_html__('Pro', 'bwd-elementor-addons'); ?></span></div>
 																				<div class="bwd-widget-box">
 																			<a href="https://bwdplugins.com/plugins_documentations/li_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -3191,17 +3201,38 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																				</label>
 																			</div>
 																		</div>
+																		<div class="bwd-sk-cmn <?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_twpx_value, 'on', false ))?esc_attr('active'):''; ?>">
+																				<div class="bwdeb_pro_pro_per"><span><?php echo esc_html__('Pro', 'bwd-elementor-addons'); ?></span></div>
+																				<div class="bwd-widget-box">
+																			<a href="https://bwdplugins.com/plugins_documentations/li_documentation/" class="bwd-dcmtn-link" target="_blank">
+																				<p class="bwd-widget-title"><?php echo esc_html__('3D WooCommerce Product Layout', 'bwd-elementor-addons'); ?></p>
+																				<span class="bwd-view-demo"><?php echo esc_html__('View Documentation', 'bwd-elementor-addons'); ?></span>
+																			</a>
+																			<a href="https://bestwpdeveloper.com/3d-woocommerce-product-layout" class="bwd-demo-link" target="_blank">
+																				<img src="<?php echo esc_url(plugin_dir_url( __FILE__ ).'../assets/admin/dashboard/img/linking.png'); ?>" alt="<?php echo esc_attr('View Demo'); ?>">
+																				<span class="bwd-view-demo"><?php echo esc_html__('View Demo', 'bwd-elementor-addons'); ?></span>
+																			</a>
+																			</div>
+																			<div class="bwd-switch-item <?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwdeb_pro_permission':'bwdeb_pro_active'; ?>">
+																				<label class="bwd-switch">
+																					<input type="<?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'':'checkbox'; ?>" <?php if(class_exists( 'ProbwdelementorBundle' )){ echo 'name="'.esc_attr('bwdeb-twpx').'" value="on"'; echo checked( $bwdeb_twpx_value, 'on', false );} ?>>
+																					<span class="bwd-slider"></span>
+																				</label>
+																			</div>
+																		</div>
+																</div>
 																</div>
 														</div>
 												</div>
 												<!-- This tab for extensions -->
 												<div id="tab3" class="tab-content">
 													<div class="bwd-main-wrapper">
+													<div class="bwd-sk-wrapper">
 														<div class="bwd-widget-cat-count">
-															<h2 class="bwd-widget-cat-title"><?php echo wp_kses_post('Extensions (3) <sup><span>Pro</span></sup>'); ?></h2>
+															<h2 class="bwd-widget-cat-title"><?php echo wp_kses_post('Extensions (<div class="widgetCount"></div>) <sup><span>Pro</span></sup>'); ?></h2>
 														</div>
 														<div class="bwd-widget-item-wrapper">
-															<div class="<?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_extn_tooltip_value, 'on', false ))?esc_attr('active'):''; ?>">
+															<div class="bwd-sk-cmn <?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_extn_tooltip_value, 'on', false ))?esc_attr('active'):''; ?>">
 																	<div class="bwdeb_pro_pro_per"><span><?php echo esc_html__('Pro', 'bwd-elementor-addons'); ?></span></div>
 																	<div class="bwd-widget-box">
 																<a href="https://bwdplugins.com/plugins_documentations/li_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -3220,7 +3251,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																	</label>
 																</div>
 															</div>
-															<div class="<?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_extn_link_value, 'on', false ))?esc_attr('active'):''; ?>">
+															<div class="bwd-sk-cmn <?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_extn_link_value, 'on', false ))?esc_attr('active'):''; ?>">
 																	<div class="bwdeb_pro_pro_per"><span><?php echo esc_html__('Pro', 'bwd-elementor-addons'); ?></span></div>
 																	<div class="bwd-widget-box">
 																<a href="https://bwdplugins.com/plugins_documentations/li_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -3239,7 +3270,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 																	</label>
 																</div>
 															</div>
-															<div class="<?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_extn_protctn_value, 'on', false ))?esc_attr('active'):''; ?>">
+															<div class="bwd-sk-cmn <?php echo ( !class_exists( 'ProbwdelementorBundle' ) )?'bwd-single-widget-if-no-pro ':'bwd-single-widget-item '; echo (checked( $bwdeb_extn_protctn_value, 'on', false ))?esc_attr('active'):''; ?>">
 																	<div class="bwdeb_pro_pro_per"><span><?php echo esc_html__('Pro', 'bwd-elementor-addons'); ?></span></div>
 																	<div class="bwd-widget-box">
 																<a href="https://bwdplugins.com/plugins_documentations/li_documentation/" class="bwd-dcmtn-link" target="_blank">
@@ -3260,7 +3291,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 															</div>
 														</div>
 													</div>
-
+													</div>
 												</div>
 											</div>
 									</div>
