@@ -16,7 +16,7 @@ class BWDEBClassElementorBundle {
 	}
 
 	public function bwdeb_admin_editor_scripts() {
-		wp_enqueue_script( 'bwdeb_the_contact_form_editor', plugin_dir_url( __FILE__ ) . 'assets/public/js/empty-dummy.js', array(), '2.3.0', true );
+		wp_enqueue_script( 'bwdeb_the_contact_form_editor', plugin_dir_url( __FILE__ ) . 'assets/public/js/empty-dummy.js', array(), '2.3.1', true );
 		wp_script_add_data( 'bwdeb_the_contact_form_editor', 'type', 'module' );
 	}
 
@@ -418,11 +418,11 @@ class BWDEBClassElementorBundle {
 	public function bwdeb_all_assets_for_the_public(){
 		$script_paths = ['imagesloaded.pkgd.min','isotope.pkgd.min','snake','min','bwdeb-main','bwdeb-custom','clicktocontact','countdown','counter','coupon','filterable-popup','filterable-gallery','imgcompare','progressbar','timeline','main','webinar','header','search_main','bwdeb-owl.carousel.min','team-carousel','video-popup','profile-card','bwdeb-bttop','masking-video','bwdeb-swiper','bwdeb-main2','author-bio','bwdeb-main3','bwdeb.carousel.min','post-carousel','bwdeb-owl.carousel.min4','bwdeb-main4','bwdeb.carousel.min2','bwdeb-product','bwdeb-main5','testimonial','bwdeb.carousel.min3','woopgridcaro','bwdeb.carousel.min4','bwdeb.carousel.min5','bwdeb-caro','product-timeline','bwdeb_main','bwdeb-loader','bwdeb-loader.min','bwdeb-loader-extra-transition','bwdeb-loader-extra-transition.min','bwdeb-main7','bwdeb-owl.carousel.min3','bwdeb-main8','bwdeb-owl.carousel.min2','bwdeb-unfold-content','codentor-prism-toolbar','codentor-prism','bwdeb-main9','bwdeb-swiper-bundle.min','bwdeb-custom2','tab','bwdeb_min','datatables','responsive','main', 'ajax-DataTable/datatables.min', 'ajax-DataTable/dataTables.responsive.min', 'ajax-DataTable/main'];
 		foreach($script_paths as $filepath){
-			wp_enqueue_script( 'bwdcssk-content-'.$filepath, plugin_dir_url( __FILE__ ) . 'assets/public/js/'.$filepath.'.js', array('jquery'), '2.3.0', true );
+			wp_enqueue_script( 'bwdcssk-content-'.$filepath, plugin_dir_url( __FILE__ ) . 'assets/public/js/'.$filepath.'.js', array('jquery'), '2.3.1', true );
 		}
 		$stylefile = ['codentor-css/prism-default', 'codentor-css/prism-coy', 'codentor-css/prism-dark', 'codentor-css/prism-funky', 'codentor-css/prism-okaidia', 'codentor-css/prism-solarized-light', 'codentor-css/solarized-dark-atom', 'codentor-css/prism-tomorrow-night', 'codentor-css/prism-twilight', 'codentor-css/prism-toolbar', 'codentor-css/cold-dark', 'codentor-css/colddark-dark', 'codentor-css/z-touch', 'codentor-css/zonokai-theme', 'codentor-css/vs-theme', 'codentor-css/nord-theme', 'codentor-css/holy-theme', 'codentor-css/laserwave-theme', 'codentor-css/lucario-theme', 'codentor-css/night-owl', 'codentor-css/atom-dark', 'codentor-css/dracula-theme', 'codentor-css/duotone-forest', 'codentor-css/duotone-dark', 'codentor-css/duotone-earth', 'codentor-css/duotone-light', 'codentor-css/duotone-sea', 'codentor-css/duotone-space', 'codentor-css/gruvbox-dark', 'codentor-css/gruvbox-light', 'codentor-css/ghcolors-theme', 'codentor-css/pojoaque', 'codentor-css/shades-of-purple', 'codentor-css/synthwave', 'codentor-css/a11y-dark-theme', 'codentor-css/material-dark', 'codentor-css/material-light', 'codentor-css/material-oceanic', 'bwdeb_style', 'bwdeb-main', 'bwdeb-animate.min', 'bwdeb-main2', 'bwdeb-owl.carousel.min', 'bwdeb-owl.theme.default.min', 'bwdeb-owl.carousel.min2', 'bwdeb-owl.theme.default.min2', 'bwdeb-style', 'bwdeb-unfold-content', 'info-downld-btn-animate.min', 'info-downld-btn-style', 'bwdeb-main4', 'bwdeb-swiper-bundle.min', 'bwdeb-style2', 'bwdeb-loader', 'bwdeb-loader.min', 'bwdeb_style2', 'bwdeb_style3', 'bwdeb_main', 'bootstrap.min', 'bwdeb-team-main', 'bwdeb_main', 'bwdeb.carousel.min', 'bwdeb.theme.default.min', 'bwdeb-main8', 'creative-buttons', 'bwdeb-masking', 'style', 'flip-style', 'creative-list-style', 'bwdeb-heading', 'icon-box-style', 'dual-buttons', 'main', 'swiper-bundle.min', 'animate.min', 'animated-heading-style', 'animated-link', 'step-style', 'blockquote', 'businesshours', 'calltoaction', 'countdown', 'counter', 'coupon', 'filterable-gallery-popup', 'filterable-gallery', 'imgaccordion', 'imgcompare', 'clicktocontact', 'imagehover', 'imgscroll', 'image-shape', 'imgswap', 'price-table', 'progressbar', 'timeline', 'social-icon', 'tab', 'webinar', 'search_style', 'header_social_icon', 'header-top', 'header', 'owl.carousel.min', 'owl.theme.default.min', 'photo-stack', 'imsgroup', 'ihover', 'video-popup', 'profile-card', 'bwdeb-team-main2', 'bwdeb-bttop', 'masking-video', 'bwdeb-swiper', 'bwdeb-masking2', 'author-bio', 'fancy-heading', 'data-table', 'bwdeb-main6', 'post-image-accordion', 'post-list', 'post-tiles', 'post-grid', 'bwdeb.carousel.min2', 'bwdeb.theme.default.min2', 'post-carousel', 'bwdeb-style3', 'bwdeb-owl.carousel.min3', 'post-masonary', 'bwdeb_css', 'bwdeb-imgaccordion', 'bwdeb_css2', 'bwdeb.carousel.min3', 'bwdeb.theme.default.min3', 'bwdeb-product', 'bwdeb_css3', 'bwdeb-tilescat', 'product-list', 'bwdeb.carousel.min4', 'bwdeb.theme.default.min4', 'wooprogridcaro', 'bwdeb-caro', 'bwdeb.carousel.min5', 'bwdeb.theme.default.min5', 'wprodcatgrid', 'bwdeb-main7', 'product-timeline', 'cmn', 'ajax-DataTable/datatables.min', 'ajax-DataTable/main', 'ajax-DataTable/responsive.dataTables.min'];
 		foreach($stylefile as $filepath){
-			wp_enqueue_style( 'bwdeb-'.$filepath, plugin_dir_url( __FILE__ ) . 'assets/public/css/'.$filepath.'.css', null, '2.3.0', 'all' );
+			wp_enqueue_style( 'bwdeb-'.$filepath, plugin_dir_url( __FILE__ ) . 'assets/public/css/'.$filepath.'.css', null, '2.3.1', 'all' );
 		}
 	}
 	public function bwdeb_all_assets_for_elementor_editor_admin(){
@@ -430,18 +430,18 @@ class BWDEBClassElementorBundle {
 			'admin-icon-style' => array('bwdeb_path_admin_define'=>BWDEB_ASFSK_ASSETS_ADMIN_DIR_FILE . '/css/icon.css'),
 		);
 		foreach($all_css_js_file as $handle => $fileinfo){
-      wp_enqueue_style( $handle, $fileinfo['bwdeb_path_admin_define'], null, '2.3.0', 'all');
+      wp_enqueue_style( $handle, $fileinfo['bwdeb_path_admin_define'], null, '2.3.1', 'all');
 		}
 	}
 
 	public function bwdeb_all_assets_for_dashboard_admin(){
 		$adCsAss = ['css/admin-basic', 'dashboard/style'];
 		foreach($adCsAss as $pathCs){
-			wp_enqueue_style( 'bwdeb-'.$pathCs,  plugin_dir_url( __FILE__ ) . 'assets/admin/'.$pathCs.'.css', null, '2.3.0', 'all' );
+			wp_enqueue_style( 'bwdeb-'.$pathCs,  plugin_dir_url( __FILE__ ) . 'assets/admin/'.$pathCs.'.css', null, '2.3.1', 'all' );
 		}
 		$adJsAss = ['dashboard/main', 'dashboard/widgets-cnt', 'js/checkbox-status'];
 		foreach($adJsAss as $pathJs){
-			wp_enqueue_script( 'bwdeb-'.$pathJs,  plugin_dir_url( __FILE__ ) . 'assets/admin/'.$pathJs.'.js', ['jquery'], '2.3.0', true );
+			wp_enqueue_script( 'bwdeb-'.$pathJs,  plugin_dir_url( __FILE__ ) . 'assets/admin/'.$pathJs.'.js', ['jquery'], '2.3.1', true );
 		}
 	}
 
