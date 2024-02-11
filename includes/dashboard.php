@@ -7,7 +7,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
  */
 	// Added  the all filed here
 	add_settings_field(
-		'bwdeb-check-meet-the-team-widget',
+		'bwdeb-plugin-meet-the-team',
 		'',
 		'bwdeb_plugin_function_for_datas_callback',
 		'bwdeb-plugin-main-menu',
@@ -63,7 +63,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 		'bwdeb-plugin-switch-section'
 	);
 	add_settings_field(
-		'bwdeb-plugin-bwd-flip-box-carousel',
+		'bwdeb-plugin-flip-box-carousel',
 		'',
 		'bwdeb_plugin_function_for_datas_callback',
 		'bwdeb-plugin-main-menu',
@@ -1127,7 +1127,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
   // Registered the add switch control here
 	register_setting( 
 		'bwdeb-plugin-settings', 
-		'bwdeb-check-meet-the-team-widget' 
+		'bwdeb-plugin-meet-the-team' 
 	);
 	register_setting( 
 		'bwdeb-plugin-settings', 
@@ -1159,7 +1159,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 	);
 	register_setting( 
 		'bwdeb-plugin-settings', 
-		'bwdeb-plugin-bwd-flip-box-carousel' 
+		'bwdeb-plugin-flip-box-carousel' 
 	);
 	register_setting( 
 		'bwdeb-plugin-settings', 
