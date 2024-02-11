@@ -376,7 +376,7 @@ $String_of_free_pro = esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_
 														echo '<div class="bwd-widget-cat-count">'.$all_T[5].'</div>';
 														echo '<div class="bwd-widget-item-wrapper">';
 															// For pro
-															$extentions = array('extn-tooltip' => 'bwdeb-extn-tooltip', 'extn-link' => 'bwdeb-extn-link', 'extn-protctn' => 'bwdeb-extn-protctn', 'CSS-Transform' => 'bwdeb-csstrnsm', 'Floating-Animation' => 'bwdeb-flanime');
+															$extentions = array('text-tooltip' => 'bwdeb-extn-tooltip', 'wrap-link' => 'bwdeb-extn-link', 'Content-Protection' => 'bwdeb-extn-protctn', 'CSS-Transform' => 'bwdeb-csstrnsm', 'Floating-Animation' => 'bwdeb-flanime');
 															foreach ($extentions as $key => $value):
 															$value_CH = (checked( get_option($value, 'off' ), 'on', false ))?esc_attr('active'):'';
 															echo '<div class="bwd-sk-cmn '.$if_no_pro.' '.$value_CH.'">';
