@@ -387,7 +387,7 @@ $String_of_free_pro = esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_
 														echo '<div class="bwd-widget-cat-count">'.$all_T[5].'</div>';
 														echo '<div class="bwd-widget-item-wrapper">';
 															// For pro
-															$extentions = array('text-tooltip' => 'bwdeb-extn-tooltip', 'wrap-link' => 'bwdeb-extn-link', 'Content-Protection' => 'bwdeb-extn-protctn', 'CSS-Transform' => 'bwdeb-csstrnsm', 'Floating-Animation' => 'bwdeb-flanime', 'duplicate' => 'bwdeb-duplicate');
+															$extentions = array('text-tooltip' => 'bwdeb-extn-tooltip', 'wrap-link' => 'bwdeb-extn-link', 'Content-Protection' => 'bwdeb-extn-protctn', 'CSS-Transform' => 'bwdeb-csstrnsm', 'Floating-Animation' => 'bwdeb-flanime', 'duplicate' => 'bwdeb-duplicate','3D-Text' => 'bwdeb-3d-text');
 															foreach ($extentions as $key => $value):
 															$value_CH = (checked( get_option($value, 'off' ), 'on', false ))?esc_attr('active'):'';
 															echo '<div class="bwd-sk-cmn '.$if_no_pro.' '.$value_CH.'">';
@@ -397,7 +397,7 @@ $String_of_free_pro = esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_
 																	echo '<p class="bwd-widget-title">'.esc_html__(ucwords(str_replace('-', ' ', $key)), 'bwd-elementor-addons').'</p>';
 																	echo '<span class="bwd-view-demo">'.esc_html__('View Documentation', 'bwd-elementor-addons').'</span>';
 																echo '</a>';
-																echo '<a href="https://bestwpdeveloper.com/'.$key.'" class="bwd-demo-link" target="_blank">';
+																echo '<a href="https://bestwpdeveloper.com/elementor-extensions" class="bwd-demo-link" target="_blank">';
 																	echo '<img src="'.esc_url(plugin_dir_url( __FILE__ ).'../assets/admin/dashboard/img/linking.png').'" alt="'.esc_attr('View Demo').'">';
 																	echo '<span class="bwd-view-demo">'.esc_html__('View Demo', 'bwd-elementor-addons').'</span>';
 																echo '</a>';

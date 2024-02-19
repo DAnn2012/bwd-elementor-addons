@@ -3,20 +3,20 @@
  * Plugin Name: BWD Elementor Addons
  * Description: BWD Elementor Addons is a plugin built on the Elementor page builder platform. It includes several widgets that can be used to create custom designs for your website. One of the main features of the plugin is the variety of preset designs available, which can save time and simplify the design process. Overall, the plugin aims to enhance the functionality and design capabilities of the Elementor page builder.
  * Plugin URI:  https://bestwpdeveloper.com/bwd-elementor-addons/
- * Version:     2.4.5
+ * Version:     2.5.5
  * Author:      Best WP Developer
  * Author URI:  https://bestwpdeveloper.com/
  * Text Domain: bwd-elementor-addons
- * Elementor tested up to: 3.0.0
- * Elementor Pro tested up to: 3.0.0
+ * Elementor tested up to: 3.19.2
+ * Elementor Pro tested up to: 3.19.2
  * Domain Path: /languages
  */
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 require_once ( plugin_dir_path(__FILE__) ) . '/includes/requires-check.php';
 final class BWDEBElementorBundle {
-	const VERSION = '2.4.5';
-	const MINIMUM_ELEMENTOR_VERSION = '3.0.0';
+	const VERSION = '2.5.5';
+	const MINIMUM_ELEMENTOR_VERSION = '3.19.2';
 	const MINIMUM_PHP_VERSION = '7.0';
 	public function __construct() {
 		add_filter( 'plugin_action_links', [$this, 'bwdeb_settings_plugin_action_link'], 10, 2 );
