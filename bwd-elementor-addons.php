@@ -3,7 +3,7 @@
  * Plugin Name: BWD Elementor Addons
  * Description: BWD Elementor Addons is a plugin built on the Elementor page builder platform. It includes several widgets that can be used to create custom designs for your website. One of the main features of the plugin is the variety of preset designs available, which can save time and simplify the design process. Overall, the plugin aims to enhance the functionality and design capabilities of the Elementor page builder.
  * Plugin URI:  https://bestwpdeveloper.com/bwd-elementor-addons/
- * Version:     2.5.6
+ * Version:     2.6.6
  * Author:      Best WP Developer
  * Author URI:  https://bestwpdeveloper.com/
  * Text Domain: bwd-elementor-addons
@@ -15,7 +15,7 @@
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 require_once ( plugin_dir_path(__FILE__) ) . '/includes/requires-check.php';
 final class BWDEBElementorBundle {
-	const VERSION = '2.5.6';
+	const VERSION = '2.6.6';
 	const MINIMUM_ELEMENTOR_VERSION = '3.19.2';
 	const MINIMUM_PHP_VERSION = '7.0';
 	public function __construct() {
@@ -62,24 +62,6 @@ final class BWDEBElementorBundle {
 		require_once( 'bwdeb-boots.php' );
 	}
 
-	public function bwdeb_admin_notice_minimum_elementor_version() {
-		if (isset($_GET['activate'])) {
-			unset($_GET['activate']);
-		}
-	
-		$message = sprintf(
-			esc_html__('%1$s requires %2$s version %3$s or greater.', 'bwd-elementor-addons'),
-			'<strong>' . esc_html__('BWD Elementor Addons', 'bwd-elementor-addons') . '</strong>',
-			'<strong>' . esc_html__('Elementor', 'bwd-elementor-addons') . '</strong>',
-			self::MINIMUM_ELEMENTOR_VERSION
-		);
-	
-		printf(
-			'<div class="notice notice-warning is-dismissible"><p>%1$s</p></div>',
-			esc_html($message)
-		);
-	}
-	
 	public function bwdeb_admin_notice_minimum_php_version() {
 		if (isset($_GET['activate'])) {
 			unset($_GET['activate']);
