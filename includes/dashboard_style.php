@@ -75,7 +75,7 @@ $String_of_free_pro = esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_
 												echo '<div id="tab1" class="tab-content active">';
 														echo '<div class="bwd-cont-main-wrap">';
 																echo '<div class="bwd-tab-banner-wrap">';
-																	echo '<h2 class="bwd-banner-title">'.esc_html__('BWD Addons For Elementor', 'bwd-elementor-addons').'</h2>';
+																	echo '<h2 class="bwd-banner-title">'.esc_html__('BWD Elementor Addons For Elementor', 'bwd-elementor-addons').'</h2>';
 																	$get_link = (class_exists( 'ProbwdelementorBundle' ))?'https://bestwpdeveloper.com/support':'https://bestwpdeveloper.com/pricing';
 																	$get_name = (class_exists( 'ProbwdelementorBundle' ))?esc_html__('Get Support', 'bwd-elementor-addons'):esc_html__('Get Our Offers', 'bwd-elementor-addons');
 																	echo '<a href="'.$get_link.'" target="_blank">'.$get_name.'</a>';
@@ -86,7 +86,7 @@ $String_of_free_pro = esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_
 																			[
 																				'img' => 'contribution.png',
 																				'name' => 'Request a Features',
-																				'dsc' => 'Please feel free to give any suggestions to include any features about BWD Addons for Elementor.',
+																				'dsc' => 'Please feel free to give any suggestions to include any features about BWD Elementor Addons for Elementor.',
 																				'link' => 'https://bestwpdeveloper.com/request-a-feature',
 																				'golink' => 'Request Features',
 																			],
@@ -100,14 +100,14 @@ $String_of_free_pro = esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_
 																			[
 																				'img' => 'customer-support.png',
 																				'name' => 'Customer Support',
-																				'dsc' => 'Bwd addon offers a reliable customer support service to assist users with any queries or problems they may encounter, ensuring their satisfaction with the product.',
+																				'dsc' => 'BWD Elementor Addons offers a reliable customer support service to assist users with any queries or problems they may encounter, ensuring their satisfaction with the product.',
 																				'link' => $support_link,
 																				'golink' => 'Get Support',
 																			],
 																			[
 																				'img' => 'favorite.png',
 																				'name' => 'Show your Love',
-																				'dsc' => 'We are continiously working to make "BWD Addons" better, everyday. Your kind feedback will surely encourage us to move forward with the development.',
+																				'dsc' => 'We are continiously working to make "BWD Elementor Addons" better, everyday. Your kind feedback will surely encourage us to move forward with the development.',
 																				'link' => 'https://wordpress.org/plugins/plugin/bwd-elementor-addons/#reviews',
 																				'golink' => 'Leave a Review',
 																			]
@@ -387,7 +387,7 @@ $String_of_free_pro = esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_
 														echo '<div class="bwd-widget-cat-count">'.$all_T[5].'</div>';
 														echo '<div class="bwd-widget-item-wrapper">';
 															// For pro
-															$extentions = array('text-tooltip' => 'bwdeb-extn-tooltip', 'wrap-link' => 'bwdeb-extn-link', 'Content-Protection' => 'bwdeb-extn-protctn', 'CSS-Transform' => 'bwdeb-csstrnsm', 'Floating-Animation' => 'bwdeb-flanime', 'duplicate' => 'bwdeb-duplicate','3D-Text' => 'bwdeb-3d-text','notation' => 'bwdeb-notation','confetti-effects' => 'bwdeb-confetti-effects','cursor-effects' => 'bwdeb-cursor-effects','reveal-effects' => 'bwdeb-reveal-effects');
+															$extentions = array('text-tooltip' => 'bwdeb-extn-tooltip', 'wrap-link' => 'bwdeb-extn-link', 'Content-Protection' => 'bwdeb-extn-protctn', 'CSS-Transform' => 'bwdeb-csstrnsm', 'Floating-Animation' => 'bwdeb-flanime', 'duplicate' => 'bwdeb-duplicate','3D-Text' => 'bwdeb-3d-text','notation' => 'bwdeb-notation','confetti-effects' => 'bwdeb-confetti-effects','cursor-effects' => 'bwdeb-cursor-effects','reveal-effects' => 'bwdeb-reveal-effects','tile-scroll' => 'bwdeb-tile-scroll');
 															foreach ($extentions as $key => $value):
 															$value_CH = (checked( get_option($value, 'off' ), 'on', false ))?esc_attr('active'):'';
 															echo '<div class="bwd-sk-cmn '.$if_no_pro.' '.$value_CH.'">';

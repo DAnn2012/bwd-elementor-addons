@@ -1165,6 +1165,13 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 		'bwdeb-plugin-main-menu',
 		'bwdeb-plugin-switch-section'
 	);
+	add_settings_field(
+		'bwdeb-tile-scroll',
+		'',
+		'bwdeb_plugin_function_for_datas_callback',
+		'bwdeb-plugin-main-menu',
+		'bwdeb-plugin-switch-section'
+	);
   
   // Registered the add switch control here
 	register_setting( 
@@ -1827,4 +1834,8 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 	register_setting( 
 		'bwdeb-plugin-settings', 
 		'bwdeb-reveal-effects' 
+	);
+	register_setting( 
+		'bwdeb-plugin-settings', 
+		'bwdeb-tile-scroll' 
 	);

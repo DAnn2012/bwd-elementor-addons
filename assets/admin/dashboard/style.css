@@ -530,7 +530,7 @@ input:checked + .bwd-slider.active:before {
     clip-path: polygon(50% 100%, 0 0, 100% 0);
 }
 .bwd-demo-link:hover .bwd-view-demo{
-    top: -15px;
+    top: 1px;
     opacity: 1;
     visibility: visible;
 }
