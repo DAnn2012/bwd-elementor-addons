@@ -16,7 +16,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 require_once ( plugin_dir_path(__FILE__) ) . '/includes/requires-check.php';
 final class BWDEBElementorBundle {
 	const VERSION = '2.6.7';
-	const MINIMUM_ELEMENTOR_VERSION = '3.19.2';
+	const MINIMUM_ELEMENTOR_VERSION = '3.0.0';
 	const MINIMUM_PHP_VERSION = '7.0';
 	public function __construct() {
 		add_filter( 'plugin_action_links', [$this, 'bwdeb_settings_plugin_action_link'], 10, 2 );
