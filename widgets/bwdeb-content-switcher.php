@@ -1189,7 +1189,7 @@ class BWDEB_BWDCSContentSwitcher extends \Elementor\Widget_Base {
                                 <div class="col-lg-12">
                                     <div class="bwdcs-switcher-content-item row <?php echo esc_attr($bwdcs_column_gap); ?>">
 										<?php if('bwdcs_saved_primary_section' === $settings['bwdcs_primary_content_type']){
-											echo bwdcs_my_plugin()->frontend->get_builder_content_for_display( esc_html($settings['bwdcs_primary_saved_section']) ); 
+											echo bwdeb_bwdcs_my_plugin()->frontend->get_builder_content_for_display( esc_html($settings['bwdcs_primary_saved_section']) ); 
 										}elseif('bwdcs_switcher_primary_repeater_list' === $settings['bwdcs_primary_content_type']){ ?>
 											<?php   
 												if( $bwdcs_primary ) {
@@ -1230,7 +1230,7 @@ class BWDEB_BWDCSContentSwitcher extends \Elementor\Widget_Base {
                                 <div class="col-lg-12">
                                     <div class="bwdcs-switcher-content-wrraper row <?php echo esc_attr($bwdcs_column_gap); ?>">
 										<?php if('saved_secondary_section' === $settings['bwdcs_secondary_content_type']){
-											echo bwdcs_my_plugin()->frontend->get_builder_content_for_display( esc_html($settings['bwdcs_secondary_saved_section']) ); 
+											echo bwdeb_bwdcs_my_plugin()->frontend->get_builder_content_for_display( esc_html($settings['bwdcs_secondary_saved_section']) ); 
 										}elseif('bwdcs_switcher_secondary_repeater_list' === $settings['bwdcs_secondary_content_type']){ ?>
 											<?php   
 												if( $bwdcs_secondary ) {
@@ -1296,7 +1296,7 @@ class BWDEB_BWDCSContentSwitcher extends \Elementor\Widget_Base {
                                 <div class="col-lg-12">
                                     <div class="bwdcs-switcher-content-item row <?php echo esc_attr($bwdcs_column_gap); ?>">
 										<?php if('bwdcs_saved_primary_section' === $settings['bwdcs_primary_content_type']){
-											echo bwdcs_my_plugin()->frontend->get_builder_content_for_display( esc_html($settings['bwdcs_primary_saved_section']) ); 
+											echo bwdeb_bwdcs_my_plugin()->frontend->get_builder_content_for_display( esc_html($settings['bwdcs_primary_saved_section']) ); 
 										}elseif('bwdcs_switcher_primary_repeater_list' === $settings['bwdcs_primary_content_type']){ ?>
 											<?php   
 												if( $bwdcs_primary ) {
@@ -1337,7 +1337,7 @@ class BWDEB_BWDCSContentSwitcher extends \Elementor\Widget_Base {
                                 <div class="col-lg-12">
                                     <div class="bwdcs-switcher-content-wrraper row <?php echo esc_attr($bwdcs_column_gap); ?>">
 										<?php if('saved_secondary_section' === $settings['bwdcs_secondary_content_type']){
-											echo bwdcs_my_plugin()->frontend->get_builder_content_for_display( esc_html($settings['bwdcs_secondary_saved_section']) ); 
+											echo bwdeb_bwdcs_my_plugin()->frontend->get_builder_content_for_display( esc_html($settings['bwdcs_secondary_saved_section']) ); 
 										}elseif('bwdcs_switcher_secondary_repeater_list' === $settings['bwdcs_secondary_content_type']){ ?>
 											<?php   
 												if( $bwdcs_secondary ) {

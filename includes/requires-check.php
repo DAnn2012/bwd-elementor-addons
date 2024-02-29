@@ -78,3 +78,8 @@ function bwdeb_addon_install() {
 	$installed_plugins = get_plugins();
 	return isset($installed_plugins[$file_path]);
 }
+
+// For content switcher
+function bwdeb_bwdcs_my_plugin() {
+	return \Elementor\Plugin::instance();
+}

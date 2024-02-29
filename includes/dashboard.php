@@ -1172,6 +1172,27 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 		'bwdeb-plugin-main-menu',
 		'bwdeb-plugin-switch-section'
 	);
+	add_settings_field(
+		'bwdeb-section-sticky',
+		'',
+		'bwdeb_plugin_function_for_datas_callback',
+		'bwdeb-plugin-main-menu',
+		'bwdeb-plugin-switch-section'
+	);
+	add_settings_field(
+		'bwdeb-scroll-box',
+		'',
+		'bwdeb_plugin_function_for_datas_callback',
+		'bwdeb-plugin-main-menu',
+		'bwdeb-plugin-switch-section'
+	);
+	add_settings_field(
+		'bwdeb-background-particles',
+		'',
+		'bwdeb_plugin_function_for_datas_callback',
+		'bwdeb-plugin-main-menu',
+		'bwdeb-plugin-switch-section'
+	);
   
   // Registered the add switch control here
 	register_setting( 
@@ -1838,4 +1859,16 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 	register_setting( 
 		'bwdeb-plugin-settings', 
 		'bwdeb-tile-scroll' 
+	);
+	register_setting( 
+		'bwdeb-plugin-settings', 
+		'bwdeb-section-sticky' 
+	);
+	register_setting( 
+		'bwdeb-plugin-settings', 
+		'bwdeb-scroll-box' 
+	);
+	register_setting( 
+		'bwdeb-plugin-settings', 
+		'bwdeb-background-particles' 
 	);
