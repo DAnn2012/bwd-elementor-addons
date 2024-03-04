@@ -555,13 +555,6 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 		'bwdeb-plugin-switch-section'
 	);
 	add_settings_field(
-		'bwdeb-plugin-nft',
-		'',
-		'bwdeb_plugin_function_for_datas_callback',
-		'bwdeb-plugin-main-menu',
-		'bwdeb-plugin-switch-section'
-	);
-	add_settings_field(
 		'bwdeb-plugin-offcanvasmagic',
 		'',
 		'bwdeb_plugin_function_for_datas_callback',
@@ -1193,6 +1186,27 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 		'bwdeb-plugin-main-menu',
 		'bwdeb-plugin-switch-section'
 	);
+	add_settings_field(
+		'bwdeb-xd-copy',
+		'',
+		'bwdeb_plugin_function_for_datas_callback',
+		'bwdeb-plugin-main-menu',
+		'bwdeb-plugin-switch-section'
+	);
+	add_settings_field(
+		'bwdeb-custom-jscss',
+		'',
+		'bwdeb_plugin_function_for_datas_callback',
+		'bwdeb-plugin-main-menu',
+		'bwdeb-plugin-switch-section'
+	);
+	add_settings_field(
+		'bwdeb-section-parallax',
+		'',
+		'bwdeb_plugin_function_for_datas_callback',
+		'bwdeb-plugin-main-menu',
+		'bwdeb-plugin-switch-section'
+	);
   
   // Registered the add switch control here
 	register_setting( 
@@ -1506,10 +1520,6 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 	register_setting( 
 		'bwdeb-plugin-settings', 
 		'bwdeb-plugin-modern-feature-list' 
-	);
-	register_setting( 
-		'bwdeb-plugin-settings', 
-		'bwdeb-plugin-nft' 
 	);
 	register_setting( 
 		'bwdeb-plugin-settings', 
@@ -1871,4 +1881,16 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 	register_setting( 
 		'bwdeb-plugin-settings', 
 		'bwdeb-background-particles' 
+	);
+	register_setting( 
+		'bwdeb-plugin-settings', 
+		'bwdeb-xd-copy' 
+	);
+	register_setting( 
+		'bwdeb-plugin-settings', 
+		'bwdeb-custom-jscss' 
+	);
+	register_setting( 
+		'bwdeb-plugin-settings', 
+		'bwdeb-section-parallax' 
 	);
