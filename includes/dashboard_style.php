@@ -55,7 +55,7 @@ $String_of_free_pro = esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_
 												echo '</div>';
 												if(class_exists( 'ProbwdelementorBundle' )):
 												$license_btn = '<div class="pro-license-btn">';
-													$license_btn .= '<a href="'.esc_url(admin_url( 'admin.php?page=bwd_elementor_addons_pro_settings' )).'">';
+													$license_btn .= '<a href="'.esc_url(admin_url( 'admin.php?page=bwdproeb-license-settings' )).'">';
 														$license_btn .= '<img src="'.esc_url(plugin_dir_url( __FILE__ ).'../assets/admin/dashboard/img/key.svg').'" style="fill: white;" alt="'.esc_attr('Go License').'">';
 														$license_btn .= '<span>'.esc_html__('Go License', 'bwd-elementor-addons').'</span>';
 													$license_btn .= '</a>';
@@ -75,7 +75,7 @@ $String_of_free_pro = esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_
 												echo '<div id="tab1" class="tab-content active">';
 														echo '<div class="bwd-cont-main-wrap">';
 																echo '<div class="bwd-tab-banner-wrap">';
-																	echo '<h2 class="bwd-banner-title">'.esc_html__('BWD Elementor Addons For Elementor', 'bwd-elementor-addons').'</h2>';
+																	echo '<h2 class="bwd-banner-title">'.esc_html__('BWD Elementor Addons', 'bwd-elementor-addons').'</h2>';
 																	$get_link = (class_exists( 'ProbwdelementorBundle' ))?'https://bestwpdeveloper.com/support':'https://bestwpdeveloper.com/pricing';
 																	$get_name = (class_exists( 'ProbwdelementorBundle' ))?esc_html__('Get Support', 'bwd-elementor-addons'):esc_html__('Get Our Offers', 'bwd-elementor-addons');
 																	echo '<a href="'.$get_link.'" target="_blank">'.$get_name.'</a>';
@@ -387,7 +387,7 @@ $String_of_free_pro = esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_
 														echo '<div class="bwd-widget-cat-count">'.$all_T[5].'</div>';
 														echo '<div class="bwd-widget-item-wrapper">';
 															// For pro
-															$extentions = array('text-tooltip' => 'bwdeb-extn-tooltip', 'wrap-link' => 'bwdeb-extn-link', 'Content-Protection' => 'bwdeb-extn-protctn', 'CSS-Transform' => 'bwdeb-csstrnsm', 'Floating-Animation' => 'bwdeb-flanime', 'duplicate' => 'bwdeb-duplicate','3D-Text' => 'bwdeb-3d-text','notation' => 'bwdeb-notation','confetti-effects' => 'bwdeb-confetti-effects','cursor-effects' => 'bwdeb-cursor-effects','reveal-effects' => 'bwdeb-reveal-effects','tile-scroll' => 'bwdeb-tile-scroll','section-sticky' => 'bwdeb-section-sticky','scroll-box' => 'bwdeb-scroll-box','background-particles'=>'bwdeb-background-particles','Cross-Domain'=>'bwdeb-xd-copy','custom-JS-&-CSS'=>'bwdeb-custom-jscss','background-parallax'=>'bwdeb-section-parallax','gradiant-animation-background'=>'bwdeb-gra-anim-bg','backdrop-filter'=>'bwdeb-backdrop-filter','line-grid'=>'bwdeb-line-grid','cursor-img-parallax'=>'bwdeb-cursor-img-parallax');
+															$extentions = array('text-tooltip' => 'bwdeb-extn-tooltip', 'wrap-link' => 'bwdeb-extn-link', 'Content-Protection' => 'bwdeb-extn-protctn', 'CSS-Transform' => 'bwdeb-csstrnsm', 'Floating-Animation' => 'bwdeb-flanime', 'duplicate' => 'bwdeb-duplicate','3D-Text' => 'bwdeb-3d-text','notation' => 'bwdeb-notation','confetti-effects' => 'bwdeb-confetti-effects','cursor-effects' => 'bwdeb-cursor-effects','reveal-effects' => 'bwdeb-reveal-effects','tile-scroll' => 'bwdeb-tile-scroll','section-sticky' => 'bwdeb-section-sticky','scroll-box' => 'bwdeb-scroll-box','background-particles'=>'bwdeb-background-particles','Cross-Domain'=>'bwdeb-xd-copy','custom-JS-&-CSS'=>'bwdeb-custom-jscss','background-parallax'=>'bwdeb-section-parallax','gradiant-animation-BG'=>'bwdeb-gra-anim-bg','backdrop-filter'=>'bwdeb-backdrop-filter','line-grid'=>'bwdeb-line-grid','cursor-img-parallax'=>'bwdeb-cursor-img-parallax');
 															foreach ($extentions as $key => $value):
 															$value_CH = (checked( get_option($value, 'off' ), 'on', false ))?esc_attr('active'):'';
 															echo '<div class="bwd-sk-cmn '.$if_no_pro.' '.$value_CH.'">';

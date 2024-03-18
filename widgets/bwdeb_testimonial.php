@@ -633,7 +633,7 @@ class BWDEB_TBTTheBestTestimonials extends Widget_Base {
 						'tbt_total_box_title' => esc_html__( 'Testimonial #4', 'bwd-elementor-addons' ),
 					],
 				],
-				'title_field' => `{{{ tbt_total_box_title }}}`,
+				'title_field' => '{{{ tbt_total_box_title }}}',
 			]
 		);
 		$this->end_controls_section();
