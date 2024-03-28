@@ -523,5 +523,3 @@ class BWDEB_BWDAHAnimatedHeadingWidget extends Widget_Base {
 	}
 	}
 }
-?>
-

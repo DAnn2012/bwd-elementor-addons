@@ -515,5 +515,4 @@ class BWDEB_BWDVPVideoPopupWidget extends Widget_Base {
 	}
 	}
 }
-?>
 
