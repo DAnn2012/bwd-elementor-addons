@@ -24,8 +24,6 @@ class BWDEB_WOOFPTProducts extends Widget_Base {
 		return [ 'bwdeb_woocommerce_category' ];
 	}
 
-
-
 	protected function register_controls() {
 		$this->start_controls_section(
 			'woofpt_products_content_section',

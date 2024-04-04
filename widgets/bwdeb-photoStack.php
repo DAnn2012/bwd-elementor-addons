@@ -902,10 +902,9 @@ class BWDEB_bwdps_photostack extends Widget_Base {
 		}
 
 		if( 'style1' == $bwdps_style_selection || 'style2' == $bwdps_style_selection ) {
-		if( 'style1' === $bwdps_style_selection ) { ?>
-			<div class="bwdps_photo_stack_1 bwdps_photostack_alignment">
-				<div class="bwdps_photo_stack_wrap">
-					<?php
+		if( 'style1' === $bwdps_style_selection ) {
+			echo '<div class="bwdps_photo_stack_1 bwdps_photostack_alignment">';
+				echo '<div class="bwdps_photo_stack_wrap">';
 					if ( $settings['bwdps-photostack-section'] ) {
 						foreach (  $settings['bwdps-photostack-section'] as $item ) {
 					?>
@@ -919,10 +918,9 @@ class BWDEB_bwdps_photostack extends Widget_Base {
 				</div>
 			</div>
 			<?php
-		} elseif( 'style2' === $bwdps_style_selection ) { ?>
-			<div class="bwdps_photo_stack_2 bwdps_photostack_alignment">
-				<div class="bwdps_photo_stack_wrap">
-				<?php
+		} elseif( 'style2' === $bwdps_style_selection ) {
+			echo '<div class="bwdps_photo_stack_2 bwdps_photostack_alignment">';
+				echo '<div class="bwdps_photo_stack_wrap">';
 					if ( $settings['bwdps-photostack-three-section'] ) {
 						foreach (  $settings['bwdps-photostack-three-section'] as $item ) {
 				?>

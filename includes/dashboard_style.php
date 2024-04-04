@@ -426,7 +426,7 @@ $String_of_free_pro = esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_
 		echo '</form>';
 		if ( isset( $_GET['settings-updated'] ) && $_GET['settings-updated'] ) {
 			echo '<div id="bwdeb-save-notice" class="notice notice-success is-dismissible">';
-				echo '<p>'.esc_html__('Settings saved successfully!', 'bwd-elementor-addons' ).'</p>';
+				echo '<p>'.esc_html__('Settings saved successfully!!', 'bwd-elementor-addons' ).'</p>';
 			echo '</div>';
 		}
 	echo '</div>';
