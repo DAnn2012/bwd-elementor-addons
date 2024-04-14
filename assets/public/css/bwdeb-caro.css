@@ -26,10 +26,10 @@
    display: flex;
    text-decoration: line-through;
 }
-.woocommerce-Price-amount bdi {
+.bwdcrtplst-slider-common .woocommerce-Price-amount bdi {
    display: flex;
 }
-.woocommerce-Price-amount {
+.bwdcrtplst-slider-common .woocommerce-Price-amount {
    padding: 0;
 }
 .bwdcrtplst_desce {
