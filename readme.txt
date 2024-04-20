@@ -4,7 +4,7 @@ Donate link: http://bestwpdeveloper.com/
 Tags: addons, elementor, elementor addons, elementor widget, elements
 Requires at least: 5.0
 Tested up to: 6.3
-Stable tag: 3.2.5
+Stable tag: 3.2.6
 Requires PHP: 5.6
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -291,6 +291,8 @@ Thank you for your continued support!
 ++ 3.2.4
 ++ Just updated css
 ++ 3.2.5
+++ Added a product compare widget
+++ 3.2.6
 
 == Installation ==
 Installation is fairly straightforward. Install it from the WordPress plugin repository.

@@ -1047,6 +1047,13 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 		'bwdeb-plugin-switch-section'
 	);
 	add_settings_field(
+		'bwdeb-plugin-product-compare',
+		'',
+		'bwdeb_plugin_function_for_datas_callback',
+		'bwdeb-plugin-main-menu',
+		'bwdeb-plugin-switch-section'
+	);
+	add_settings_field(
 		'bwdeb-plugin-woo-cat-gallery',
 		'',
 		'bwdeb_plugin_function_for_datas_callback',
@@ -1836,6 +1843,10 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 	register_setting( 
 		'bwdeb-plugin-settings', 
 		'bwdeb-plugin-featured-product' 
+	);
+	register_setting( 
+		'bwdeb-plugin-settings', 
+		'bwdeb-plugin-product-compare' 
 	);
 	register_setting( 
 		'bwdeb-plugin-settings', 
