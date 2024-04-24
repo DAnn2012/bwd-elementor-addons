@@ -352,7 +352,7 @@ a {
     justify-content: space-between;
     position: relative;
     transition: .3s ease;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 .bwd-single-widget-item.active:has(.bwd-slider.active), .bwd-single-widget-if-no-pro:has(.bwd-slider.active){
     background: #f1edff;
@@ -582,7 +582,47 @@ h2.bwdeb-the-top-title{
     font-size: 3em;
     margin: 1.67em 0;
 }
-
+.bwdeb-promo-box::before,
+.bwdeb-call-to-action::before,
+.bwdeb-image-hover-effect::before,
+.bwdeb-blockquote::before,
+.bwdeb-webinar-info::before,
+.bwdeb-logo-filter::before,
+.bwdeb-coupon-code::before,
+.bwdeb-click-to-contact::before,
+.bwdeb-news-ticker::before,
+.bwdeb-post-timeline::before,
+.bwdeb-info-download-button::before,
+.bwdeb-plugin-honeycombs::before,
+.bwdeb-plugin-slide-anything::before,
+.bwdeb-plugin-img-unfold-kit::before,
+.bwdeb-plugin-progress-master-kit::before,
+.bwdeb-plugin-restaurant-price-menu::before,
+.bwdeb-plugin-offcanvasmagic::before,
+.bwdeb-post-prestige-portfolio::before,
+.bwdeb-txsx::before,
+.bwdeb-vsix::before,
+.bwdeb-plugin-woop-multi-action::before,
+.bwdeb-product-category-tiles::before,
+.bwdeb-plugin-woop-wish-cont::before,
+.bwdeb-plugin-product-compare::before,
+.bwdeb-woop-vendors::before,
+.bwdeb-twpx::before,
+.bwdeb-3d-text::before,.bwdeb-notation::before,.bwdeb-confetti-effects::before,.bwdeb-cursor-effects::before,
+.bwdeb-reveal-effects::before,.bwdeb-background-particles::before,.bwdeb-live-copy::before {
+    content: "New";
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    background: #ff00b1;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 10px 3px;
+    line-height: 1;
+    font-size: 12px;
+    font-family: math;
+    font-weight: 500;
+}
 @media (min-width: 1139px) and (max-width: 1190px) {
     .bwd-single-widget-item.matched {
         width: 31.7%;

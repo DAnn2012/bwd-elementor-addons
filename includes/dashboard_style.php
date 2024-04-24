@@ -156,7 +156,7 @@ $String_of_free_pro = esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_
 																		$arr_for_free_pro = array("meet-the-team" => "meet-the-team","testimonial-addon-for-elementor" => "testimonials","creative-button" => "creative-button","accordion-addon-for-elementor" => "accordion","bwd-masking-effect" => "masking-effect","service-addon-for-elementor" => "service-showcase","promo-box" => "promo-box","flip-box-addon-for-service" => "service-flip-box","flip-box-carousel" => "flip-box-carousel","flip-box-addon-for-step" => "step-flip-box","flip-box-addon-for-team" => "team-flip-box","bwd-map-masking" => "map-masking","creative-list-addon-for-elementor" => "creative-list","dual-heading-addon-for-elementor" => "dual-heading","back-to-top-addon-for-elementor" => "back-to-top","call-to-action-for-elementor" => "call-to-action","icon-box-addon-for-elementor" => "icon-box","dual-button-addon-for-elementor" => "dual-button","step-addon-for-elementor" => "awesome-step","counter-addon-for-elementor" => "counter","image-hover-effect-addon-for-elementor" => "image-hover-effect","count-down-addon-for-elementor" => "countdown","animated-heading" => "animated-heading","filterable-gallery-for-elementor" => "filterable-gallery","pricing-table-addon-for-elementor" => "pricing-table","social-icon-addon-for-elementor" => "social-icon","creative-tabs-addon-for-elementor" => "creative-tab","author-bio-addon-for-elementor" => "author-bio","animated-link-plugin-for-elementor" => "animated-link","business-hours-addon-for-elementor" => "business-hours","bwd-image-shape" => "image-shape","fancy-heading-addon-for-elementor" => "fancy-heading","progress-bar-addon-for-elementor" => "progress-bar","image-accordion" => "image-accordion","image-compare" => "image-compare","timeline" => "timeline","blockquote" => "blockquote","video-popup" => "video-popup","image-stack-group" => "image-stack-group","masking-video-addon-for-elementor" => "masking-video","image-swap" => "image-swap","profile-card-addon-for-elementor" => "profile-card","photo-stack-plugin-for-elementor-page-builder" => "photo-stack","image-scroll-elementor-addon" => "image-scroll","ihover" => "ihover","webinar-info-addon-for-elementor" => "webinar-info","interactive-circle-infographic" => "circle-info","elementor-coupon-code" => "coupon-code","elementor-header" => "unique-headers","plugins/click-to-contact" => "click-to-contact","elementor-data-table" => "data-table","contact-form-7-styler" => "contact-form-7-styler","brand-logo-carousel" => "logo-carousel","brand-logo-grid" => "logo-grid","brand-logo-filter" => "logo-filter","team-member-carousel" => "team-carousel","code-highlighter" => "code-highlighter","breadcrumb" => "breadcrumb","info-download-button" => "info-download-button","pre-loader" => "effective-pre-loader","social-share" => "social-share","background-switcher" => "background-switcher","content-switcher" => "content-switcher");
 																		foreach ($arr_for_free_pro as $key => $value):
 																		$F_Single_W = (checked( get_option( 'bwdeb-plugin-'.$value, 'off' ), 'on', false ))?esc_attr('active'):'';
-																		echo '<div class="bwd-sk-cmn bwd-single-widget-item '.$F_Single_W.'">';
+																		echo '<div class="bwd-sk-cmn bwd-single-widget-item '.$F_Single_W.' bwdeb-'.$value.'">';
 																			echo '<div class="bwd-profree-badge">'.$String_of_free_pro.'</div>';
 																			echo '<div class="bwd-widget-box">';
 																			echo '<a href="https://bestwpdeveloper.com/documentation" class="bwd-dcmtn-link" target="_blank">';
@@ -180,7 +180,7 @@ $String_of_free_pro = esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_
 																		$arr_for_Pro = array("honeycombs" => "bwdeb-plugin-honeycombs","popup-elementor-addon" => "bwdeb-plugin-popup","advanced-slider" => "bwdeb-plugin-advanced-slider","anything-slide" => "bwdeb-plugin-slide-anything","image-hotspot" => "bwdeb-plugin-image-hotspot","unfold-content" => "bwdeb-plugin-unfold","effective-lottie-animation" => "bwdeb-plugin-lottie-animation","bar-chart" => "bwdeb-plugin-bar-chart","lord-icon" => "bwdeb-plugin-lord-icon","card-flipper-pro" => "bwdeb-plugin-cart-flipper","ajax-data-table" => "bwdeb-plugin-ajax-data-table","content-switcher-plus" => "bwdeb-plugin-con-swi-pls","image-reveal-animation" => "bwdeb-plugin-img-rev-widg","image-unfold-kit" => "bwdeb-plugin-img-unfold-kit","modern-feature-list" => "bwdeb-plugin-modern-feature-list","offcanvas-slide-magic" => "bwdeb-plugin-offcanvasmagic","private-content-locker" => "bwdeb-plugin-privacy-content-locker","clear-pdf-view" => "bwdeb-plugin-viewpdf","progress-master-kit" => "bwdeb-plugin-progress-master-kit","restaurant-price-menu" => "bwdeb-plugin-restaurant-price-menu","sales-promotion-offer" => "bwdeb-plugin-sales-promotion-offer","showcase-your-profile" => "bwdeb-plugin-profile-showcas","tooltip-mastery" => "bwdeb-plugin-tooltip-mastery","employee-profile-identity" => "bwdeb-employee-profile-identity","horizontal-timeline-slider" => "bwdeb-horizontal-timeline-slider","Showcase-Product-Features" => "bwdeb-product-features-w","threesixty-rotation-view" => "bwdeb-threesixty-rotation-view","bwd-faq" => "bwdeb-widget-template","pricing-scheme-switcher" => "bwdeb-pssx","bio-about-maker" => "bwdeb-blmx1","bio-link-maker" => "bwdeb-blmx2","bio-social-maker" => "bwdeb-blmx3","sticky-video-prime" => "bwdeb-svpx","tabify-xpert-suite" => "bwdeb-txsx","vertical-split-slideshow" => "bwdeb-vsix");
 																		foreach ($arr_for_Pro as $key => $value):
 																		$Check_active = (checked( get_option( $value, 'off' ), 'on', false ))?esc_attr('active'):'';
-																		echo '<div class="bwd-sk-cmn '.$if_no_pro.' '.$Check_active.'">';
+																		echo '<div class="bwd-sk-cmn '.$if_no_pro.' '.$Check_active.' '.$value.'">';
 																			echo '<div class="bwdeb_pro_pro_per"><span>'.esc_html__('Pro', 'bwd-elementor-addons').'</span></div>';
 																			echo '<div class="bwd-widget-box">';
 																			echo '<a href="https://bestwpdeveloper.com/documentation" class="bwd-dcmtn-link" target="_blank">';
@@ -211,7 +211,7 @@ $String_of_free_pro = esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_
 																		$cv_builder_values = array('builder', 'about', 'contact', 'education', 'experience', 'footer', 'header', 'hobby', 'language', 'reference', 'skill');
 																		foreach($cv_builder_values as $cv_builder):
 																			$act_check = (checked( get_option('bwdeb-plugin-cv-'.$cv_builder, 'off' ), 'on', false ))?esc_attr('active'):'';
-																		echo '<div class="bwd-sk-cmn '.$if_no_pro.' '.$act_check.'">';
+																		echo '<div class="bwd-sk-cmn '.$if_no_pro.' '.$act_check.' '.$cv_builder.'">';
 																			echo '<div class="bwdeb_pro_pro_per"><span>'.esc_html__('Pro', 'bwd-elementor-addons').'</span></div>';
 																			echo '<div class="bwd-widget-box">';
 																				echo '<a href="https://bestwpdeveloper.com/documentation" class="bwd-dcmtn-link" target="_blank">';
@@ -242,7 +242,7 @@ $String_of_free_pro = esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_
 																	$i = 1;
 																	for ($i; $i <= 13; $i++) :
 																		$option_Ch = (checked( get_option('bwdeb-check-hero-widget'.$i, 'off' ), 'on', false ))?esc_attr('active'):'';
-																	echo '<div class="bwd-sk-cmn '.$if_no_pro.' '.$option_Ch.'">';
+																	echo '<div class="bwd-sk-cmn '.$if_no_pro.' '.$option_Ch.' bwd-new-'.$i.'">';
 																		echo '<div class="bwdeb_pro_pro_per"><span>'.esc_html__('Pro', 'bwd-elementor-addons').'</span></div>';
 																		echo '<div class="bwd-widget-box">';
 																			echo '<a href="https://bestwpdeveloper.com/documentation" class="bwd-dcmtn-link" target="_blank">';
@@ -273,7 +273,7 @@ $String_of_free_pro = esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_
 																	$post_wdgts = array('post-grid-elementor-addon' => 'post-grid', 'blog-post-list' => 'post-list', 'post-tiles' => 'post-tiles', 'blog-post-accordions' => 'post-accordion', 'post-timeline' => 'post-timeline', 'masonry-blog-post' => 'masonary-blog-post', 'post-image-accordion' => 'post-image-accordion', 'effective-post-slider' => 'single-post-slider', 'news-ticker' => 'news-ticker');
 																	foreach($post_wdgts as $key => $value):
 																		$vaLue = (checked( get_option('bwdeb-plugin-'.$value, 'off' ), 'on', false ))?esc_attr('active'):'';
-																	echo '<div class="bwd-sk-cmn bwd-single-widget-item '.$vaLue.'">';
+																	echo '<div class="bwd-sk-cmn bwd-single-widget-item '.$vaLue.' bwdeb-'.$value.'">';
 																		echo '<div class="bwd-profree-badge">'.$String_of_free_pro.'</div>';
 																		echo '<div class="bwd-widget-box">';
 																			echo '<a href="https://bestwpdeveloper.com/documentation" class="bwd-dcmtn-link" target="_blank">';
@@ -297,7 +297,7 @@ $String_of_free_pro = esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_
 																	$post_wdgtsPro = ['post-carousel' => 'bwdeb-plugin-creative-post-carousel','post-prestige-portfolio' => 'bwdeb-post-prestige-portfolio', 'advanced-posts-tab' => 'bwdeb-apostst'];
 																	foreach($post_wdgtsPro as $key => $value):
 																	$value_CH = (checked( get_option($value, 'off' ), 'on', false ))?esc_attr('active'):'';
-																	echo '<div class="bwd-sk-cmn '.$if_no_pro.' '.$value_CH.'">';
+																	echo '<div class="bwd-sk-cmn '.$if_no_pro.' '.$value_CH.' '.$value.'">';
 																		echo '<div class="bwdeb_pro_pro_per"><span>'.esc_html__('Pro', 'bwd-elementor-addons').'</span></div>';
 																		echo '<div class="bwd-widget-box">';
 																			echo '<a href="https://bestwpdeveloper.com/documentation" class="bwd-dcmtn-link" target="_blank">';
@@ -325,10 +325,10 @@ $String_of_free_pro = esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_
 															echo '<div class="bwd-sk-wrapper">';
 																echo '<div class="bwd-widget-cat-count">'.$all_T[4].'</div>';
 																echo '<div class="bwd-widget-item-wrapper">';
-																	$product_wdgts = array('woocommerece-product-compare'=>'product-compare','woocommerce-product-grid-addon-for-elementor' => 'product-grid', 'creative-products-list' => 'product-list', 'product-tiles' => 'product-tiles', 'product-carousel' => 'product-carousel', 'woocommerce-product-category-grid' => 'product-category-grid', 'woocommerce-product-category-tiles' => 'product-category-tiles', 'product-accordion' => 'product-accordion', 'product-image-accordion' => 'product-image-accordion', 'creative-product-list-carousel' => 'product-list-carousel', 'product-timeline' => 'product-timeline', 'woocommerce-related-product' => 'related-product', 'product-category-carousel' => 'product-category-carousel', 'featured-product' => 'featured-product');
+																	$product_wdgts = array('woocommerce-product-grid-addon-for-elementor' => 'product-grid', 'creative-products-list' => 'product-list', 'product-tiles' => 'product-tiles', 'product-carousel' => 'product-carousel', 'woocommerce-product-category-grid' => 'product-category-grid', 'woocommerce-product-category-tiles' => 'product-category-tiles', 'product-accordion' => 'product-accordion', 'product-image-accordion' => 'product-image-accordion', 'creative-product-list-carousel' => 'product-list-carousel', 'product-timeline' => 'product-timeline', 'woocommerce-related-product' => 'related-product', 'product-category-carousel' => 'product-category-carousel', 'featured-product' => 'featured-product');
 																	foreach($product_wdgts as $key => $value):
 																		$Val = (checked( get_option('bwdeb-plugin-'.$value, 'off' ), 'on', false ))?esc_attr('active'):'';
-																	echo '<div class="bwd-sk-cmn bwd-single-widget-item '.$Val.'">';
+																	echo '<div class="bwd-sk-cmn bwd-single-widget-item '.$Val.' bwdeb-'.$value.'">';
 																		echo '<div class="bwd-profree-badge">'.$String_of_free_pro.'</div>';
 																		echo '<div class="bwd-widget-box">';
 																			echo '<a href="https://bestwpdeveloper.com/documentation" class="bwd-dcmtn-link" target="_blank">';
@@ -349,10 +349,10 @@ $String_of_free_pro = esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_
 																	echo '</div>';
 																	endforeach;
 																	// Pro 
-																	$product_wdgtsPro = ['woocommerce-category-gallery' => 'bwdeb-plugin-woo-cat-gallery', 'wooCommerce-product-multi-action' => 'bwdeb-plugin-woop-multi-action', 'wooCommerce-product-wish-action' => 'bwdeb-plugin-woop-wish-cont', 'woocommerce-product-vendors' => 'bwdeb-woop-vendors', '3d-woocommerce-product-layout' => 'bwdeb-twpx'];
+																	$product_wdgtsPro = ['woocommerce-product-compare'=>'bwdeb-plugin-product-compare','woocommerce-category-gallery' => 'bwdeb-plugin-woo-cat-gallery', 'wooCommerce-product-multi-action' => 'bwdeb-plugin-woop-multi-action', 'wooCommerce-product-wish-action' => 'bwdeb-plugin-woop-wish-cont', 'woocommerce-product-vendors' => 'bwdeb-woop-vendors', '3d-woocommerce-product-layout' => 'bwdeb-twpx'];
 																	foreach ($product_wdgtsPro as $key => $value):
 																	$value_CH = (checked( get_option($value, 'off' ), 'on', false ))?esc_attr('active'):'';
-																	echo '<div class="bwd-sk-cmn '.$if_no_pro.' '.$value_CH.'">';
+																	echo '<div class="bwd-sk-cmn '.$if_no_pro.' '.$value_CH.' '.$value.'">';
 																		echo '<div class="bwdeb_pro_pro_per"><span>'.esc_html__('Pro', 'bwd-elementor-addons').'</span></div>';
 																		echo '<div class="bwd-widget-box">';
 																		echo '<a href="https://bestwpdeveloper.com/documentation" class="bwd-dcmtn-link" target="_blank">';
@@ -390,7 +390,7 @@ $String_of_free_pro = esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_
 															$extentions = array('text-tooltip' => 'bwdeb-extn-tooltip', 'wrap-link' => 'bwdeb-extn-link', 'Content-Protection' => 'bwdeb-extn-protctn', 'CSS-Transform' => 'bwdeb-csstrnsm', 'Floating-Animation' => 'bwdeb-flanime', 'duplicate' => 'bwdeb-duplicate','3D-Text' => 'bwdeb-3d-text','notation' => 'bwdeb-notation','confetti-effects' => 'bwdeb-confetti-effects','cursor-effects' => 'bwdeb-cursor-effects','reveal-effects' => 'bwdeb-reveal-effects','tile-scroll' => 'bwdeb-tile-scroll','section-sticky' => 'bwdeb-section-sticky','scroll-box' => 'bwdeb-scroll-box','background-particles'=>'bwdeb-background-particles','Cross-Domain'=>'bwdeb-xd-copy','custom-JS-&-CSS'=>'bwdeb-custom-jscss','background-parallax'=>'bwdeb-section-parallax','gradiant-animated-BG'=>'bwdeb-gra-anim-bg','backdrop-filter'=>'bwdeb-backdrop-filter','line-grid'=>'bwdeb-line-grid','cursor-img-parallax'=>'bwdeb-cursor-img-parallax','live-copy'=>'bwdeb-live-copy');
 															foreach ($extentions as $key => $value):
 															$value_CH = (checked( get_option($value, 'off' ), 'on', false ))?esc_attr('active'):'';
-															echo '<div class="bwd-sk-cmn '.$if_no_pro.' '.$value_CH.'">';
+															echo '<div class="bwd-sk-cmn '.$if_no_pro.' '.$value_CH.' '.$value.'">';
 																echo '<div class="bwdeb_pro_pro_per"><span>'.esc_html__('Pro', 'bwd-elementor-addons').'</span></div>';
 																echo '<div class="bwd-widget-box">';
 																echo '<a href="https://bestwpdeveloper.com/documentation" class="bwd-dcmtn-link" target="_blank">';
