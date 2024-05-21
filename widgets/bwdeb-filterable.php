@@ -160,19 +160,19 @@ class BWDEB_BWDFGfilterable extends Widget_Base {
 				'fields' => $repeater->get_controls(),
 				'default' => [
 					[
-						'bwdfg_total_box_title_one' => esc_html__( 'Filterable Gallery #1', 'bwd-elementor-addons' ),
+						'bwdfg_filterable_item_name' => esc_html__( 'Filterable Gallery #1', 'bwd-elementor-addons' ),
 					],
 					[
-						'bwdfg_total_box_title' => esc_html__( 'Filterable Gallery #2', 'bwd-elementor-addons' ),
+						'bwdfg_filterable_item_name' => esc_html__( 'Filterable Gallery #2', 'bwd-elementor-addons' ),
 					],
 					[
-						'bwdfg_total_box_title' => esc_html__( 'Filterable Gallery #3', 'bwd-elementor-addons' ),
+						'bwdfg_filterable_item_name' => esc_html__( 'Filterable Gallery #3', 'bwd-elementor-addons' ),
 					],
 					[
-						'bwdfg_total_box_title' => esc_html__( 'Filterable Gallery #4', 'bwd-elementor-addons' ),
+						'bwdfg_filterable_item_name' => esc_html__( 'Filterable Gallery #4', 'bwd-elementor-addons' ),
 					],
 				],
-				'title_field' => '{{{ bwdfg_total_box_title }}}',
+				'title_field' => '{{{ bwdfg_filterable_item_name }}}',
 			]
 		);
 		$this->end_controls_section();
