@@ -154,7 +154,7 @@ class BWDEB_BWDDBDualButtons extends Widget_Base {
 			[
 				'label' => esc_html__( 'Link', 'bwd-elementor-addons' ),
 				'type' => Controls_Manager::URL,
-				'placeholder' => esc_attr( 'https://www.your-link.com', 'bwd-elementor-addons' ),
+				'placeholder' => esc_attr( 'https://www.your-link.com' ),
 				'dynamic' => [
 					'active' => true,
 				],
@@ -393,7 +393,7 @@ class BWDEB_BWDDBDualButtons extends Widget_Base {
 				'dynamic' => [
 					'active' => true,
 				],
-				'placeholder' => esc_attr( 'https://www.your-link.com', 'bwd-elementor-addons' ),
+				'placeholder' => esc_attr( 'https://www.your-link.com' ),
 				'default' => [
 					'url' => 'https://www.google.com',
 					'is_external' => true,
