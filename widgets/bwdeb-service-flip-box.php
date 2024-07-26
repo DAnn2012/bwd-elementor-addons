@@ -395,7 +395,7 @@ class BWDEB_BWDServiceFlipBox extends Widget_Base {
 			[
 				'label' => esc_html__( 'Link', 'bwd-elementor-addons' ),
 				'type' => Controls_Manager::URL,
-				'placeholder' => esc_attr( 'https://www.your-link.com', 'bwd-elementor-addons' ),
+				'placeholder' => esc_attr( 'https://www.your-link.com' ),
 				'default' => [
 					'url' => '#',
 					'is_external' => true,
