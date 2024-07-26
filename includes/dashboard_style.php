@@ -21,7 +21,7 @@ $String_of_free_pro = esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_
 									echo '<div class="bwd-dash-header-area">';
 										echo '<div class="bwd-addon-title">';
 											echo '<div class="bwd-logo-wrap">';
-												echo '<a class="bwdea_dashboard_logo" href="https://bestwpdeveloper.com/" target="_blank"><img src="'.esc_url(plugin_dir_url( __FILE__ ).'../assets/admin/dashboard/img/cropped-Logo.webp').'" alt="'.esc_attr('View Demo').'"></a>';
+												echo '<a class="bwdea_dashboard_logo" href="https://bestwpdeveloper.com/" target="_blank"><img src="'.esc_url(plugin_dir_url( __FILE__ ).'../assets/admin/dashboard/img/cropped-Logo.webp').'" alt="'.esc_attr__('View Demo', 'bwd-elementor-addons').'"></a>';
 											echo '</div>';
 											echo '<h2>'.esc_html__('BWD Elementor Addons Settings', 'bwd-elementor-addons').'</h2>';
 										echo '</div>';
@@ -56,7 +56,7 @@ $String_of_free_pro = esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_
 												if(class_exists( 'ProbwdelementorBundle' )):
 												$license_btn = '<div class="pro-license-btn">';
 													$license_btn .= '<a href="'.esc_url(admin_url( 'admin.php?page=bwdproeb-license-settings' )).'">';
-														$license_btn .= '<img src="'.esc_url(plugin_dir_url( __FILE__ ).'../assets/admin/dashboard/img/key.svg').'" style="fill: white;" alt="'.esc_attr('Go License').'">';
+														$license_btn .= '<img src="'.esc_url(plugin_dir_url( __FILE__ ).'../assets/admin/dashboard/img/key.svg').'" style="fill: white;" alt="'.esc_attr__('Go License', 'bwd-elementor-addons').'">';
 														$license_btn .= '<span>'.esc_html__('Go License', 'bwd-elementor-addons').'</span>';
 													$license_btn .= '</a>';
 												$license_btn .= '</div>';
@@ -115,7 +115,7 @@ $String_of_free_pro = esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_
 																		foreach ($nameOne as $outerIndex => $innerArray) {
 																		echo '<div class="bwd-info-item">';
 																			echo '<div class="bwd-info-icon">';
-																				echo '<img src="'.esc_url(plugin_dir_url(__FILE__) . '../assets/admin/dashboard/img/' . $innerArray['img'] ).'" alt="'.esc_attr('View Demo').'">';
+																				echo '<img src="'.esc_url(plugin_dir_url(__FILE__) . '../assets/admin/dashboard/img/' . $innerArray['img'] ).'" alt="'.esc_attr__('View Demo', 'bwd-elementor-addons').'">';
 																			echo '</div>';
 																			echo '<div class="bwd-item-cont">';
 																				echo '<h4 class="bwd-item-title">'.esc_html($innerArray['name']).'</h4>';
@@ -164,7 +164,7 @@ $String_of_free_pro = esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_
 																				echo '<span class="bwd-view-demo">'.esc_html__('View Documentation', 'bwd-elementor-addons').'</span>';
 																			echo '</a>';
 																			echo '<a href="https://bestwpdeveloper.com/'.$key.'" class="bwd-demo-link" target="_blank">';
-																				echo '<img src="'.esc_url(plugin_dir_url( __FILE__ ).'../assets/admin/dashboard/img/linking.png'),'" alt="'.esc_attr('View Demo').'">';
+																				echo '<img src="'.esc_url(plugin_dir_url( __FILE__ ).'../assets/admin/dashboard/img/linking.png'),'" alt="'.esc_attr__('View Demo', 'bwd-elementor-addons').'">';
 																				echo '<span class="bwd-view-demo">'.esc_html__('View Demo', 'bwd-elementor-addons').'</span>';
 																			echo '</a>';
 																			echo '</div>';
@@ -188,7 +188,7 @@ $String_of_free_pro = esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_
 																				echo '<span class="bwd-view-demo">'.esc_html__('View Documentation', 'bwd-elementor-addons').'</span>';
 																			echo '</a>';
 																			echo '<a href="https://bestwpdeveloper.com/'.$key.'" class="bwd-demo-link" target="_blank">';
-																				echo '<img src="'.esc_url(plugin_dir_url( __FILE__ ).'../assets/admin/dashboard/img/linking.png').'" alt="'.esc_attr('View Demo').'">';
+																				echo '<img src="'.esc_url(plugin_dir_url( __FILE__ ).'../assets/admin/dashboard/img/linking.png').'" alt="'.esc_attr__('View Demo', 'bwd-elementor-addons').'">';
 																				echo '<span class="bwd-view-demo">'.esc_html__('View Demo', 'bwd-elementor-addons').'</span>';
 																			echo '</a>';
 																			echo '</div>';
@@ -219,7 +219,7 @@ $String_of_free_pro = esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_
 																					echo '<span class="bwd-view-demo">'.esc_html__('View Documentation', 'bwd-elementor-addons').'</span>';
 																				echo '</a>';
 																				echo '<a href="https://bestwpdeveloper.com/cv-builder-plugin-for-elementor/" class="bwd-demo-link" target="_blank">';
-																					echo '<img src="'.esc_url(plugin_dir_url( __FILE__ ).'../assets/admin/dashboard/img/linking.png').'" alt="'.esc_attr('View Demo').'">';
+																					echo '<img src="'.esc_url(plugin_dir_url( __FILE__ ).'../assets/admin/dashboard/img/linking.png').'" alt="'.esc_attr__('View Demo', 'bwd-elementor-addons').'">';
 																					echo '<span class="bwd-view-demo">'.esc_html__('View Demo', 'bwd-elementor-addons').'</span>';
 																				echo '</a>';
 																			echo '</div>';
@@ -250,7 +250,7 @@ $String_of_free_pro = esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_
 																				echo '<span class="bwd-view-demo">'.esc_html__('View Documentation', 'bwd-elementor-addons').'</span>';
 																			echo '</a>';
 																			echo '<a href="https://bestwpdeveloper.com/hero-section/" class="bwd-demo-link" target="_blank">';
-																				echo '<img src="'.esc_url(plugin_dir_url( __FILE__ ).'../assets/admin/dashboard/img/linking.png').'" alt="'.esc_attr('View Demo').'">';
+																				echo '<img src="'.esc_url(plugin_dir_url( __FILE__ ).'../assets/admin/dashboard/img/linking.png').'" alt="'.esc_attr__('View Demo', 'bwd-elementor-addons').'">';
 																				echo '<span class="bwd-view-demo">'.esc_html__('View Demo', 'bwd-elementor-addons').'</span>';
 																			echo '</a>';
 																		echo '</div>';
@@ -281,7 +281,7 @@ $String_of_free_pro = esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_
 																				echo '<span class="bwd-view-demo">'.esc_html__('View Documentation', 'bwd-elementor-addons').'</span>';
 																			echo '</a>';
 																			echo '<a href="https://bestwpdeveloper.com/'.$key.'" class="bwd-demo-link" target="_blank">';
-																				echo '<img src="'.esc_url(plugin_dir_url( __FILE__ ).'../assets/admin/dashboard/img/linking.png').'" alt="'.esc_attr('View Demo').'">';
+																				echo '<img src="'.esc_url(plugin_dir_url( __FILE__ ).'../assets/admin/dashboard/img/linking.png').'" alt="'.esc_attr__('View Demo', 'bwd-elementor-addons').'">';
 																				echo '<span class="bwd-view-demo">'.esc_html__('View Demo', 'bwd-elementor-addons').'</span>';
 																			echo '</a>';
 																		echo '</div>';
@@ -305,7 +305,7 @@ $String_of_free_pro = esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_
 																				echo '<span class="bwd-view-demo">'.esc_html__('View Documentation', 'bwd-elementor-addons').'</span>';
 																			echo '</a>';
 																			echo '<a href="https://bestwpdeveloper.com/'.$key.'" class="bwd-demo-link" target="_blank">';
-																				echo '<img src="'.esc_url(plugin_dir_url( __FILE__ ).'../assets/admin/dashboard/img/linking.png').'" alt="'.esc_attr('View Demo').'">';
+																				echo '<img src="'.esc_url(plugin_dir_url( __FILE__ ).'../assets/admin/dashboard/img/linking.png').'" alt="'.esc_attr__('View Demo', 'bwd-elementor-addons').'">';
 																				echo '<span class="bwd-view-demo">'.esc_html__('View Demo', 'bwd-elementor-addons').'</span>';
 																			echo '</a>';
 																		echo '</div>';
@@ -336,7 +336,7 @@ $String_of_free_pro = esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_
 																				echo '<span class="bwd-view-demo">'.esc_html__('View Documentation', 'bwd-elementor-addons').'</span>';
 																			echo '</a>';
 																			echo '<a href="https://bestwpdeveloper.com/'.$key.'" class="bwd-demo-link" target="_blank">';
-																				echo '<img src="'.esc_url(plugin_dir_url( __FILE__ ).'../assets/admin/dashboard/img/linking.png').'" alt="'.esc_attr('View Demo').'">';
+																				echo '<img src="'.esc_url(plugin_dir_url( __FILE__ ).'../assets/admin/dashboard/img/linking.png').'" alt="'.esc_attr__('View Demo', 'bwd-elementor-addons').'">';
 																				echo '<span class="bwd-view-demo">'.esc_html__('View Demo', 'bwd-elementor-addons').'</span>';
 																			echo '</a>';
 																		echo '</div>';
@@ -360,7 +360,7 @@ $String_of_free_pro = esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_
 																			echo '<span class="bwd-view-demo">'.esc_html__('View Documentation', 'bwd-elementor-addons').'</span>';
 																		echo '</a>';
 																		echo '<a href="https://bestwpdeveloper.com/'.$key.'" class="bwd-demo-link" target="_blank">';
-																			echo '<img src="'.esc_url(plugin_dir_url( __FILE__ ).'../assets/admin/dashboard/img/linking.png').'" alt="'.esc_attr('View Demo').'">';
+																			echo '<img src="'.esc_url(plugin_dir_url( __FILE__ ).'../assets/admin/dashboard/img/linking.png').'" alt="'.esc_attr__('View Demo', 'bwd-elementor-addons').'">';
 																			echo '<span class="bwd-view-demo">'.esc_html__('View Demo', 'bwd-elementor-addons').'</span>';
 																		echo '</a>';
 																		echo '</div>';
@@ -398,7 +398,7 @@ $String_of_free_pro = esc_html__('Free /', 'bwd-elementor-addons').'<span>'.esc_
 																	echo '<span class="bwd-view-demo">'.esc_html__('View Documentation', 'bwd-elementor-addons').'</span>';
 																echo '</a>';
 																echo '<a href="https://bestwpdeveloper.com/elementor-extensions" class="bwd-demo-link" target="_blank">';
-																	echo '<img src="'.esc_url(plugin_dir_url( __FILE__ ).'../assets/admin/dashboard/img/linking.png').'" alt="'.esc_attr('View Demo').'">';
+																	echo '<img src="'.esc_url(plugin_dir_url( __FILE__ ).'../assets/admin/dashboard/img/linking.png').'" alt="'.esc_attr__('View Demo', 'bwd-elementor-addons').'">';
 																	echo '<span class="bwd-view-demo">'.esc_html__('View Demo', 'bwd-elementor-addons').'</span>';
 																echo '</a>';
 																echo '</div>';
