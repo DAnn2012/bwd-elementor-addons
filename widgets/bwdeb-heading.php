@@ -120,7 +120,7 @@ class BWDEB_BWDDHHeading extends Widget_Base {
 				'condition' => [
 					'bwddh_heading_title_url_switcher' => 'yes',
 				],
-				'placeholder' => esc_attr( 'https://www.your-link.com', 'bwd-elementor-addons' ),
+				'placeholder' => esc_attr( 'https://www.your-link.com' ),
 				'default' => [
 					'url' => 'https://www.google.com',
 					'is_external' => true,
