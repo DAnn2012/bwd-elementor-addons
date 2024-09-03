@@ -241,7 +241,7 @@ class BWDEB_bwdfbFlipBox extends \Elementor\Widget_Base {
 		$repeater->add_control(
 			'back_img_box_front_background',
 			[
-				'label' => esc_html__( 'Box Background', 'the-unique-headers' ),
+				'label' => esc_html__( 'Box Background', 'bwd-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -504,7 +504,7 @@ class BWDEB_bwdfbFlipBox extends \Elementor\Widget_Base {
 		$repeater->add_control(
 			'back_img_box_back_background',
 			[
-				'label' => esc_html__( 'Box Background', 'the-unique-headers' ),
+				'label' => esc_html__( 'Box Background', 'bwd-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
