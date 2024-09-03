@@ -40,7 +40,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
         <div class="<?php echo esc_attr($thf_search_class); ?> bwdsb-search-box-common <?php echo esc_attr($thf_button_align); ?>">
             <div class="bwdsb-search-form">
                 <form role="search" method="get" class="bwdsb-form" action="<?php echo home_url( '/' ); ?>">
-                    <input type="text" class="bwdsb-input-text" name="search" placeholder="<?php echo esc_attr__( 'Search here...', 'the-unique-headers' ); ?>" value="<?php echo get_search_query(); ?>">
+                    <input type="text" class="bwdsb-input-text" name="search" placeholder="<?php echo esc_attr__( 'Search here...', 'bwd-elementor-addons' ); ?>" value="<?php echo get_search_query(); ?>">
                     <input type="submit" class="bwdsb-search-btn" value="<?php echo esc_attr($thf_nav_search_form_text); ?>"/>
                 </form>
             </div>
@@ -111,7 +111,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
     <div class="<?php echo esc_attr($thf_search_class); ?> bwdsb-search-box-common <?php echo esc_attr($thf_button_align); ?>">
         <div class="bwdsb-search-form">
             <form role="search" method="get" class="bwdsb-form" action="<?php echo home_url( '/' ); ?>">
-                <input type="text" class="bwdsb-input-text" name="search" placeholder="<?php echo esc_attr( 'Search here...', 'the-unique-headers' ); ?>" value="<?php echo get_search_query(); ?>">
+                <input type="text" class="bwdsb-input-text" name="search" placeholder="<?php echo esc_attr__( 'Search here...', 'bwd-elementor-addons' ); ?>" value="<?php echo get_search_query(); ?>">
                 <input type="submit" class="bwdsb-search-btn" value="<?php echo esc_attr($thf_nav_search_form_text); ?>"/>
             </form>
         </div>
