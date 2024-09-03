@@ -16,7 +16,7 @@ echo '<div class="bwd-dashboard-template-container">';
 			echo '<div class="save-toast-message"></div>';
 				if(class_exists( 'ProbwdelementorBundle' )):
 					echo '<a class="bwd-save-button" href="'.esc_url(admin_url( 'admin.php?page=bwdproeb-license-settings' )).'">';
-						echo '<img src="'.esc_url(plugin_dir_url( __FILE__ ).'../assets/admin/dashboard/images/key.svg').'" style="fill: white;" alt="'.esc_attr('Go License').'">';
+						echo '<img src="'.esc_url(plugin_dir_url( __FILE__ ).'../assets/admin/dashboard/images/key.svg').'" style="fill: white;" alt="'.esc_attr__('Go License', BWDEB_PLUGIN_TD).'">';
 						echo '<span>'.esc_html__('Go License', BWDEB_PLUGIN_TD).'</span>';
 					echo '</a>';
 				else:
