@@ -586,29 +586,29 @@ class BWDEB_BWDFGfilterable extends Widget_Base {
 	}
 	protected function render() {
 		$settings = $this->get_settings_for_display();
-		$the_class_one = esc_attr('active', 'bwd-elementor-addons');
+		$the_class_one = esc_attr('active');
 		$bwdfg_column_class = $settings['bwdfg_column_check'];
 		if( $bwdfg_column_class === 'column_two') {
-			$bwdfg_column = esc_attr('col-xl-6', 'bwd-elementor-addons');
-			$bwdfg_column_lg = esc_attr('col-lg-6', 'bwd-elementor-addons');
+			$bwdfg_column = esc_attr('col-xl-6');
+			$bwdfg_column_lg = esc_attr('col-lg-6');
 		} elseif($bwdfg_column_class === 'column_three') {
-			$bwdfg_column = esc_attr('col-xl-4', 'bwd-elementor-addons');
-			$bwdfg_column_lg = esc_attr('col-lg-4', 'bwd-elementor-addons');
+			$bwdfg_column = esc_attr('col-xl-4');
+			$bwdfg_column_lg = esc_attr('col-lg-4');
 		} else{
-			$bwdfg_column = esc_attr('col-xl-3', 'bwd-elementor-addons');
-			$bwdfg_column_lg = esc_attr('col-lg-3', 'bwd-elementor-addons');
+			$bwdfg_column = esc_attr('col-xl-3');
+			$bwdfg_column_lg = esc_attr('col-lg-3');
 		}
 
 		$bwdfg_item_align_class = $settings['bwdfg_filterable_all_items_align'];
 		if( $bwdfg_item_align_class === 'filter_left') {
-			$bwdfg_filter_item = esc_attr('justify-content-start', 'bwd-elementor-addons');
-			$bwdfg_filter_item_one = esc_attr('text-align: left;', 'bwd-elementor-addons');
+			$bwdfg_filter_item = esc_attr('justify-content-start');
+			$bwdfg_filter_item_one = esc_attr('text-align: left;');
 		} elseif($bwdfg_item_align_class === 'filter_center') {
-			$bwdfg_filter_item = esc_attr('justify-content-center', 'bwd-elementor-addons');
-			$bwdfg_filter_item_one = esc_attr('text-align: center;', 'bwd-elementor-addons');
+			$bwdfg_filter_item = esc_attr('justify-content-center');
+			$bwdfg_filter_item_one = esc_attr('text-align: center;');
 		} else{
-			$bwdfg_filter_item = esc_attr('justify-content-end', 'bwd-elementor-addons');
-			$bwdfg_filter_item_one = esc_attr('text-align: right;', 'bwd-elementor-addons');
+			$bwdfg_filter_item = esc_attr('justify-content-end');
+			$bwdfg_filter_item_one = esc_attr('text-align: right;');
 		}
 			if('style1' == $settings['bwdfg_style_selection'] || 'style2' == $settings['bwdfg_style_selection']){
         if('style1' === $settings['bwdfg_style_selection']){
