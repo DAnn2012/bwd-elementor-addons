@@ -3,7 +3,7 @@
  * Plugin Name: BWD Elementor Addons
  * Description: <a href="https://bestwpdeveloper.com/" target="_blank">BWD Elementor Addons</a> is a plugin built on the Elementor page builder platform. It includes several widgets that can be used to create custom designs for your website. One of the main features of the plugin is the variety of preset designs available, which can save time and simplify the design process. Overall, the plugin aims to enhance the functionality and design capabilities of the Elementor page builder.
  * Plugin URI:  https://bestwpdeveloper.com/bwd-elementor-addons/
- * Version:     4.2.16
+ * Version:     4.2.17
  * Author:      Best WP Developer
  * Requires Plugins: elementor
  * Author URI:  https://bestwpdeveloper.com/
@@ -13,7 +13,7 @@
  */
 
 if ( ! defined( 'ABSPATH' ) ) exit;
-define( 'BWDEB_PLUGIN_V', '4.2.16' );
+define( 'BWDEB_PLUGIN_V', '4.2.17' );
 define( 'BWDEB_PLUGIN_TD', 'bwd-elementor-addons' );
 require_once ( plugin_dir_path(__FILE__) ) . '/includes/requires-check.php';
 final class BWDEBElementorBundle {
@@ -49,7 +49,19 @@ final class BWDEBElementorBundle {
 			return;
 		}
 		require_once( 'bwdeb-boots.php' );
+        $this->bwdeb_reg_apps_reson_in_class();
 	}
+
+    public function bwdeb_reg_apps_reson_in_class(){
+        require __DIR__ . '/vendor/autoload.php';
+        function appsero_init_tracker_bwd_elementor_addons() {
+            if ( ! class_exists( 'Appsero\Client' ) ) {
+            require_once __DIR__ . '/appsero/src/Client.php';
+            }
+            $client->insights()->init();
+        }
+        appsero_init_tracker_bwd_elementor_addons();
+    }
 
 	public function bwdeb_admin_notice_minimum_php_version() {
 		if (isset($_GET['activate'])) {
@@ -72,8 +84,6 @@ final class BWDEBElementorBundle {
 new BWDEBElementorBundle();
 
 class bwdebSupport {
-    private $api_key = '57935a00406b164eba92e17a8c842e43-us12';
-    private $list_id = 'fd262c5a5f';
 
     public function __construct() {
         register_activation_hook(__FILE__, [$this, 'on_activation']);
