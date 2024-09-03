@@ -1,0 +1,29 @@
+
+#toplevel_page_bwdeb-plugin-main-menu .wp-menu-image img {
+    max-width: 37px !important;
+    rotate: 90deg;
+    position: relative;
+    left: 8px;
+    top: 13px;
+  }
+  #toplevel_page_bwdeb-plugin-main-menu a .wp-menu-name{
+    background: linear-gradient(90deg, #f441a5, #03a9f4);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  #toplevel_page_bwdeb-plugin-main-menu .current.menu-top, #toplevel_page_bwdeb-plugin-main-menu .wp-has-current-submenu{
+    background: linear-gradient(90deg, #1d2327, #787878) !important;
+  }
+.bwdeb-notice-btn{
+  padding: 5px 10px;
+  border-radius: 4px;
+  color: white;
+  background: linear-gradient(90deg, #f441a5, #03a9f4);
+  border: none;
+  margin: 5px 0;
+  font-size: small;
+  cursor: pointer;
+}
